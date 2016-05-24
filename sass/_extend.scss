@@ -1,0 +1,88 @@
+%clearfix {
+	&::before, &::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+%fn {
+	float: none;
+}
+
+%fl {
+  float: left;
+}
+
+%fr {
+  float: right;
+}
+
+%margin-spacing-2_5-persent {
+	margin: 0 2.5%;
+}
+
+%nav-hover {
+	color: #000;
+}
+
+%border-bottom-2px-solid-gray {
+	border-bottom: 2px solid #d1d8da;
+}
+
+%border-bottom-2px-solid-green {
+	border-bottom: 2px solid $green;
+}
+
+%border-bottom-1px-solid-primary {
+	border-bottom: 1px solid #e9f0f3;
+}
+
+%text-decoration-none {
+	text-decoration: none;
+}
+
+%Blue-Web-Design {
+	background-color: $blue-Web-Design;
+}
+
+%dark-red-Front-End {
+	background-color: $dark-red-Front-End;
+}
+
+%light-red-Rails {
+	background-color: $light-red-Rails;
+}
+
+%purple-php {
+	background-color: $purple-php;
+}
+
+%purple-Wordpress {
+	background-color: $purple-Wordpress;
+}
+
+%orange-Business {
+	background-color: $orange-Business;
+}
+
+%green-ios {
+	background-color: $green-ios;
+}
+%green-android {
+	background-color: $green-android;
+}
+%color-white {
+	color: #fff;
+}
+
+%border-transition {
+	-webkit-transition-property: border;
+	-webkit-transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease;
+}
+
+%ovh {
+	overflow: hidden;
+	display: inline-block;
+}

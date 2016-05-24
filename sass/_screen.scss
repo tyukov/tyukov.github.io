@@ -1,0 +1,114 @@
+@media screen and (min-width: 1200px) {
+	.row {
+		width: 1170px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+
+	%media_768-fr {
+		float: right;
+	}
+
+	%media_768-fl {
+		float: left;
+	}
+
+	.progress-container {
+		display: table-cell;
+	}
+
+	.header	{
+		position: fixed;
+
+		& + div {
+			margin-top: 70px;
+		}
+		&_top{
+
+			&_logo {
+				width: auto;
+			}
+
+			&_link {
+				width: 158px;
+			}
+
+			&_brand {
+				margin: 16px 0 0 15px;
+			}
+		}
+	}
+
+	.five {
+		width: 50%;
+	}
+
+	.three {
+		width: 33.3333%;
+	}
+
+	.nav {
+
+		&-list {
+			width: auto;
+		}
+
+		&-item {
+			@extend %media_768-fl;
+		}
+
+		&-anchor {
+			@extend %media_768-fl;
+		}
+
+	}
+
+	.cover {
+		
+	}
+
+	.card-list {
+		margin: 30px -15px 0;
+
+		& img {
+			border-radius: 4px;
+		}
+
+		&-item {
+
+			&-five, &-ten {
+				display: block;
+				@extend %media_768-fl;
+				margin-bottom: 16px;
+			}
+
+			&-five {
+				width: 33.3333%;
+			}
+
+			&-ten {
+				width: 100%;
+
+				& img {
+					width: 100%;
+					margin: 0;
+				}
+			}
+		}
+	}
+	.colums {
+		padding: 0 15px;
+	}
+
+	.row-50 {
+		@extend %media_768-fl;
+		width: 48.82117%;
+	}
+
+	.big-img {
+		width: 100%;
+		margin: 0;
+	}
+
+}

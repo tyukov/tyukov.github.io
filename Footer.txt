@@ -1,0 +1,8 @@
+<div class="footer container">
+		<div class="row">
+			<span class="footer-copyright fl">© Tyukov Dmitriy 2016</span>
+			<ul class="footer-links-primary fr">
+			<li><a href="https://vk.com/tyukovd">VK</a></li><li><a href="https://www.facebook.com/groups/428422924015598/">Facebook</a></li><li><a href="https://twitter.com/tyukovd1">Twitter</a></li><li><a href="https://dribbble.com/tyukovd1">Dribbble</a></li><li><a href="https://www.behance.net/tyukovd/wip">Behance</a></li>
+			</ul>
+		</div>
+	</div>

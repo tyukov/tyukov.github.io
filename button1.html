@@ -8,10 +8,20 @@
 	<title>Hello</title>
 	<style>
 
-		@charset "UTF-8";
-/**
- * Set the default color.
+	@charset "UTF-8";
+/*
+ * Role: variables.
+ * Description: Styles used for further fast work.
+ * Author: Dmitriy Tyukov
+ * Version: 1
  */
+/*
+ * Colors
+ */
+/*Black*/
+/*Green*/
+/*Blue*/
+/*Gray*/
 /**
  * Set the default font-face.
  */
@@ -501,6 +511,9 @@ a:hover {
  * Author: Dmitriy Tyukov
  * Version: 1
  */
+/*
+* ╨б╨▒╤А╨╛╤Б ╤Б╤В╨░╨╜╨┤╨░╤А╤В╨╜╤Л╤Е ╤Б╤В╨╕╨╗╨╡╨╣ [ ╨г╤Б╤В╨░╨╗ ╤Б╨▒╤А╨░╤Б╤Л╨▓╨░╤В╤М (: ]
+*/
 ul, ol, dl {
   list-style: none;
   margin: 0;
@@ -537,9 +550,19 @@ img {
   max-width: 100%;
 }
 
-/*
-1. ╨б╤В╨░╨╜╨┤╨░╤А╤В╨╜╤Л╨╡ ╤Б╤В╨╕╨╗╨╕ ╨┤╨╗╤П ╨║╨╜╨╛╨┐╨║╨╕ [╨Т╤Л╤Б╨╛╤В╨░ 40px].
-2. Success (╨Ч╨╡╨╗╤С╨╜╨░╤П) ╨║╨╜╨╛╨┐╨║╨░ ╨╕ ╨╡╤С ╨╕╨╜╨▓╨╡╤А╤Б╨╕╤П.
+ /*** Btn bar ***
+ [╨Т╤Л╤Б╨╛╤В╨░ 40px].
+==============================
+[Support]
+   Mozilla 3.6
+   Webkit (Safari, Chrome)
+   Opera 10
+   IE 5.5
+==============================
+[Primary - ╨│╨╛╨╗╤Г╨▒╨░╤П, Success - ╨╖╨╡╨╗╤С╨╜╨░╤П] - ╤Б╤В╨╕╨╗╨╕╨╖╨░╤Ж╨╕╤П, ╨╛╨▒╨▓╨╛╨┤╨║╨░ ╨▓ ╤Ж╨▓╨╡╤В╨░ ╨Ш ╨Ш╨е ╨Ш╨Э╨Т╨Х╨а╨б╨Ш╨п.
+==============================
+[__group] тАФ ╨Ъ╨╛╨╜╨║╨░╤В╨╡╨╜╨░╤Ж╨╕╤П ╨║╨╜╨╛╨┐╨╛╨║ ╨▓ ╨│╤А╤Г╨┐╨┐╤Г.
+[__group-fluid] тАФ ╤А╨╡╨╖╨╕╨╜╨╛╨▓╨░╤П ╨│╤А╤Г╨┐╨┐╨░ ╨║╨╜╨╛╨┐╨╛╨║. 
 */
 .btn {
   -webkit-transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, width 0.3s ease, opacity 0.3s ease;
@@ -559,17 +582,28 @@ img {
   border: 2px solid transparent;
   padding: .5em 1.07142857em .57142857em;
   line-height: 1.5;
-  /*
-  1. ╨Ъ╨╛╨╜╨║╨░╤В╨╡╨╜╨░╤Ж╨╕╤П ╨║╨╜╨╛╨┐╨╛╨║ ╨▓ ╨│╤А╤Г╨┐╨┐╤Г. 
-  2. ╨Я╨╡╤А╨▓╨░╤П ╨Ъ╨╜╨╛╨┐╨║╨░ ╨▓ ╨│╤А╤Г╨┐╨┐╨╡.
-  3. ╨Ъ╨╜╨╛╨┐╨║╨╕ ╨┐╨╛ ╤Б╨╡╤А╨╡╨┤╨╕╨╜╨╡ ╨│╤А╤Г╨┐╨┐╤Л.
-  4. ╨Я╨╛╤Б╨╗╨╡╨┤╨╜╤П╤П ╨║╨╜╨╛╨┐╨║╨░ ╨▓ ╨│╤А╤Г╨┐╨┐╨╡.
-  5. [fluid] тАФ ╤А╨╡╨╖╨╕╨╜╨╛╨▓╨░╤П ╨│╤А╤Г╨┐╨┐╨░ ╨║╨╜╨╛╨┐╨╛╨║. 
-  */
 }
 .btn:active {
   position: relative;
   top: 1px;
+}
+.btn__primary {
+  background-color: #6b9bd2;
+  border-color: #6b9bd2;
+  color: #fff;
+}
+.btn__primary:hover {
+  background-color: #4481c6;
+  border-color: #4481c6;
+}
+.btn__primary-inverse {
+  color: #6b9bd2;
+  border-color: #6b9bd2;
+  background-color: #fff;
+}
+.btn__primary-inverse:hover {
+  color: #4481c6;
+  border-color: #4481c6;
 }
 .btn__success {
   background-color: #5fcf80;
@@ -603,9 +637,18 @@ img {
   width: 100%;
 }
 
-/*
- * Tags bar.
- */
+/*** Tags bar ***
+==============================
+[Support]
+   Mozilla 3.6
+   Webkit (Safari, Chrome)
+   Opera 10
+   IE 5.5
+==============================
+[Primary - ╨│╨╛╨╗╤Г╨▒╨░╤П, Success - ╨╖╨╡╨╗╤С╨╜╨░╤П] - ╤Б╤В╨╕╨╗╨╕╨╖╨░╤Ж╨╕╤П, ╨╛╨▒╨▓╨╛╨┤╨║╨░ ╨▓ ╤Ж╨▓╨╡╤В╨░.
+==============================
+[Rounded] - ╨╖╨░╨║╤А╤Г╨│╨╗╤С╨╜╨╜╤Л╨╡ ╤В╤Н╨│╨╕.
+*/
 .tags {
   display: inline-block;
 }
@@ -1021,6 +1064,7 @@ img {
     width: 75em;
   }
 }
+
 
 body {
 			margin: 80px 15px;

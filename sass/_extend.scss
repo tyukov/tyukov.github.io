@@ -1,0 +1,176 @@
+
+%fl {
+  float: left;
+}
+
+.fl {
+  @extend %fl;
+}
+
+%fr {
+  float: right;
+}
+
+.fr {
+  @extend %fr;
+}
+
+%content__box {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+%text__decoration-none {
+  text-decoration: none;
+}
+
+%overflow--auto {
+  overflow: auto;
+}
+
+%border__radius--none {
+  border-radius: 0;
+}
+
+%select__none {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+%clearfix {
+
+  &:before,
+  &:after {
+   content: "";
+   display: table;
+ }
+
+ &:after {
+   clear: both;
+ }
+}
+
+/*
+ * Tabs - альтернатива float(-у);
+ */
+
+ %table__column {
+ 	display: table-cell;
+ 	vertical-align: middle;
+ 	white-space: nowrap;
+
+ 	&-li {
+ 		display: table-cell;
+ 		vertical-align: middle;
+ 	}
+
+ 	&-animation {
+ 		@include transition(padding 130ms linear);
+ 	}
+ }
+
+/*
+ * С помощью свойства appearance Вы можете превратить тэг HTML документа в указанный элемент пользовательского интерфейса.
+ */
+
+ %appearance__none {
+ 	-moz-appearance: none;
+ 	-webkit-appearance: none;
+ 	appearance: none;
+ }
+
+ /*
+  * Tab Size
+ ==============================
+ http://caniuse.com/#search=tab-size
+ [Support]
+   Firefox 4
+   Chrome 21
+   Safari 6.1
+   Opera 10.6
+   IE No support
+==============================
+*/
+%tab__size--2 {
+	-moz-tab-size: 2;
+	-o-tab-size: 2;
+	tab-size: 2;
+}
+
+%tab__size--6 {
+	-moz-tab-size: 6;
+	-o-tab-size: 6;
+	tab-size: 6;
+}
+
+/*
+ * http://htmlhook.ru/property-touch-action.html
+ * Свойство touch-action предназначено для мультитач устройств, Отменяет действие назначенное по умолчанию.
+ */
+
+ %toch__action-none {
+ 	-ms-touch-action: none;
+ 	touch-action: none;
+ }
+
+ %toch__action-none {
+ 	-ms-touch-action: none;
+ 	touch-action: none;
+ }
+
+ /*
+ * Border-radius: none [top-left, bottom-left].
+ */
+
+ %border__radius-top-left-bottom-left--none {
+ 	border-top-left-radius: 0;
+ 	border-bottom-left-radius: 0;
+ }
+
+/*
+ * Border-radius: none [top-right, bottom-right].
+ */
+
+ %border__radius-top-right-bottom-right--none {
+ 	border-top-right-radius: 0;
+ 	border-bottom-right-radius: 0;
+ }
+
+ /*
+ * Border-radius: 100px
+ */
+
+ %border__radius-rounded {
+ 	border-radius: 6.25rem;
+ }
+
+/*
+ * Border-right: 0
+ */
+
+ %border__rigth--none {
+ 	border-right: 0;
+ }
+
+ /*
+  * Hyphens — сообщает браузеру, как расставлять переносы слов в блоке текста.
+ ==============================
+ http://caniuse.com/#search=hyphens
+ [Support]
+   Android 4
+   Chrome 13
+   Firefox 6
+   IE 10
+   iOS 4.2
+   Opera No support
+   Safari 5.1
+==============================
+*/
+%hyphens--none {
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	-webkit-hyphens: none;
+	hyphens: none;
+}

@@ -1,0 +1,75 @@
+.container {
+
+	@extend %clearfix;
+
+	margin: 0 auto;
+	padding: 0 15px;
+
+}
+
+.row {
+
+	@extend %clearfix;
+
+	margin: 0 -15px;
+	
+}
+
+.btn {
+
+	@include transition(color .3s ease, background-color .3s ease, border-color .3s ease, width .3s ease, opacity .3s ease);
+	
+	@extend %appearance__none;
+	@extend %select__none;
+
+	font-size: 1em;
+	height: 3.125em;
+	line-height: 3.125;
+	display: inline-block;
+	padding: 0 2em;
+	border-radius: 3px;
+	font-weight: 500;
+	position: relative;
+	white-space: nowrap;
+	vertical-align: baseline;
+	text-align: center;
+	margin: 0;
+
+	&-white {
+
+		background-color: #fff;
+		border-color: #fff;
+		color: #3c5460;
+		opacity: .88;
+
+		&:hover {
+
+			opacity: 1;
+
+		}
+
+		&:active {
+
+			top: 1px;
+
+		}
+
+	}
+
+}
+
+.flash {
+
+	background: -webkit-gradient(linear,left top,right top,color-stop(0%,rgba(248,248,248,0)),color-stop(100%,rgba(248,248,248,1)));
+	height: 54px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 24px;
+	z-index: 2;
+	pointer-events: none;
+}
+
+body {
+	height: 5000px;
+}

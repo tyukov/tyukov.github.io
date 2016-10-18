@@ -1,0 +1,16 @@
+
+/*
+* Transition Mixin.
+*/
+
+@mixin transition($transition...) {
+	-webkit-transition: $transition;
+	-moz-transition:    $transition;
+	-o-transition:      $transition;
+	transition:         $transition;
+}
+
+@mixin background-size($background-size) {
+	-webkit-background-size: $background-size;
+	background-size: $background-size;
+}

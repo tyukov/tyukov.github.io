@@ -11,7 +11,7 @@
  * Body customize.
  */
  body {
- 	background-color: #fff;
+ 	background-color: #FCFCFC;
  	color: $color__black;
  	font-family: $font-helvetica;
  	line-height: 1.4;
@@ -61,4 +61,8 @@
  h6 {
  	margin-top: 0;
  	font-weight: 300;
+ }
+
+ a {
+ 	transition: color 300ms 0s ease;
  }

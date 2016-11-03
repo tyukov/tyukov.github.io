@@ -34,6 +34,7 @@
 	vertical-align: baseline;
 	text-align: center;
 	margin: 0;
+	border: 2px solid transparent;
 
 	&-white {
 
@@ -56,6 +57,25 @@
 
 	}
 
+	&__ghost {
+
+		&--green {
+
+			transition: color 200ms 0s ease, padding 200ms 0s ease, border 200ms 0s ease, background-color 200ms 0s ease;
+			background-color: #fff;
+			border-color: $color__green;
+			color: $color__green;
+
+			&:hover {
+
+				background-color: $color__green;
+				color: #fff;
+			}
+
+		}
+
+	}
+
 }
 
 .flash {
@@ -72,23 +92,41 @@
 
 .header {
 
+	@media screen and (min-width: 768px) {
+
+		& {
+
+			min-height: 70px;
+
+		}
+
+	}
+
 	@extend %clearfix;
 
 	width: 100%;
 	position: relative;
-	min-height: 70px;
+	min-height: 50px;
 	box-shadow: 0px 2px 40px 0px rgba(0,0,0,0.08);
 	position: relative;
 
 	&__logo {
 
+		@media screen and (min-width: 768px) {
+			& {
+				background-position: 0 -50px;
+				height: 70px;
+				width: 132px;
+			}
+		}
+
 		@extend %fl;
 		
-		width: 132px;
-		height: 70px;
+		width: 57px;
+		height: 50px;
 		background-image: url(../img/header__logo.png);
 		background-repeat: no-repeat;
-		background-position: 0 -50px;
+		background-position: 0 0;
 		overflow: hidden;
 		text-indent: 100%;
 		position: relative;
@@ -103,6 +141,30 @@
 
 	& .navbar {
 
+		@media screen and (min-width: 768px) {
+
+			& {
+
+				width: auto;
+
+			}
+
+		}
+
+		@media screen and (max-width: 767px) {
+
+			&>.navbar__list:last-child {
+				display: none;
+			}
+
+		}
+
+		display: inline-block;
+		overflow-x: auto;
+		overflow-y: hidden;
+		white-space: nowrap;
+		width: 100%;
+
 		@extend %fr;
 
 		&--item {
@@ -111,6 +173,29 @@
 				color: $color__green;
 			}
 		}
+
+	}
+
+	& a {
+
+		text-decoration: none;
+
+	}
+
+	& .btn.btn__ghost--green {
+
+		@media screen and (min-width: 768px) {
+			& {
+				display: none;
+			}
+		}
+
+		float: right;
+		font-size: .875rem;
+		height: 2.125rem;
+		line-height: 1.875rem;
+		padding: 0 .75rem;
+		margin: .5rem 1rem 0 0;
 
 	}
 
@@ -126,13 +211,25 @@
 
 		&__list {
 
-			@extend %fl;
+			@media screen and (min-width: 768px) {
 
-			line-height: 70px;
+				& {
+
+					line-height: 70px;
+
+				}
+
+			}
+
+			float: left;
+
+			line-height: 50px;
 			font-size: 1rem;
 			font-weight: 500;
 			color: $color__black-80;
 			position: relative;
+			float: none;
+			display: inline-block;
 
 			&:hover .navbar--item {
 				color: $color__black;
@@ -148,10 +245,22 @@
 
 		&--item {
 
+			@media screen and (min-width: 768px) {
+
+				& {
+
+					font-size: 1rem;
+					text-transform: none;
+
+				}
+
+			}
+
 			@extend %fl;
 
-			text-decoration: none;
 			color: inherit;
+			font-size: .75rem;
+			text-transform: uppercase;
 			font-weight: inherit;
 			padding: 0 1em;
 
@@ -161,6 +270,65 @@
 	}
 }
 
+.cover {
+
+	&-post {
+
+		text-align: center;
+		padding: 8.375rem 0;
+		position: relative;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		&:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(109, 193, 160, .8);
+			transition: background-color 230ms ease-in-out;
+		}
+
+		& a {
+			text-decoration: none;
+		}
+
+		& h1 {
+
+			& a {
+				color: #fff;
+				font-weight: 400;
+				display: block;
+				margin: 0 1rem .8125rem;
+			}
+
+		}
+
+	}
+
+	&-development {
+
+		& h1 {
+
+			&:before {
+
+				content: "";
+				background-image: url(../img/icons/java.png);
+				display: block;
+				background-repeat: no-repeat;
+				background-size: 64px;
+				width: 100%;
+				height: 84px;
+				background-position: 50%;
+
+			}
+		}
+	}
+}
+
 body {
 	height: 5000px;
+	background-color: #fff;
 }

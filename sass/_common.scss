@@ -17,14 +17,14 @@
 
 .btn {
 
-	@include transition(color .3s ease, background-color .3s ease, border-color .3s ease, width .3s ease, opacity .3s ease);
+	@include transition(all .1s ease-in-out);
 	
 	@extend %appearance__none;
-	@extend %select__none;
+	@extend %select--none;
 
 	font-size: 1em;
 	height: 3.125em;
-	line-height: 3.125;
+	line-height: 2.875;
 	display: inline-block;
 	padding: 0 2em;
 	border-radius: 3px;
@@ -51,7 +51,7 @@
 
 		&:active {
 
-			@extend .header__logo:active;
+			box-shadow: 0 0 0 3px #fff;
 
 		}
 
@@ -159,9 +159,12 @@
 
 		}
 
+		@extend %select--none;
+
 		display: inline-block;
 		overflow-x: auto;
 		overflow-y: hidden;
+		text-align: center;
 		white-space: nowrap;
 		width: 100%;
 
@@ -256,13 +259,12 @@
 
 			}
 
-			@extend %fl;
-
 			color: inherit;
+			display: block;
 			font-size: .75rem;
-			text-transform: uppercase;
 			font-weight: inherit;
 			padding: 0 1em;
+			text-transform: uppercase;
 
 		}
 
@@ -275,21 +277,10 @@
 	&-post {
 
 		text-align: center;
-		padding: 8.375rem 0;
+		padding: 8.375em 0;
 		position: relative;
 		background-repeat: no-repeat;
 		background-size: cover;
-
-		&:before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background-color: rgba(109, 193, 160, .8);
-			transition: background-color 230ms ease-in-out;
-		}
 
 		& a {
 			text-decoration: none;
@@ -309,6 +300,17 @@
 	}
 
 	&-development {
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: rgba(44, 150, 118, .8);
+				transition: background-color 230ms ease-in-out;
+			}
 
 		& h1 {
 

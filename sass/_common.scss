@@ -276,8 +276,16 @@
 
 	&-post {
 
+		@media screen and (min-width: 768px) {
+
+			& {
+				padding: 8.375em 0;
+			}
+
+		}
+
 		text-align: center;
-		padding: 8.375em 0;
+		padding: 2rem 0;
 		position: relative;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -289,10 +297,20 @@
 		& h1 {
 
 			& a {
+
+				@media screen and (max-width: 767px) {
+
+					& {
+						font-size: 1.875rem;
+					}
+
+				}
+
 				color: #fff;
 				font-weight: 400;
 				display: block;
-				margin: 0 1rem .8125rem;
+				margin: 0 1rem .8125rem;	
+				line-height: 1.35;
 			}
 
 		}
@@ -301,16 +319,38 @@
 
 	&-development {
 
-			&:before {
-				content: "";
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				background-color: rgba(44, 150, 118, .8);
-				transition: background-color 230ms ease-in-out;
-			}
+		&:before {
+			content: "";
+			background-color: rgba(16,22,19,0.50);
+			bottom: 0;
+			height: 100%;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			transition: background-color 230ms ease-in-out;
+			width: 100%;
+			z-index: 1;
+		}
+
+		&:after {
+			background-image: url(../img/icons/trame.svg);
+			background-repeat: repeat;
+			bottom: 0;
+			content: "";
+			height: 100%;
+			left: 0;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 100%;
+			opacity: .8;
+			z-index: 2;
+		}
+
+		& .container {
+			z-index: 3;
+		}
 
 		& h1 {
 

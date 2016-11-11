@@ -20,14 +20,29 @@
       <ul class="nav navbar"><li class="navbar__list"><a class="navbar--item" href="#">Работа</a></li><li class="navbar__list"><a class="navbar--item" href="#">Блог</a></li><li class="navbar__list"><a class="navbar--item" href="#">Истории</a></li><li class="navbar__list"><a class="navbar--item" href="#">Войти</a></li><li class="navbar__list"><a class="action navbar--item" href="">Зарегистрироваться</a></li></ul>
     </div>
   </div>
-<!-- data-parallax="scroll" data-image-src="img/blog/article_-journeys-4.jpg" -->
+  <!-- data-parallax="scroll" data-image-src="img/blog/article_-journeys-4.jpg" -->
   <div class="cover-post cover-development" style="background-image: url(img/blog/article_-journeys-4.jpg);">
     <div class="container">
-        <h1><a href="#">Разработка дипломной работы идёт полным ходом</a></h1>
-        <a class="btn btn-white" href="#">Прочитать историю</a>
+      <h1><a href="#">Разработка дипломной работы идёт полным ходом</a></h1>
+      <a class="btn btn-white" href="#">Прочитать историю</a>
     </div>
   </div>
+  <!-- Content -->
+  <div class="page-container">
 
+    <div class="container">
+
+      <div class="col-4">
+
+        <a href="#">
+          <div class="card">
+            <div class="card-body">sdd</div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
 
 
 
@@ -43,3 +58,139 @@
   </script>
 </body>
 </html>
+<div class="container">
+  <div class="col-4">
+    <a href="#1">
+      <div class="prom">
+        <div class="card-prom">
+          <div class="card-circle" style="background-image: url(img/icons/user1.png)"></div>
+          <div class="card-name">Иван Иванович</div>
+          <div class="card-title">Как стать профессионалом в своей профессии</div>
+          <p class="card-article">Как долго вы собираетесь просиживать свою жизнь. Насколько вы цените свою жизнь, а жизнь родного сына?</p>
+        </div>
+        <div class="card-hero">
+          <img src="img/blog/image3-01.jpg" class="card-hero_img" alt="">
+        </div>
+      </div>
+    </a><a href="#1">
+    <div class="prom">
+      <div class="card-prom">
+        <div class="card-circle" style="background-image: url(img/icons/user4.jpg)"></div>
+        <div class="card-name">Елена Александровна</div>
+        <div class="card-title">Скоро соревнования по программированию</div>
+        <p class="card-article">Ола друзья, через неделю пройдёт основной сбор юных программистов, где наша команда поборится с лучшими специалистами города Атырау. Надеюсь мы возьмём золото в пятый раз.</p>
+      </div>
+      <div class="card-hero">
+        <img src="img/blog/image5.png" class="card-hero_img" alt="">
+      </div>
+    </div>
+  </a>
+
+</div>
+<div class="col-4">
+  <a href="#2">
+    <div class="prom">
+      <div class="card-prom">
+        <div class="card-circle" style="background-image: url(img/icons/user2.jpg)"></div>
+        <div class="card-name">Екатерина Дмитриевна</div>
+        <div class="card-title">Куда поступить учиться после Прикаспийского</div>
+        <p class="card-article">Очень много дискуссий у студентов нашего колледжа вызывает вопрос о дальнейшем развитии в высшем заведении. Мы составили список лучших вариантов специально для Вас.</p>
+      </div>
+      <div class="card-hero">
+        <img src="img/blog/image2.png" class="card-hero_img" alt="">
+      </div>
+    </div>
+  </a>
+</div>
+<div class="col-4">
+  <a href="#3">
+    <div class="prom">
+      <div class="card-prom">
+        <div class="card-circle" style="background-image: url(img/icons/user3.jpg)"></div>
+        <div class="card-name">Михаил Афанасьевич</div>
+        <div class="card-title">Как я выходил из зоны комфорта</div>
+        <p class="card-article">В 12 лет я полностью отказался от игр, это было крайне тяжело и у меня отнюдь не сразу получилось, но я чувствовал дифференциацию над сверстниками и об этом моя история.</p>
+      </div>
+      <div class="card-hero">
+        <img src="img/blog/image3.jpg" class="card-hero_img" alt="">
+      </div>
+    </div>
+  </a>
+</div>
+</div>
+
+<style>
+  .container {
+
+  }
+  .col-4 a {
+    width: 100%;
+    display: block;
+    float: left;
+  }
+  .prom {
+    margin: 20px;
+    box-shadow: 0 20px 20px rgba(0,0,0,.08);
+    -webkit-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    -moz-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+    background-color: #fff;
+  }
+  .prom:hover {
+    box-shadow: 0 40px 40px rgba(0,0,0,.16);
+    transform: translate(0,-20px);
+    transition-delay: 0s !important;
+  }
+  .prom-here {
+
+    width: 100%;
+    display: block;
+  }
+
+  .prom-here:before,
+  .prom-here:after,
+  .prom:before,
+  .prom:after,
+  .card-circle:before,
+  .card-circle:after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .card-prom {
+    padding: 20px 20px 0 20px;
+    float: left;
+    width: 100%;
+    color: #3c5460;
+  }
+  .card-circle {
+    width: 50px;
+    height: 50px;
+    float: left;
+    border-radius: 50%;
+  }
+  .card-name {
+    margin: 17px 0 0 66px;
+    font-weight: 400;
+    font-size: 1.125rem;
+  }
+  .card-title {
+    font-size: 24px;
+    clear: both;
+    margin-top: 20px;
+  }
+  .card-article {
+    font-size: 1rem;
+    color: #90949c;
+    margin: .5625rem 0 0 0;
+  }
+  .card-hero {
+    padding: 20px;
+    float: left;
+    width: 100%;
+  }
+  .card-hero_img {
+    width: 100%;
+    float: left;
+  }
+</style>

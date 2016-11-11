@@ -370,6 +370,52 @@
 	}
 }
 
+.page-container {
+
+	margin: 1.875rem 0;
+	position: relative;
+}
+
+.col {
+
+	&-4 {
+
+		width: 33.3333333%;
+		float: left;
+
+		& a {
+			width: 100%;
+			display: block;
+		}
+
+	}
+
+}
+
+.card {
+	margin: 20px;
+	width: 100%;
+	vertical-align: top;
+	display: inline-block;
+	position: relative;
+	background-color: #930;
+	box-shadow: 0 20px 20px rgba(0,0,0,.08);
+	white-space: normal;
+	-webkit-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+	-moz-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+	transition: all 250ms cubic-bezier(.02, .01, .47, 1);
+	color: #3c5460;
+
+	&-body {
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		overflow: visible;
+		width: 100%;
+		float: left;
+	}
+}
+
 body {
 	height: 5000px;
 	background-color: #fff;

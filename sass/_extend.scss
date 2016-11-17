@@ -173,3 +173,8 @@
 	-webkit-hyphens: none;
 	hyphens: none;
 }
+
+%card-tag {
+  @extend %fl;
+  margin-right: 20px;
+}

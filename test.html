@@ -23,6 +23,7 @@
   <!-- data-parallax="scroll" data-image-src="img/blog/article_-journeys-4.jpg" -->
   <div class="cover-post cover-development" style="background-image: url(img/blog/article_-journeys-4.jpg);">
     <div class="container">
+    <div class="card-circle" style="background-image: url(img/icons/user2.jpg)"></div>
       <h1><a href="#">Разработка дипломной работы идёт полным ходом</a></h1>
       <a class="btn btn-white" href="#">Прочитать историю</a>
     </div>
@@ -31,10 +32,10 @@
 
 
 
-
+<div class="action">
   <div class="container">
     <div class="col-4">
-      <a href="#1">
+      <a class="promlink" href="#1">
         <div class="prom">
           <div class="card-prom">
             <div class="card-circle" style="background-image: url(img/icons/user1.png)"></div>
@@ -53,7 +54,7 @@
             </div>
           </div>
         </div>
-      </a><a href="#1">
+      </a><a class="promlink" href="#1">
       <div class="prom">
         <div class="card-prom">
           <div class="card-circle" style="background-image: url(img/icons/user4.jpg)"></div>
@@ -76,7 +77,7 @@
 
   </div>
   <div class="col-4">
-    <a href="#2">
+    <a class="promlink" href="#2">
       <div class="prom">
         <div class="card-prom">
           <div class="card-circle" style="background-image: url(img/icons/user2.jpg)"></div>
@@ -96,7 +97,7 @@
         </div>
       </div>
     </a>
-    <a href="#2">
+    <a class="promlink" href="#2">
       <div class="prom">
         <div class="card-prom">
           <div class="card-circle" style="background-image: url(img/icons/user2.jpg)"></div>
@@ -116,7 +117,7 @@
         </div>
       </div>
     </a>
-    <a href="#2">
+    <a class="promlink" href="#2">
       <div class="prom">
         <div class="card-prom">
           <div class="card-circle" style="background-image: url(img/icons/user5.jpg)"></div>
@@ -139,7 +140,7 @@
 
   </div>
   <div class="col-4 medium">
-    <a href="#3">
+    <a class="promlink" href="#3">
       <div class="prom">
         <div class="card-prom">
           <div class="card-circle" style="background-image: url(img/icons/user3.jpg)"></div>
@@ -159,7 +160,7 @@
         </div>
       </div>
     </a>
-    <a href="#3">
+    <a class="promlink" href="#3">
       <div class="prom">
         <div class="card-prom">
           <div class="card-circle" style="background-image: url(img/icons/user6.jpg)"></div>
@@ -180,6 +181,7 @@
       </div>
     </a>
   </div>
+</div>
 </div>
 
 <div class="footer">
@@ -206,123 +208,6 @@
 
 
 
-
-<style>
-  .container {
-
-  }
-  .col-4 a {
-    width: 100%;
-    display: block;
-    float: left;
-  }
-  .prom {
-    margin: 20px;
-    box-shadow: 0 20px 20px rgba(0,0,0,.08);
-    -webkit-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
-    -moz-transition: all 250ms cubic-bezier(.02, .01, .47, 1);
-    transition: all 250ms cubic-bezier(.02, .01, .47, 1);
-    background-color: #fff;
-    position: relative;
-    color: #90949c;
-  }
-  .prom:hover {
-    box-shadow: 0 40px 40px rgba(0,0,0,.16);
-    transform: translate(0,-20px);
-    transition-delay: 0s !important;
-  }
-  .prom:hover:before {
-    content: "";
-    position: absolute;
-    top: 100%;
-    width: 100%;
-    height: 20px;
-  }
-  .prom-here {
-
-    width: 100%;
-    display: block;
-  }
-
-  .prom-here:before,
-  .prom-here:after,
-  .prom:before,
-  .prom:after,
-  .card-circle:before,
-  .card-circle:after{
-    content: "";
-    clear: both;
-    display: table;
-  }
-  .card-prom {
-    padding: 20px 20px 0 20px;
-    float: left;
-    width: 100%;
-    color: #3c5460;
-  }
-  .card-circle {
-    width: 50px;
-    height: 50px;
-    float: left;
-    border-radius: 50%;
-  }
-  .card-name {
-    margin: 17px 0 0 66px;
-    font-weight: 400;
-    font-size: 1.125rem;
-  }
-  .card-title {
-    font-size: 24px;
-    clear: both;
-    margin-top: 20px;
-  }
-  .card-article {
-    font-size: 1rem;
-    margin: .5625rem 0 0 0;
-    color: #90949C;
-  }
-  .card-hero {
-    padding: 20px 20px 10px 20px;
-    float: left;
-    width: 100%;
-  }
-  .card-hero_img {
-    width: 100%;
-    float: left;
-  }
-  .card-footer {
-    font-size: 11px;
-    text-transform: uppercase;
-    padding: 0 20px;
-    width: 100%;
-    float: left;
-  }
-  .card-footer--wrapper {
-    border-top: 1px solid #e9ebee;
-    height: 36px;
-    line-height: 36px;
-  }
-  .card-tag,
-  .card-type {
-    float: left;
-    margin-right: 20px;
-  }
-  .card-tag {
-    color: #90949C;
-  }
-  .card-type {
-    color: #3c5460;
-  }
-  .prom:hover .card-hide {
-    display: none;
-  }
-  .card-show {
-    display: none;
-  }
-  .prom:hover .card-show {
-    display: block;
-  }
-</style>
 
 
 

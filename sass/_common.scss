@@ -273,13 +273,24 @@
 
 .cover {
 
+	text-align: center;
+	padding: 2rem 0;
+	margin: 0;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: padding 270ms ease;
+
+	& a {
+		text-decoration: none;
+	}
+
 	&-post {
 
 		@media screen and (min-width: 768px) {
 
 			& {
 				padding: 8.375em 0;
-				margin-bottom: 1.25rem;
 			}
 
 		}
@@ -287,38 +298,6 @@
 		& .card-circle {
 			float: none;
 			margin: 0 auto;
-		}
-
-		text-align: center;
-		padding: 2rem 0;
-		margin: 0;
-		position: relative;
-		background-repeat: no-repeat;
-		background-size: cover;
-
-		& a {
-			text-decoration: none;
-		}
-
-		& h1 {
-
-			& a {
-
-				@media screen and (max-width: 767px) {
-
-					& {
-						font-size: 1.875rem;
-					}
-
-				}
-
-				color: #fff;
-				font-weight: 400;
-				display: block;
-				margin: 1rem 1rem .8125rem;	
-				line-height: 1.35;
-			}
-
 		}
 
 	}
@@ -357,6 +336,25 @@
 		& .container {
 			z-index: 3;
 		}
+	}
+
+	&-title {
+		color: #fff;
+		font-weight: 400;
+		display: block;
+		margin: 1rem 1rem .8125rem;
+		line-height: 1.35;
+
+		@media screen and (max-width: 767px) {
+			& {
+				font-size: 1.875rem;
+			}
+		}
+
+	}
+
+	@media screen and (min-width: 768px) {
+		margin-bottom: 1.25rem;
 	}
 }
 
@@ -621,6 +619,20 @@
 
 		& .card-show {
 			display: block;
+		}
+	}
+}
+
+.cover-blog {
+
+	@media screen and (min-width: 768px){
+    padding: 23rem 0 2.625rem;
+}
+
+	& h1 {
+
+		& a {
+			font-size: larger;
 		}
 	}
 }

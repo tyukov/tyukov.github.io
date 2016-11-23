@@ -1,75 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/zoom.css">
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/zoom.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-	<!-- Header -->
-	<div class="header">
-		<div class="container">
-			<div class="row">
 
-				<div class="fl header_logo">
-					<a href="#" class="header_logo-inner"></a>
-				</div>
 
-				<ul class="nav navbar fr">
-					<li class="navbar_list"><a class="navbar_list-item" href="#">Работа</a></li>
-					<li class="navbar_list"><a class="navbar_list-item" href="#">Блог</a></li>
-					<li class="navbar_list"><a class="navbar_list-item" href="#">Истории</a></li>
-					<li class="navbar_list"><a class="navbar_list-item" href="#">Войти</a></li>
-					<li class="navbar_list"><a class="navbar_list-item action">Зарегистрироваться</a></li>
-				</ul>
+  <div class="header">
+    <div class="container">
 
-			</div>
-		</div>
-	</div>
-	<!-- Header END -->
+      <a class="header__logo" href="#">Caspian</a>
+      
+      <a class="btn btn__ghost--green" href="#">Зарегистрироваться</a>
 
-	<!-- Cover -->
-	<div data-parallax="scroll" data-image-src="img/blog/article_-journeys-4.jpg" class="cover-post cover-development cover-image">
-		<div class="container">
-			<div class="row">
-				<h1><a href="#">Разработка дипломной работы идёт полным ходом</a></h1>
-				<a class="btn btn-white" href="#">Прочитать историю</a>
-			</div>
-		</div>
-	</div>
-	<!-- Cover END -->
-
-	<!-- Subnav -->
-	<div class="container">
-		<div class="row">
-			<div id="header" class="cover-subnav">
-				<ul class="nav cover-subnav-list"><div class="flash"></div><li class="cover-subnav-item"><a class="select" href="#"><span class="text">Рекомендуемые</span></a></li><li class="cover-subnav-item"><a href=""><span class="text">Математика</span></a></li><li class="cover-subnav-item"><a href="#"><span class="text">Русский язык</span></a></li><li class="cover-subnav-item"><a href="#"><span class="text">Физика</span></a></li><li class="cover-subnav-item"><a href="#"><span class="text">Химия</span></a></li><li class="cover-subnav-item"><a href="#"><span class="text">Бизнес</span></a></li><li class="cover-subnav-item"><a href="#"><span class="text">Истории</a></li>
-				</ul>
-				<div class="cover-search">
-				</div>
-			</div>
-		</div>
-	</div>
+      <ul class="nav navbar"><li class="navbar__list"><a class="navbar--item" href="#">Работа</a></li><li class="navbar__list"><a class="navbar--item" href="#">Блог</a></li><li class="navbar__list"><a class="navbar--item" href="#">Истории</a></li><li class="navbar__list"><a class="navbar--item" href="#">Войти</a></li><li class="navbar__list"><a class="action navbar--item" href="">Зарегистрироваться</a></li></ul>
+    </div>
+  </div>
+  <!-- data-parallax="scroll" data-image-src="img/blog/article_-journeys-4.jpg" -->
+  <div class="cover cover-post cover-development" style="background-image: url(img/blog/article_-journeys-7.jpg);">
+    <div class="container">
+    <div class="card-circle" style="background-image: url(img/icons/user2.jpg)"></div>
+      <h1><a class="cover-title" href="test.html">Разработка дипломной работы идёт полным ходом</a></h1>
+      <a class="btn btn-white" href="test.html">Прочитать историю</a>
+    </div>
+  </div>
+  <!-- Content -->
 
 
 
+<div class="action">
+  <div class="container">
+    <div class="col-4">
+      <a class="promlink" href="#1">
+        <div class="prom">
+          <div class="card-prom">
+            <div class="card-circle" style="background-image: url(img/icons/user1.png)"></div>
+            <div class="card-name">Иван Иванович</div>
+            <div class="card-title">Как стать профессионалом в своей профессии</div>
+            <p class="card-article">Как долго вы собираетесь просиживать свою жизнь. Насколько вы цените свою жизнь, а жизнь родного сына?</p>
+          </div>
+          <div class="card-hero">
+            <img src="img/blog/image3-01.jpg" class="card-hero_img" alt="">
+          </div>
+          <div class="card-footer">
+            <div class="card-footer--wrapper">
+              <div class="card-type card-hide">Статьи</div>
+              <div class="card-tag card-hide">Обучающие</div>
+              <div class="card-tag card-show">Прочитать статью Ивана</div>
+            </div>
+          </div>
+        </div>
+      </a><a class="promlink" href="#1">
+      <div class="prom">
+        <div class="card-prom">
+          <div class="card-circle" style="background-image: url(img/icons/user4.jpg)"></div>
+          <div class="card-name">Елена Александровна</div>
+          <div class="card-title">Скоро соревнования по программированию</div>
+          <p class="card-article">Ола друзья, через неделю пройдёт основной сбор юных программистов, где наша команда поборится с лучшими специалистами города Атырау. Надеюсь мы возьмём золото в пятый раз.</p>
+        </div>
+        <div class="card-hero">
+          <img src="img/blog/image5.png" class="card-hero_img" alt="">
+        </div>
+        <div class="card-footer">
+          <div class="card-footer--wrapper">
+            <div class="card-type card-hide">Новости</div>
+            <div class="card-tag card-hide">Соревнования</div>
+            <div class="card-tag card-show">Прочитать статью Елены</div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+  </div>
+  <div class="col-4">
+    <a class="promlink" href="#2">
+      <div class="prom">
+        <div class="card-prom">
+          <div class="card-circle" style="background-image: url(img/icons/user2.jpg)"></div>
+          <div class="card-name">Екатерина Дмитриевна</div>
+          <div class="card-title">Куда поступить учиться после Прикаспийского</div>
+          <p class="card-article">Очень много дискуссий у студентов нашего колледжа вызывает вопрос о дальнейшем развитии в высшем заведении. Мы составили список лучших вариантов специально для Вас.</p>
+        </div>
+        <div class="card-hero">
+          <img src="img/blog/image2.png" class="card-hero_img" alt="">
+        </div>
+        <div class="card-footer">
+          <div class="card-footer--wrapper">
+            <div class="card-type card-hide">Статьи</div>
+            <div class="card-tag card-hide">Обучающие</div>
+            <div class="card-tag card-show">Прочитать статью Екатерины</div>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a class="promlink" href="#2">
+      <div class="prom">
+        <div class="card-prom">
+          <div class="card-circle" style="background-image: url(img/icons/user2.jpg)"></div>
+          <div class="card-name">Анжела Олеговна</div>
+          <div class="card-title">Приглашаю всех на мероприятие посвящённое дню влюблённых</div>
+          <p class="card-article">У тебя есть пара, а может ты одинок? Неважно, мы приглашаем тебя на масштабное мероприятие в честь дня влюблённых.</p>
+        </div>
+        <div class="card-hero">
+          <img src="img/blog/photo8.jpg" class="card-hero_img" alt="">
+        </div>
+        <div class="card-footer">
+          <div class="card-footer--wrapper">
+            <div class="card-type card-hide">Мероприятия</div>
+            <div class="card-tag card-hide">Праздники</div>
+            <div class="card-tag card-show">Прочитать статью Анжелы</div>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a class="promlink" href="#2">
+      <div class="prom">
+        <div class="card-prom">
+          <div class="card-circle" style="background-image: url(img/icons/user5.jpg)"></div>
+          <div class="card-name">Мария Граф</div>
+          <div class="card-title">Британские исследования доказали пользу видеоигр</div>
+          <p class="card-article">Привет камрад, британские учёные смогли доказать причастность интеллектуального развития с помощью видеоигр.</p>
+        </div>
+        <div class="card-hero">
+          <img src="img/blog/photo7.jpg" class="card-hero_img" alt="">
+        </div>
+        <div class="card-footer">
+          <div class="card-footer--wrapper">
+            <div class="card-type card-hide">Исследования</div>
+            <div class="card-tag card-hide">Развитие</div>
+            <div class="card-tag card-show">Прочитать статью Марии</div>
+          </div>
+        </div>
+      </div>
+    </a>
+
+  </div>
+  <div class="col-4 medium">
+    <a class="promlink" href="#3">
+      <div class="prom">
+        <div class="card-prom">
+          <div class="card-circle" style="background-image: url(img/icons/user3.jpg)"></div>
+          <div class="card-name">Михаил Афанасьевич</div>
+          <div class="card-title">Как я выходил из зоны комфорта</div>
+          <p class="card-article">В 12 лет я полностью отказался от игр, это было крайне тяжело и у меня отнюдь не сразу получилось, но я чувствовал дифференциацию над сверстниками и об этом моя история.</p>
+        </div>
+        <div class="card-hero">
+          <img src="img/blog/image3.jpg" class="card-hero_img" alt="">
+        </div>
+        <div class="card-footer">
+          <div class="card-footer--wrapper">
+            <div class="card-type card-hide">Истории</div>
+            <div class="card-tag card-hide">Развлекательные</div>
+            <div class="card-tag card-show">Прочитать статью Михаила</div>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a class="promlink" href="#3">
+      <div class="prom">
+        <div class="card-prom">
+          <div class="card-circle" style="background-image: url(img/icons/user6.jpg)"></div>
+          <div class="card-name">Пётр Степанович</div>
+          <div class="card-title">Встречайте, новый дизайн Прикаспийского сайта</div>
+          <p class="card-article">Мы кропотливо работали на протяжении 9 месяцев. Каждый день новые социальные исследования, каждый день усовершенствование и создание новых элеменов, каждый день для Вас.</p>
+        </div>
+        <div class="card-hero">
+          <img src="img/blog/image6.png" class="card-hero_img" alt="">
+        </div>
+        <div class="card-footer">
+          <div class="card-footer--wrapper">
+            <div class="card-type card-hide">Новости</div>
+            <div class="card-tag card-hide">Технологии</div>
+            <div class="card-tag card-show">Прочитать статью Петра</div>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+</div>
+
+<div class="footer">
+  <div class="container">
+    <ul class="nav footer-list">
+      <li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Блог</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Вакансии</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">О нас</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Реклама</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Правила</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Помощь</a></li><li class="footer-item">© Gimmeall 2016</li>
+    </ul>
+  </div>
+</div>
 
 
 
 
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="js/zoom.js"></script>
-	<script src="js/parallax.min.js"></script>
-	<script src="js/jquery.sticky.js"></script>
-	<script>
-		$(document).ready(function(){
-			$("#header").sticky({topSpacing:0});
-		});
-	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="js/zoom.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#header").sticky({topSpacing:0});
+  });
+</script>
 </body>
 </html>

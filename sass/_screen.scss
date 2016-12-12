@@ -1,6 +1,17 @@
 
-@media (min-width: 1200px){
-	.container {
+
+.container {
+
+	@media (min-width: 768px){
+		width: 48.875em;
+	}
+
+	@media (min-width: 992px){
+		width: 62em;
+	}
+
+	@media (min-width: 1200px){
 		width: 75em;
 	}
+
 }

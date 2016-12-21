@@ -243,7 +243,7 @@
 		}
 
 		& ~ .cover {
-			padding: 100px 0;
+			padding: 100px 0 60px;
 			text-align: left;
 			@media screen and (min-width: 768px) {
 				padding: 70px 0 100px;
@@ -406,10 +406,6 @@
 				margin: 1rem 1rem 1.4375rem;
 				line-height: 1.35;
 
-			}
-
-			@media screen and (min-width: 768px) {
-				margin-bottom: 1.25rem;
 			}
 
 			& .card-circles {
@@ -749,124 +745,155 @@
 		}
 
 		&__fullcolumn {
-			margin-bottom: 80px;
-			margin-top: 80px;
+			margin-bottom: 40px;
+			margin-top: 40px;
 			position: relative;
 			width: 100%;
+			@media screen and (min-width: 768px) {
+				margin-top: 80px;
+				margin-bottom: 80px;
+			}
 			& img {
 				display: block;
 				width: 100%;
 			}
 		}
 
-		&__author {
-			-webkit-transition: all 230ms;
-			-o-transition: all 230ms;
-			transition: all 230ms;
-			position: absolute;
-			margin: 0 0 0 -112px;
-			&:hover {
-				text-decoration: none;
+		&__creator {
+
+
+			text-align: center;
+			position: relative;
+			z-index: 99;
+
+
+			&-link {
+				display: inline-block;
 			}
-			&--image {
-				width: 70px;
-				border-radius: 50%;
-				height: 70px;
-			}
-			&--name {
-				-webkit-transition: all 100ms;
-				-o-transition: all 100ms;
-				transition: all 100ms;
+
+			&-name {
 				color: $color__black;
+				font-size: 1rem;
 				font-weight: 500;
-				text-align: center;
+			}
+
+			&--image {
+				display: block;
+				border-radius: 50%;
+				&.x70 {
+					width: 70px;
+					height: 70px;
+				}
+			}
+
+			&-Text {
+				& p {
+					margin-top: .4375rem;
+					color: #90949C;
+					font-size: .875rem;
+				}	
 			}
 		}
-	}
+		} // End .section
 
-	.imagecaption {
-		max-width: 1000px;
-		margin: 10px auto 0;
-		text-align: center;
-		display: block;
-		color: #90949C;
-	}
+		.imagecaption {
+			max-width: 1000px;
+			margin: 10px auto 0;
+			text-align: center;
+			display: block;
+			color: #90949C;
+		}
 
-	.action {
-		position: relative;
+		.action {
+			position: relative;
 
-		& .prom {
-			& .card-circles {
-				float: left;
-				margin-bottom: .75rem;
-				& img {
-					width: 50px;
-					height: 50px;
+			& .prom {
+				& .card-circles {
+					float: left;
+					margin-bottom: .75rem;
+					& img {
+						width: 50px;
+						height: 50px;
+					}
 				}
 			}
 		}
-	}
 
-	.bloger {
+		.bloger {
 
-		& .cover-post-title {
-
-			@media screen and (max-width: 767px) {
-				text-align: left;
-				margin: 0 1.25rem;
-			}
-		}
-
-		& .cover-development {
-			&:before {
-				@media screen and (min-width: 768px) {
-					background: rgba(16,22,19,0.11);
-				}
-			}
-		}
-
-		& .btn__ghost--green {
-			color: #fff;
-		}
-		} // End .bloger
-
-		.welcome {
-
-			padding: 0 1em;
-			margin-top: 1.25rem;
-			@media screen and (min-width: 768px) {
-				padding: 0;
-				margin-top: 2.25rem;
-			}
-
-			& h1 {
-				font-size: 2.875rem;
-				line-height: 1.3;
-				color: #fff;
-				font-weight: 500;
-				margin-bottom: 1.875rem;
-				@media screen and (min-width: 768px) {
-					line-height: 1.2;
-					margin-bottom: 3.125rem;
-				}
+			& .cover-post-title {
 
 				@media screen and (max-width: 767px) {
-					& {
-						font-size: 1.875rem;
+					text-align: left;
+					margin: 0 1.25rem;
+				}
+			}
+
+			& .cover-development {
+				&:before {
+					@media screen and (min-width: 768px) {
+						background: rgba(16,22,19,0.11);
 					}
 				}
 			}
 
-			p {
+			& .btn__ghost--green {
 				color: #fff;
-				opacity: .8;
-				margin: 0;
-				font-size: 1.25rem;
-				font-style: italic;
-				padding-left: .5rem;
-				line-height: 1.6;
+			}
+
+			& .action {
+				margin-top: -20px;
+			}
+
+			} // End .bloger
+
+			.welcome {
+
+				padding: 0 1em;
+				margin-top: 1.25rem;
 				@media screen and (min-width: 768px) {
-					padding-left: 1rem;
+					padding: 0;
+					margin-top: 2.25rem;
+				}
+
+				& h1 {
+					font-size: 2.875rem;
+					line-height: 1.3;
+					color: #fff;
+					font-weight: 500;
+					margin-bottom: 1.875rem;
+					@media screen and (min-width: 768px) {
+						line-height: 1.2;
+						margin-bottom: 3.125rem;
+					}
+
+					@media screen and (max-width: 767px) {
+						& {
+							font-size: 1.875rem;
+						}
+					}
+				}
+
+				p {
+					color: #fff;
+					opacity: .8;
+					margin: 0;
+					font-size: 1.25rem;
+					font-style: italic;
+					padding-left: .5rem;
+					line-height: 1.6;
+					@media screen and (min-width: 768px) {
+						padding-left: 1rem;
+					}
 				}
 			}
-		}
+
+			.h2before {
+				margin: 30px 0 0 0;
+				@media screen and (min-width: 768px) {
+					margin: 45px 0 0 0;
+				}
+			}
+			.h2after {
+				margin-top: 6px;
+			}

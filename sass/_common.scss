@@ -313,7 +313,7 @@
     -o-transition: all 90ms;
     transition: all 90ms;
   }
-  &:hover, &:active, .footer-item:not(:last-child) {
+  &:hover, .footer-item:not(:last-child) {
     color: rgba(64, 128, 255, 0.88);
   }
   & .footer-list {

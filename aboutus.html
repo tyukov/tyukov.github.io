@@ -180,6 +180,10 @@
     padding: 0 .05em 0 .1em;
     vertical-align: -0.2em;
 }
+.wrapper {
+  background-color: #edeff0;
+  z-index: -1;
+}
 </style>
 </head>
 <body>
@@ -193,9 +197,13 @@
       <ul class="nav navbar"><li class="navbar__list"><a class="navbar--item" href="#">Работа</a></li><li class="navbar__list"><a class="navbar--item" href="#">Блог</a></li><li class="navbar__list"><a class="navbar--item" href="#">Истории</a></li><li class="navbar__list"><a class="navbar--item" href="#">Войти</a></li><li class="navbar__list"><a class="action navbar--item" href="">Зарегистрироваться</a></li></ul>
     </div>
   </div>
-  <div class="case">
-    <div class="caseInner" style="background-image: url(img/blog/baldar.jpg);transform: scale(1);"></div>
+  
+  <div style="background-image: url(img/blog/baldar.jpg);height:448.9px;transition: transform 5s cubic-bezier(0.12, 0.53, 0.42, 0.82), -webkit-transform 5s cubic-bezier(0.12, 0.53, 0.42, 0.82), -o-transform 5s cubic-bezier(0.12, 0.53, 0.42, 0.82);background-size: cover;animation: slide-in-hero 5s cubic-bezier(0.12, 0.53, 0.42, 0.82) forwards;z-index: -1;" class="cover cover-post">
+
   </div>
+  
+  <div class="wrapper">
+  
   <div class="section__halfcolumn" style="margin-bottom: 70px">
     <center>
       <img class="comming_x2" src="img/icons/badges_JavaScript_ExpressBasics_Stage6.png" alt="">
@@ -379,6 +387,8 @@
         </div>
 
       </div>
+    </div>
+    
     </div>
     
   </div>

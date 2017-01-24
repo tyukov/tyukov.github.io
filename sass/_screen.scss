@@ -1,17 +1,14 @@
 
 
+@media (min-width: 768px){
 .container {
-
-	@media (min-width: 768px){
-		width: 48.875em;
-	}
-
-	@media (min-width: 992px){
-		width: 62em;
-	}
-
-	@media (min-width: 1200px){
-		width: 75em;
-	}
-
-}
+    width: 750px;
+}}
+@media (min-width: 992px){
+.container {
+    width: 970px;
+}}
+@media (min-width: 1200px){
+.container {
+    width: 1170px;
+}}

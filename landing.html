@@ -16,7 +16,10 @@
 			transition: all 600ms 0s ease;
 		}
 		.hero-pro {
-			background: #3c5460 url(img/landing/girl-cover.jpg) 72% top no-repeat /cover;
+			background: #3c5460 url(img/landing/girl-cover.jpg);
+			background-position: 72% top;
+			background-repeat: no-repeat;
+			background-size: cover;
 			position: relative;
 			z-index: 0;
 		}
@@ -121,7 +124,8 @@
 				.hero-pro > .container,
 				.technology-content > .container,
 				.price-section > .container,
-				.paralax-section > .container {
+				.paralax-section > .container,
+				.section-faq > .container {
 					padding-left: 1rem;
 					padding-right: 1rem;
 				}
@@ -138,6 +142,13 @@
 				@media screen and (min-width:680px) {
 					.col-half {
 						width: 50%;
+					}
+					.section-faq-container > .col-half {
+						padding: 0 50px;
+					}
+					.section-faq > .container {
+						padding-left: 0;
+						padding-right: 0;
 					}
 				}
 				.text-center {
@@ -418,7 +429,7 @@
 				@media screen and (min-width:680px) {
 					.paralax-section > .container {
 						padding-top: 100px;
-					padding-bottom: 100px;
+						padding-bottom: 100px;
 					}
 				}
 				.paralax-section-button {
@@ -479,6 +490,109 @@
 				.m-b-1-xs {
 					margin-bottom: 1rem;
 				}
+				.section-partners-card-list-item {
+					float: left;
+					text-align: center;
+				}
+				@media screen and (min-width:680px) {
+					.section-partners-card-list-item {
+						width: 33.33333%;
+						padding: 0 15px;
+					}
+				}
+				.section-partners-card-description {
+					font-size: .875rem;
+					display: -webkit-box;
+					-webkit-line-clamp: 3;
+					-webkit-box-orient: vertical;
+					overflow: hidden;
+					color: rgba(60, 84, 96, .60);
+					line-height: 1.6;
+				}
+				.section-partners-card {
+					padding: 2rem 15px;
+				}
+				.section-partners {
+					padding: 4rem 0;
+				}
+				.section-partners-card-img {
+					margin-bottom: 1.25rem;
+				}
+				.section-partners-card-button-gray,
+				.section-partners-card-button-transparent{
+					line-height: 24px;
+					padding: 8px 0;
+					color: #3e474f;
+					border-radius: 2px;
+					border: 2px solid #e8ebed;
+					display: block;
+					width: 100%;
+				}
+				.section-partners-card-button-gray {
+					background: #e8ebed;
+				}
+				.section-faq-container p,
+				.section-faq-container ul,
+				.section-faq-container .nav-features > li > span {
+					color: rgba(60, 84, 96, .60);
+				}
+				.section-faq-container p {
+					margin-top: .75rem;
+					margin-bottom: .75rem;
+				}
+				.section-faq-container h4 {
+					font-weight: 500;
+					margin: 2rem 0 0;
+				}
+				.section-faq-container {
+					line-height: 1.625;
+					margin-bottom: 1.4375rem;
+				}
+				@media screen and (min-width:680px) {
+					.section-faq-container {
+						margin-bottom: 2.4375rem;
+					}
+				}
+				.nav-features {
+					padding: 0;
+					margin: 0 0 0 1.125rem;
+				}
+				.section-faq-container .nav-features {
+					font-weight: 500;
+				}
+				.col-half:before,
+				.col-half:after,
+				.section-faq-container:before,
+				.section-faq-container:after {
+					content: "";
+					display: table;
+				}
+				.container:after,
+				.section-faq-container:after {
+					clear: both;
+				}
+				.section-faq-button {
+					width: 100%;
+					display: block;
+					margin: 0 auto;
+					background-color: #edeff7;
+					color: #6b9bd2;
+					line-height: 24px;
+					padding: 12px 0px;
+					border-radius: 2px;
+					transition: all 300ms;
+				}
+				@media screen and (min-width:680px) {
+					.section-faq-button {
+						max-width: 362px;
+						background-color: transparent;
+					}
+				}
+				.section-faq-button:hover {
+					background-color: #edeff7;
+					text-decoration: none;
+				}
+
 
 
 
@@ -603,6 +717,85 @@
 				<p><cite class="text-color-white">Елизавета Петровна - Юрист, Международно-правовая специализация</cite></p>
 				<a class="paralax-section-button paralax-section-button-default m-b-1-xs" href="#">Связаться</a><a class="paralax-section-button paralax-section-button-transparent m-b-1-xs" href="#">Прочитать историю</a>
 			</div>
+		</div>
+		<div class="section-partners">
+			<div class="container">
+				<ul class="nav section-partners-card-list">
+					<li class="section-partners-card-list-item">
+						<div class="section-partners-card">
+							<div class="section-partners-card-img _38vo">
+								<img src="img/icons/teamtreehouse-icon.png" alt="Teamtreehouse">
+							</div>
+							<h2>Treehouse</h2>
+							<p class="section-partners-card-description">Ресурс научит вас проектировать и создавать сайты, приложения на iPhone и Android, применять полученные знания для своего бизнеса....</p>
+							<a class="section-partners-card-button-transparent" href="dev.html">Подробнее</a>
+						</div>
+					</li>
+					<li class="section-partners-card-list-item">
+						<div class="section-partners-card">
+							<div class="section-partners-card-img _38vo">
+								<img src="img/icons/twitter-icon.png" alt="Twitter">
+							</div>
+							<h2>Twitter</h2>
+							<p class="section-partners-card-description">Социальная сеть, сервис мгновенного обмена сообщениями либо новостями, для пользователей интернета любого возраста....</p>
+							<a class="section-partners-card-button-gray" href="dev.html">Подробнее</a>
+						</div>
+					</li>
+					<li class="section-partners-card-list-item">
+						<div class="section-partners-card">
+							<div class="section-partners-card-img _38vo">
+								<img src="img/icons/google-icon.png" alt="Google">
+							</div>
+							<h2>Google</h2>
+							<p class="section-partners-card-description">Крупная корпорация, разрабатывающая крупные продукты во всех существующих сферах деятельности, делает жизнь легче.... </p>
+							<a class="section-partners-card-button-transparent" href="dev.html">Подробнее</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="section-faq">
+			<div class="container">
+				<h2 class="text-center">Часто задаваемые вопросы</h2>
+				<div class="section-faq-container">
+					<div class="col-half">
+						<h4>Сколько стоит обучение?</h4>
+						<p>Стоимость обучения в Прикаспийском Современном на 2017 год составляет 139  000 тг.</p>
+						<h4>Сколько лет я буду обучаться?</h4>
+						<p>Обучение в Прикаспийском Современном варьируется в зависимости от выбранной профессии, в среднем это 3 - 4 года. Ниже приведён список специальностей и период времени обучения.</p>
+						<ul class="nav-features">
+							<li class="add-oil-color"><span>Нефтяник - 2 года 10 месяцев</span></li>
+							<li class="add-lawyer-color"><span>Юрист - 2 года 10 месяцев</span></li>
+							<li class="add-translator-color"><span>Переводчик - 2 года 10 месяцев</span></li>
+							<li class="add-programmer-color"><span>Программист - 3 года 10 месяцев</span></li>
+							<li class="add-accountant-color"><span>Бухгалтер - 3 года 10 месяцев</span></li>
+							<li class="add-economist-color"><span>Экономист - 3 года 10 месяцев</span></li>
+						</ul>
+						<h4>Насколько тяжело поступить?</h4>
+						<p>Для поступления необходим фундаментальный багаж школьных знаний на уровне 9 класса.</p>
+					</div>
+					<div class="col-half">
+						<h4>Что такое Прикаспийский Современный?</h4>
+						<p>В первую очередь это колледж, дающий феноменально быструю динамику взаимодействия. Новые передовые технологии в совокупности с высококвалифицированными учителями не оставит вас с голой задницей. История возникновения нашего колледжа началась в 1991 году, каждый день мы растём, а вместе с нами растут и наши ученики. Сакральный смысл нашего проекта, донести до людей, что начать учиться не поздно никогда. Выберите свою дорогу и идите по ней не взымая на всю тернистую тяготу. Рано или поздно вы добьётесь успеха, а Прикаспийский Современный вам в этом поможет.</p>
+						<h4>Мне предоставят работу?</h4>
+						<p>Да! Абсолютно каждый ученик Прикаспийского Современного получит стажировку, практику и работу по профессии. Отнюдь отбор будет проходиться на конкурсной основе и в зависимости от успеваемости ученика, его ментальных способностей, харизме и ряда других факторов.</p>
+					</div>
+				</div>
+				<a class="section-faq-button col-center text-center" href="#">Задать свой вопрос</a>
+			</div>
+		</div>
+
+
+
+
+
+
+	</div>
+	<div class="footer">
+		<div class="container">
+			<ul class="nav footer-list">
+				<li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Блог</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="dev.html">Вакансии</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="aboutus.html">О нас</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Реклама</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Правила</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Помощь</a></li><li class="footer-item">© Gimmeall 2016</li>
+			</ul>
 		</div>
 	</div>
 

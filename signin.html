@@ -1,0 +1,129 @@
+<!doctype html>
+<html class="signup">
+<head>
+	<title>Вход в закрытую группу Gimme'all</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/zoom.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+	body,
+	html {
+		height: 100%;
+	}
+	.h {
+		display: table;
+		position: relative;
+		width: 100%;
+		height: 100%;
+		background: url(img/blog/6rk.jpg) no-repeat center center scroll;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
+	.vac {
+		display: table-cell;
+	}
+	.col-50 {
+		float: left;
+		width: 50%;
+	}
+	.section__signin {
+		background-color: #fff;
+		padding: 8% 11%;
+		margin-bottom: 30px;
+		border-radius: 2px;
+	}
+	.section__signin > .btn_signblue {
+		margin-right: 18px;
+	}
+	h3 {
+		font-size: 25px;
+		font-weight: 400;
+	}
+	input[type=text],
+	input[type=password] {
+		width: 100%;
+		border-style: solid;
+		border-width: 0 0 2px;
+		outline: none;
+		border-color: #e8e4e4;
+		padding: 13px;
+		margin-bottom: 20px;
+	}
+	input[type=text]:focus,
+	input[type=password]:focus {
+		border-color: #c3c3c3;
+		outline: none;
+	}
+	label {
+		margin-top: 20px;
+		display: block;
+	}
+	.btn_signblue,
+	.btn_signgreen {
+		color: #fff;
+	}
+	.btn_signblue {
+		background-color: #5f93ce;
+	}
+	.btn_signgreen {
+		background-color: #77bd7f;
+		width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	.btn_sign {
+		-webkit-transition: all 0.1s ease-in-out;
+		-moz-transition: all 0.1s ease-in-out;
+		-o-transition: all 0.1s ease-in-out;
+		transition: all 0.1s ease-in-out;
+		font-size: 1em;
+		height: 2.5em;
+		line-height: 2.25;
+		display: inline-block;
+		padding: 0 2em;
+		border-radius: 2px;
+		font-weight: 500;
+		position: relative;
+		white-space: nowrap;
+		vertical-align: baseline;
+		text-align: center;
+		margin: 0;
+		border: 2px solid transparent;
+	}
+	.btn_sign:hover {
+		text-decoration: none;
+	}
+
+
+</style>
+<body>
+	<div class="h">
+		<div class="vac">
+			<div class="container">
+				<div class="col-50">
+					<h1>Прикаспийский Современный</h1>
+					<p>Колледж, дающий феноменально быструю динамику взаимодействия.</p>
+				</div>
+				<div class="col-50">
+					<div class="section__signin">
+						<h3>Войти в аккаунт Прикаспийского</h3>
+						<label for="name">Ваш Email</label>
+						<input autofocus id="name" type="text" placeholder="example@psk.com">
+						<label for="password">Ваш Пароль</label>
+						<input autofocus id="password" type="password" placeholder="Введте ваш пароль для входа в аккаунт">
+						<a class="btn_sign btn_signblue" href="#">Войти</a><a href="">Забыли пароль?</a>
+					</div>
+					<div class="section__signin">
+						<h3>Присоединиться к нам бесплатно</h3>
+						<a class="btn_sign btn_signgreen" href="">Зарегистрироваться бесплатно</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

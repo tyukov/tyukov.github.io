@@ -741,6 +741,7 @@
 				}
 				font-size: 18px;
 				line-height: 1.6;
+				color: rgba(60, 84, 96, 0.6);
 			}
 		}
 
@@ -897,3 +898,8 @@
 			.h2after {
 				margin-top: 6px;
 			}
+			.feb_14 .cover {
+				@media screen and (min-width: 768px) {
+      padding: 700px 0 100px;
+    }
+    }

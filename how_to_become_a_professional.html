@@ -5,113 +5,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/zoom.css">
 	<link rel="stylesheet" href="css/style.css">
-	<style>
-		.section__halfcolumn ul {
-			line-height: 1.8;
-			padding: 0;
-			margin: 0 0 18px 0;
-		}
-		.section__halfcolumn ul > li strong {
-			color: rgba(60, 84, 96, .70);
-		}
-		.section__halfcolumn ul > li {
-			color: rgba(60, 84, 96, .70);
-			transition: all 260ms ease;
-			cursor: default
-		}
-		.section__halfcolumn ul > li:hover {
-			color: #fff;
-			transform: scale(1.2);
-			background: #000;
-			padding: 1rem;
-			margin: 1rem;
-			border-radius: 5px;
-		}
-		.section__halfcolumn ul > li:hover strong {
-			color: #000;
-		}
-		.section__halfcolumn ul > li:hover strong {
-			color: #fff;
-		}
-		.section__halfcolumn a {
-			text-decoration: none;
-		}
-		.helme {
-			font-size: 20px;
-			font-weight: 500;
-			margin: 60px 0 60px -15px;
-			transition: all 300ms;
-		}
-		.helme:before,
-		.helme:after {
-			content: "";
-			width: 66px;
-			height: 2px;
-			display: block;background-color: #6dc1a0;
-			margin: 15px 0;
-			transition: width 300ms;
-		}
-		.helme:hover > span {
-			transform: scale(1.1);
-		}
-		.helme > span {
-			margin: 33px;
-			display: block;
-			max-width: 540px;
-			-webkit-transition: all 300ms;
-			-o-transition: all 300ms;
-			transition: all 300ms;
-		}
-		.mat {
-			font-size: 20px;
-			    margin: 60px 0 60px -15px;
-		}
-
-		.mat > div {
-			border-left: 2px solid #930;
-			padding: 30px 0 30px 30px;
-		}
-		.mat p {
-			margin: 0;
-			font-weight: 300;
-			font-style: italic;
-			padding: 0;
-		}
-.textr {
-	text-align: right;
-	font-style: normal !important;
-	font-weight: normal !important;
-	}
-
-
-
-
-
-
-
-	</style>
 </head>
 <body>
 
 
 
-	<div class="header">
+	<div class="header header-top">
 		<div class="container">
 
 			<a class="header__logo" href="index.html">Caspian</a>
 
-			<a class="btn btn__ghost--green" href="signup.html" style="color:#6dc1a0;">Зарегистрироваться</a>
+			<a class="btn btn__ghost--green" href="signup.html">Зарегистрироваться</a>
 
 			<ul class="nav navbar"><li class="navbar__list"><a class="navbar--item" href="#">Работа</a></li><li class="navbar__list"><a class="navbar--item" href="#">Блог</a></li><li class="navbar__list"><a class="navbar--item" href="#">Истории</a></li><li class="navbar__list"><a class="navbar--item" href="#">Войти</a></li><li class="navbar__list"><a class="action navbar--item" href="signup.html">Зарегистрироваться</a></li></ul>
 		</div>
 	</div>
 	<!-- data-parallax="scroll" data-image-src="img/blog/article_-journeys-4.jpg" -->
-	
+	<div class="cover cover-blog cover-development cover-development-dark" style="background-image: url(img/blog/9rk.jpg);background-position: center;">
+		<div class="container-x2">
+			<div class="welcome">
+				<h1>Как стать профессионалом в своей профессии</h1>
+				<p>Если вы нашли своё дело, в котором хочется расти и развиваться, радужные перспективы выглядят примерно так: стать лучшим в своём деле. Но что вы делаете для того, чтобы действительно стать лучшим, как понять, что вы приближаетесь к своей цели, и какие действия понадобятся на этом пути?</p>
+			</div>
+		</div>
+	</div>
 	<!-- Content -->
-	<div style="margin-top: 40px" class="action">
+	<div class="action">
 		<div class="section__wrap">
-			<div class="section__halfcolumn">
-				<center><h1>Как стать профессионалом в своей профессии</h1></center>
+			<div class="section__halfcolumn" id="dev_page_content_wrap">
 				<div class="section__creator">
 					<a href="#" class="section__creator-link">
 						<img class="section__creator--image x70" src="img/icons/user6-50.jpg" alt="">
@@ -121,19 +42,10 @@
 						<p class="">от 15 февраля 2017 · 8 мин</p>
 					</div>
 				</div>
-				<i class="h2after" style="font-size: 17px;
-				color: rgba(60, 84, 96, .60);
-				margin-bottom: 20px;
-				padding-bottom: 20px;
-				display: inline-block;">Если вы нашли своё дело, в котором хочется расти и развиваться, радужные перспективы выглядят примерно так: стать лучшим в своём деле. Но что вы делаете для того, чтобы действительно стать лучшим, как понять, что вы приближаетесь к своей цели, и какие действия понадобятся на этом пути?</i>
 				<p>Стать лучшим — достойная цель для профессионалов в своём деле. По сути, это логичное завершение долгого пути саморазвития в конкретной области.</p>
 				<p>Но ведь не все специалисты достигают этого, не все становятся лучшими или даже хоть сколько-нибудь хорошими. Так от чего же это зависит? В первую очередь от самого желания стать лучшим.</p>
 				<h3>Вы хотите стать лучшим в своей сфере?</h3>
-				<i class="h2after" style="font-size: 17px;
-				color: rgba(60, 84, 96, .60);
-				margin-bottom: 20px;
-				padding-bottom: 20px;
-				display: inline-block;">Любое движение начинается с цели, и первое, что надо сделать, — это правильно поставить цель.</i><br><br>	
+				<blockquote class="helme"><span>Любое движение начинается с цели, и первое, что надо сделать, — это правильно поставить цель.</span></blockquote>
 				<h1>Начинаем с постановки цели</h1>
 				<p>Первый и самый главный признак хорошей цели: она мотивирует. Когда вы вспоминаете о ней, вам хочется что-то делать, она подталкивает вас к работе и отталкивает лень и прокрастинацию.</p>
 				<img src="img/blog/gif/paipline.gif" alt="papiline">
@@ -146,8 +58,8 @@
 				<p>Вот список качеств, которые характерны для лучшего в своей сфере — от конкретной профессии до любимого хобби.</p><br><br>
 				<h1>Развиваем качества, необходимые для номера 1</h1>
 				<p>Наверняка эти качества не станут для вас открытием, но часто ли вы задумывались об их развитии? Все эти качества можно назвать правильными, и даже несмотря на то, что правда чаще всего — это понятие субъективное, они совпадают практически у всех.</p>
-				<img src="img/blog/gif/illustration.gif" alt="">
-				<span class="imagecaption">Dribbble: Dany Rizky</span><br><br>
+				<img src="img/blog/gif/illustration.gif" alt="Dribbble: Dany Rizky">
+				<span class="imagecaption">Dribbble: Dany Rizky</span>
 				<h2>Не опаздывайте</h2>
 				<p>Лучший в своём деле не опаздывает. Лучше прийти раньше на полчаса, чем опоздать на 5 минут, и оправданий здесь быть не может.</p>
 				<p>Чтобы приучить себя к пунктуальности, можно придумывать разные наказания за опоздание. Например, как советует Игорь Манн, известный маркетолог и автор книг о саморазвитии, можно наказывать себя оплатой общего счёта в ресторане.</p>
@@ -178,65 +90,50 @@
 				<p>Вы не можете один раз завоевать звание лучшего, а потом поставить свой кубок на полку и до конца дней почивать на лаврах. Только постоянное развитие поможет оставаться лучшим.</p>
 				<h2>Не сдавайтесь</h2>
 				<p>В одной из своих лекций Игорь Манн упомянул одно знаменитое высказывание:</p>
-				<blockquote class="mat"><div><p>Ничто не может заменить настойчивости: ни талант — нет ничего более обычного, чем талантливые неудачники, ни гениальность — гений-неудачник уже вошёл в поговорку, ни образование — мир полон образованными изгоями.</p>
+				<blockquote class="mat"><div><p>Ничто не может заменить настойчивости: ни талант — нет ничего более обычного, чем талантливые неудачники, ни гениальность — гений-неудачник уже вошёл в поговорку, ни образование — мир полон образованными изгоями.</p><br>
 					<p>Всемогущи лишь упорство и настойчивость. Девиз «поднажми» или «не сдавайся» решал и всегда будет решать проблемы человечества.</p>
-					</div><p class="textr">— Кэлвин Кулидж, 30-й президент США</p>
-					</blockquote>
-					<p>Человек, имеющий все эти качества, уже претендует на звание лучшего и обязательно им станет. А теперь о том, как понять, что вы стали лучшим.</p>
-					<h2>Как понять, что вы — лучший?</h2>
-					<img src="img/blog/gif/dribbbledance.gif" alt="">
-					<p>Как вы будете доказывать кому-то или даже себе самому, что вы лучший специалист в своей сфере? Ведь объективности как таковой не существует, и каждый человек судит себя и других со своей точки зрения.</p>
+				</div><p class="textr">— Кэлвин Кулидж, 30-й президент США</p>
+			</blockquote>
+			<p>Человек, имеющий все эти качества, уже претендует на звание лучшего и обязательно им станет. А теперь о том, как понять, что вы стали лучшим.</p>
+			<h2>Как понять, что вы — лучший?</h2>
+			<img src="img/blog/gif/dribbbledance.gif" alt="">
+			<p>Как вы будете доказывать кому-то или даже себе самому, что вы лучший специалист в своей сфере? Ведь объективности как таковой не существует, и каждый человек судит себя и других со своей точки зрения.</p>
 
-<p>Самое первое — это ваши проекты и свершения. Если у вас есть проекты или дела, которыми вы гордитесь, вы можете их назвать и рассказать о них, это уже успех.</p>
+			<p>Самое первое — это ваши проекты и свершения. Если у вас есть проекты или дела, которыми вы гордитесь, вы можете их назвать и рассказать о них, это уже успех.</p>
 
-<p>Конечно, у вас могут быть и какие-то документальные подтверждения признания: много денег, дипломы, отличные рейтинги, статистика.</p>
+			<p>Конечно, у вас могут быть и какие-то документальные подтверждения признания: много денег, дипломы, отличные рейтинги, статистика.</p>
 
-<p>Что интересно, ваши провалы тоже можно считать достижениями. Почему? Потому что вы что-то делали, а не ошибается, как известно, только тот, кто ничего не делает. Поэтому цените и считайте достижениями все свои ошибки, главное, чтобы они не повторялись.</p>
+			<p>Что интересно, ваши провалы тоже можно считать достижениями. Почему? Потому что вы что-то делали, а не ошибается, как известно, только тот, кто ничего не делает. Поэтому цените и считайте достижениями все свои ошибки, главное, чтобы они не повторялись.</p>
 
-<p>Не менее важно и позиционировать себя как лучшего в своём деле. Создание личного слогана, который настраивает вас на определённую жизненную позицию, правильное оригинальное резюме, 100 слов, которые описывают вас как личность, и прочие фишки — всё это помогает вам увидеть себя лучшим и являться им.</p>
+			<p>Не менее важно и позиционировать себя как лучшего в своём деле. Создание личного слогана, который настраивает вас на определённую жизненную позицию, правильное оригинальное резюме, 100 слов, которые описывают вас как личность, и прочие фишки — всё это помогает вам увидеть себя лучшим и являться им.</p>
 
-<p>Итак, если у вас есть достижения, которыми вы гордитесь, есть документальные подтверждения, которых вам хватает, чтобы считать себя лучшим, и при этом вы продолжаете постоянно развиваться и позиционировать себя нужным образом, можно сказать, что вы действительно добились того, что стали номером 1, и мало кто усомнится в этом.</p>
+			<p>Итак, если у вас есть достижения, которыми вы гордитесь, есть документальные подтверждения, которых вам хватает, чтобы считать себя лучшим, и при этом вы продолжаете постоянно развиваться и позиционировать себя нужным образом, можно сказать, что вы действительно добились того, что стали номером 1, и мало кто усомнится в этом.</p>
 
-<p>Правила и способы звучат достаточно просто, а вот сам путь простым не назовёшь. Ведь здесь не хватает одной мотивации: сегодня вы решили стать лучшим, день прожили «правильно», а завтра забыли обо всём.</p>
-<h1 class="h2before">Вывод</h1>
-<i class="h2after" style="font-size: 20px">Нужны последовательные действия, регулярные занятия и постоянное поддержание мотивации, а это могут обеспечить только занятия с тренером, который сам прошёл этот путь и стал лучшим в своей сфере.</i>
-				</div>
-			</div>
-
+			<p>Правила и способы звучат достаточно просто, а вот сам путь простым не назовёшь. Ведь здесь не хватает одной мотивации: сегодня вы решили стать лучшим, день прожили «правильно», а завтра забыли обо всём.</p>
+			<h1 class="h2before">Вывод</h1>
+			<i class="h2after" style="font-size: 20px">А сегодня в завтрашний день не все могут смотреть... Вернее смотреть могут не только лишь все, мало кто может это делать</i>
 			<div class="footer">
-				<div class="container">
-					<ul class="nav footer-list">
-						<li class="footer-item"><a class="footer-link" title="Группа VK" href="index.html">Блог</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="dev.html">Вакансии</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="aboutus.html">О нас</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Реклама</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Правила</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Помощь</a></li><li class="footer-item">© Gimmeall 2016</li>
-					</ul>
-				</div>
-			</div>
+  		<ul class="nav footer-list">
+  			<li class="footer-item"><a class="footer-link" title="Группа VK" href="index.html">Блог</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="dev.html">Вакансии</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="aboutus.html">О нас</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Реклама</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Правила</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Помощь</a></li><li class="footer-item">© Gimmeall 2016</li>
+  		</ul>
+  </div>
+		</div>
+
+      <!-- <div class="section__fullcolumn">
+        <img src="img/blog/1-Mghg_t-vMdWi8lDn09VnrQ.png" alt="">
+        <span class="imagecaption">UX Design progect</span>
+      </div> -->
+    </div>
+  </div>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-			<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-			<script src="js/zoom.js"></script>
-			<script src="js/parallax.min.js"></script>
-			<script src="js/jquery.sticky.js"></script>
-			<script>
-				$(document).ready(function(){
-					$("#header").sticky({topSpacing:0});
-				});
-			</script>
-		</body>
-		</html>
+  <!-- Page Up from Telegram -->
+  <script src="js/temporary/telegram.js"></script>
+  <script>backToTopInit();</script>
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="js/zoom.js"></script>
+</body>
+</html>

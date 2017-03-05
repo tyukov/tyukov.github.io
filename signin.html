@@ -17,31 +17,29 @@
 		position: relative;
 		width: 100%;
 		height: 100%;
-		background: url(img/blog/6rk.jpg) no-repeat center center scroll;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		background-size: cover;
-		-o-background-size: cover;
+		background-color: #24292e;
 	}
 	.vac {
 		display: table-cell;
 	}
 	.col-50 {
-		float: left;
-		width: 50%;
+		padding: 0 2rem;
+		padding-top: 30px;
 	}
 	.section__signin {
 		background-color: #fff;
 		padding: 8% 11%;
-		margin-bottom: 30px;
 		border-radius: 2px;
+		margin-bottom: 30px;
 	}
 	.section__signin > .btn_signblue {
 		margin-right: 18px;
 	}
 	h3 {
-		font-size: 25px;
+		font-size: 20px;
 		font-weight: 400;
+		margin-bottom: 1.375rem;
+		text-align: center;
 	}
 	input[type=text],
 	input[type=password] {
@@ -89,7 +87,7 @@
 		font-weight: 500;
 		position: relative;
 		white-space: nowrap;
-		vertical-align: baseline;
+		vertical-align: middle;
 		text-align: center;
 		margin: 0;
 		border: 2px solid transparent;
@@ -97,16 +95,79 @@
 	.btn_sign:hover {
 		text-decoration: none;
 	}
+	.vac .container {
+		margin-top: 100px;
+	}
+	.color-heading,
+	.color-description {
+		text-align: center;
+		color: #fff;
+		text-shadow: 0 1px 0px rgba(0,0,0,0.15);
+	}
+	.color-heading {
+		font-weight: bold;
+		font-size: 1.75rem;
+		margin-bottom: 38px;
+	}
+	.color-description {
+		font-size: 22px;
+	}
+	.forgot-password {
+		display: inline-block;
+		color: #6495ed;
+	}
+	@media screen and (min-width:1200px) {
+		h3 {
+			font-size: 25px;
+		}
+		.color-heading {
+			font-size: 2.125rem;
+		}
+	}
+	@media screen and (min-width:992px) {
+		.col-50 {
+			width: 50%;
+			float: left;
+		}
+		h3 {
+			text-align: left;
+		}
+	}
+	@media screen and (min-width:768px) {
+		.h {
+			background: url(img/blog/8rk.jpg) no-repeat center center scroll;
+			-webkit-background-size: cover;
+			background-size: cover;
+		}
+		.vac .container {
+			margin-top: 70px;
+		}
+		.color-heading,
+		.color-description {
+			text-align: left;
+		}
+	}
+
 
 
 </style>
 <body>
 	<div class="h">
+		<div class="header header-top">
+			<div class="container">
+
+				<a class="header__logo" href="index.html">Caspian</a>
+
+				<a class="btn btn__ghost--green" href="signup.html">Зарегистрироваться</a>
+
+				<ul class="nav navbar"><li class="navbar__list"><a class="navbar--item" href="#">Работа</a></li><li class="navbar__list"><a class="navbar--item" href="#">Блог</a></li><li class="navbar__list"><a class="navbar--item" href="#">Истории</a></li><li class="navbar__list"><a class="navbar--item" href="#">Войти</a></li><li class="navbar__list"><a class="action navbar--item" href="signup.html">Зарегистрироваться</a></li></ul>
+			</div>
+		</div>
 		<div class="vac">
 			<div class="container">
 				<div class="col-50">
-					<h1>Прикаспийский Современный</h1>
-					<p>Колледж, дающий феноменально быструю динамику взаимодействия.</p>
+					<h1 class="color-heading">Прикаспийский Современный</h1>
+					<p class="color-description">Колледж, дающий феноменально быструю динамику взаимодействия.</p>
 				</div>
 				<div class="col-50">
 					<div class="section__signin">
@@ -115,11 +176,11 @@
 						<input autofocus id="name" type="text" placeholder="example@psk.com">
 						<label for="password">Ваш Пароль</label>
 						<input autofocus id="password" type="password" placeholder="Введте ваш пароль для входа в аккаунт">
-						<a class="btn_sign btn_signblue" href="#">Войти</a><a href="">Забыли пароль?</a>
+						<a class="btn_sign btn_signblue" href="#">Войти</a><a class="forgot-password" href="#">Забыли пароль?</a>
 					</div>
 					<div class="section__signin">
 						<h3>Присоединиться к нам бесплатно</h3>
-						<a class="btn_sign btn_signgreen" href="">Зарегистрироваться бесплатно</a>
+						<a class="btn_sign btn_signgreen" href="">Зарегистрироваться <span class="hide-md">бесплатно</span></a>
 					</div>
 				</div>
 			</div>

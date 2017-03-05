@@ -7,7 +7,6 @@
 	&-x2 {
 		max-width: 700px;
 		margin: 0 auto;
-		position: relative;
 	}
 
 }
@@ -211,6 +210,7 @@
 	&-top{
 		position: absolute;
 		z-index: 99;
+		top: 0;
 
 		& .header__logo {
 
@@ -243,11 +243,7 @@
 		}
 
 		& ~ .cover {
-			padding: 100px 0 60px;
 			text-align: left;
-			@media screen and (min-width: 768px) {
-				padding: 70px 0 100px;
-			}
 		}
 
 		} // END .header.top
@@ -325,7 +321,6 @@
 		.cover {
 
 			text-align: center;
-			padding: 2rem 0;
 			margin: 0;
 			position: relative;
 			background-repeat: no-repeat;
@@ -367,7 +362,7 @@
 
 				&:before {
 					content: "";
-					background-color: rgba(16,22,19,0.50);
+					background-color: rgba(16,22,19,.5);
 					bottom: 0;
 					height: 100%;
 					left: 0;
@@ -395,7 +390,7 @@
 				}
 
 				& .container,
-				& .container-x2 {
+				& .welcome {
 					z-index: 3;
 				}
 			}
@@ -452,7 +447,7 @@
 				transition: all 90ms;
 			}
 
-			&:hover .footer-item:not(:last-child) {
+			&:hover .footer-link {
 				color: rgba(64, 128, 255, 0.88);
 			}
 
@@ -490,7 +485,10 @@
 
 				font-size: 0.875rem;
 				margin-right: .625rem;
-				color: #b1bbc2;
+
+				& .footer-link {
+					color: #b1bbc2;
+				}
 
 				&:last-child {
 
@@ -703,21 +701,12 @@
 		}
 
 		.cover-blog {
-
-			@media screen and (min-width: 768px){
-				padding: 4.375rem 0 6.25rem;
-			}
+			min-height: 600px;
 		}
 
 		.section {
 
 			&__halfcolumn {
-				margin: 0 auto;
-				max-width: 740px;
-				padding-left: 20px;
-				padding-right: 20px;
-				width: 100%;
-
 				& a {
 					color: cornflowerblue;
 					&:hover {
@@ -741,7 +730,7 @@
 				}
 				font-size: 18px;
 				line-height: 1.6;
-				color: rgba(60, 84, 96, 0.6);
+				color: #656c72;
 			}
 		}
 
@@ -784,6 +773,7 @@
 				&.x70 {
 					width: 70px;
 					height: 70px;
+					box-shadow: 0 0 0 3px #fcfcfc;
 				}
 			}
 
@@ -836,6 +826,11 @@
 						background: rgba(16,22,19,0.11);
 					}
 				}
+				&-dark {
+					&:before {
+						background-color: rgba(16, 22, 19, .68);
+					}
+				}
 			}
 
 			& .btn__ghost--green {
@@ -849,12 +844,12 @@
 			} // End .bloger
 
 			.welcome {
-
+				position: absolute;
+				max-width: 700px;
+				bottom: 100px;
 				padding: 0 1em;
-				margin-top: 1.25rem;
 				@media screen and (min-width: 768px) {
 					padding: 0;
-					margin-top: 2.25rem;
 				}
 
 				& h1 {
@@ -900,6 +895,95 @@
 			}
 			.feb_14 .cover {
 				@media screen and (min-width: 768px) {
-      padding: 700px 0 100px;
-    }
-    }
+					padding: 700px 0 100px;
+				}
+			}
+
+			/* Page Up Like Telegram */
+			#dev_page_content_wrap {
+				padding-left: 20px;
+				padding-right: 20px;
+				max-width: 740px;
+				margin: 0 auto;
+			}
+			.back_to_top_wrap {
+				display: block;
+				pointer-events: none;
+				cursor: default;
+				position: fixed;
+				left: 0;
+				top: 0;
+				bottom: 0;
+				outline: none;
+				box-shadow: none;
+				opacity: 0;
+				/*display: none;*/
+				transition: opacity ease-in-out 0.2s;
+				-webkit-transition: opacity ease-in-out 0.2s;
+			}
+			.back_to_top_wrap.back_to_top_shown {
+				cursor: pointer;
+				pointer-events: all;
+				/*display: block;*/
+				opacity: 1;
+			}
+			.back_to_top_wrap:hover {
+				text-decoration: none;
+			}
+			.back_to_top {
+				font-size: 15px;
+				width: 120px;
+				text-align: center;
+				padding: 18px 15px 18px 7px;
+				transition: background ease-in-out 0.2s;
+				-webkit-transition: background ease-in-out 0.2s;
+			}
+			.back_to_top_wrap:hover .back_to_top {
+				background: #ecf3f8;
+				background: rgba(174, 198, 215, 0.2);
+			}
+			.icon-to-top {
+				display: inline-block;
+				background: url(../img/temporary/telegram/back_to_top_1x.png) 0 50% no-repeat;
+				background-size: 16px 7px;
+				width: 16px;
+				height: 7px;
+				margin-right: 12px;
+				margin-top: 4px;
+				vertical-align: text-top;
+			}
+			.helme {
+				color: #8b9195;
+				font-family: "Times New Roman", serif;
+				font-size: 28px;
+				margin-bottom: 80px;
+				margin-top: 80px;
+				transition: all 300ms;
+				& > span {
+					display: block;
+					-webkit-transition: all 300ms;
+					-o-transition: all 300ms;
+					transition: all 300ms;
+					max-width: 540px;
+					margin-left: auto;
+					margin-right: auto;
+				}
+			}
+			.mat {
+				font-size: 20px;
+				margin: 80px 0;
+				text-indent: -7px;
+			}
+			.mat > div > p {
+				margin: 0;
+				font-weight: 300;
+				font-style: italic;
+				padding: 0;
+				display: inline;
+				background-color: rgba(109, 193, 160, 0.2);
+			}
+			.textr {
+				text-align: right;
+				font-style: normal !important;
+				font-weight: normal !important;
+			}

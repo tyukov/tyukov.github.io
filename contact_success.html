@@ -1,0 +1,294 @@
+<!doctype html>
+<html class="contact">
+<head>
+  <title>Вход в закрытую группу Gimme'all</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/zoom.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+  html,
+  body,
+  .wrapper {
+    height: 100%;
+  }
+  body {
+    font-family:sans-serif 
+  }
+  hr {
+    width:23.5%;
+    margin: 1.1em auto
+  }
+  h1 {
+    margin: 2rem auto;
+    text-align:center;
+    font-weight: bold;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=password],
+  textarea {
+    background-color: rgba(101, 179, 149, 0.07);
+    border: 0;
+    border: 1px solid #e5e5e5;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    outline:none;
+    width:100%;
+    padding:18px;
+    border-radius: 2px;
+  }
+  input[type="submit"] {
+    padding: 0 15px;
+    width: 100%;
+    line-height: 42px;
+    height: 44px;
+    background-color: #83d8a4;
+    color: #fff;
+    outline:none;
+    font-size: 16px;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    transition: all ease-out 200ms;
+  }
+  input[type=submit]:hover {
+    background-color: #7fd19f;
+  }
+  input[type=submit]:focus {
+    transform: scale(.95);
+    background-color: #7fd19f;
+  }
+  table {
+    width: 50%;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px) {
+    table {
+      width: 20%;
+    }
+  }
+  table td {
+    padding: 3px 1px;
+    border-collapse: collapse;
+    vertical-align: middle;
+    margin: 0;
+    height: 15px;
+  }
+  table td a {
+    height: 15px;
+    overflow: hidden;
+    box-shadow: 0 1px 0 0 rgba(0,0,0,0.05) inset;
+    display: block;
+    background-color: #edeff0;
+    transition: all ease-out 260ms;
+  }
+  table td:hover a {
+    background-color: #d1d6d9;
+  }
+  table td:first-child a {
+    border-radius: 14px 0 0 14px;
+  }
+  table td:last-child a {
+    border-radius: 0 14px 14px 0;
+  }
+  td .active {
+    background-color: #83d8a4;
+  }
+  td .active.in,
+  td .greayactive.in {
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image: -o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    -webkit-background-size: 40px 40px;
+    background-size: 40px 40px;
+  }
+  td:hover .active {
+    background-color: #50c17c;
+  }
+  td .greayactive {
+    background-color: #d1d6d9;
+  }
+  input[type=radio] {
+    display: none;
+  }
+  input[type=radio] + label:before {
+    cursor: pointer;
+  }
+  input[type=radio] + label:before {
+    content: "";
+    display: inline-block;
+    margin: 0 5px 0 0;
+    height: 14px;
+    width: 14px;
+    background-image: url(img/icons/radiobutton.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+  input[type=radio]:checked + label:before {
+    background-position: 0 -14px;
+  }
+
+  input[type=radio]:checked + label {
+    color: #6dc1a0;
+  }
+  input[type=radio] + label {
+    margin: 5px 0;
+    display: inline-block;
+  }
+  #genderWoman + label {
+    margin-top: 12px;
+  }
+  .content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 100%;
+    padding-bottom: 58px;
+  }
+  textarea {
+    width: 100%;
+    resize: vertical;
+    background-color: rgba(101, 179, 149, 0.07);
+    margin: 5px 0;
+    line-height: 1.6;
+  }
+  /**/
+  .contact .header {
+    margin-bottom: 4.375rem;
+  }
+
+  .section__contact {
+    background-color: #fff;
+    box-shadow: 0 20px 20px rgba(0,0,0,0.08);
+    -webkit-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+    -moz-transition: all 250ms cubic-bezier(0.02, 0.01, 0.47, 1);
+    padding: 2rem;
+  }
+
+  .container-x90 {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .container-x90:before,
+  .container-x90:after,
+  .col66:before,
+  .col66:after,
+  .section__container-act:before,
+  .section__container-act:after,
+  .section__contact:before,
+  .section__contact:after
+  {
+    content: "";
+    display: table;
+  }
+
+  .container-x90:after,
+  .col66:after,
+  .section__container-act:after,
+  .section__contact:after {
+    clear: both;
+  }
+
+  .section__container-act {
+    margin: 0 -1rem;
+  }
+
+  .section__contact-heading {
+    position: relative;
+    padding-bottom: 1.625rem;
+  }
+
+  .section__contact-h3 {
+    font-weight: 500;
+    margin: 0;
+  }
+
+  select {
+    width: 100%;
+    background-color: rgba(101, 179, 149, 0.07);
+    border: 0;
+    height: 60px;
+    padding: 0 14px;
+    border: 1px solid #e5e5e5;
+    outline: none;
+  }
+
+  .col {
+    width: 100%;
+    float: left;
+    padding: 0 1rem;
+  }
+
+  @media screen and (min-width:600px) {
+
+    .col-66 {
+      width: 66%;
+    }
+
+    .col-34 {
+      width: 34%;
+    }
+
+  }
+
+  label {
+    padding-bottom: .75rem;
+    display: block;
+  }
+
+  input[type=text],
+  input[type=email],
+  select {
+    margin-bottom: 1.5rem;
+  }
+  textarea {
+    margin-bottom: .75rem;
+  }
+  input[type="submit"] {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+</style>
+<body>
+  <div class="header">
+    <div class="container">
+
+      <a class="header__logo" href="index.html">Caspian</a>
+
+      <a class="btn btn__ghost--green" href="#">Зарегистрироваться</a>
+
+      <ul class="nav navbar"><li class="navbar__list"><a class="navbar--item" href="#">Работа</a></li><li class="navbar__list"><a class="navbar--item" href="#">Блог</a></li><li class="navbar__list"><a class="navbar--item" href="#">Истории</a></li><li class="navbar__list"><a class="navbar--item" href="signin.html">Войти</a></li><li class="navbar__list"><a class="action navbar--item" href="">Зарегистрироваться</a></li></ul>
+    </div>
+  </div>
+  <!--  -->
+  <div class="container-x90">
+    <div class="section__contact">
+      <div class="section__contact-heading">
+        <h3 class="section__contact-h3">Свяжись с нами</h3>
+      </div>
+      <div class="section__container-act">
+        <div class="col col-66">
+          Ваше сообщение успешно доставлено, мы отметим вам в ближайшее время.
+        </div>
+        <div class="col col-34">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--  -->
+</div>
+<div class="footer">
+  <div class="container">
+    <ul class="nav footer-list">
+      <li class="footer-item"><a class="footer-link" title="Группа VK" href="index.html">Блог</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="dev.html">Вакансии</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="aboutus.html">О нас</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Реклама</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Правила</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Помощь</a></li><li class="footer-item">© Gimmeall 2016</li>
+    </ul>
+  </div>
+</body>
+</html>

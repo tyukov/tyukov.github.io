@@ -2,20 +2,13 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="../../common__files/css/test.css">
 	<title>Document</title>
 	<style>
-		*,
-		*::before,
-		*::after {
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing: border-box;
-			box-sizing: border-box;
-		}
-		body {
-			width: 50%;
-			margin-left: 5%;
-			max-width: 980px;
-		}
+
+	.wrapper {
+		margin-top: 30px;
+	}
 
 		.nav-two {
 			list-style-position: inside;
@@ -29,53 +22,44 @@
 			padding-right: 7%
 		}
 
-.page__control {
-	width: 100%;
+		.page__control {
+			width: 100%;
 
-	border-width: 1px;
-	border-style: dashed solid;
-	border-color: rgba(204, 204, 204, 0.5) #ccc ;
-	margin-bottom: 2%;
-	/*padding-left: 20px;*/
-}
+			border-width: 1px;
+			border-style: dashed solid;
+			border-color: rgba(204, 204, 204, 0.5) #ccc ;
+			margin-bottom: 2%;
+		}
 
-hr {
-	border-color: #fff;
-	border-width: 1px 0 0;
-}
 
-body {
-	margin-top: 2.5%;
-}
+		.page__control::before,
+		.page__control::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
 
-.page__control::before,
-.page__control::after {
-	content: "";
-	display: table;
-	clear: both;
-}
+		.my__description {
+			font-size: 14px;
+			color: #7b8b8e;
+			line-height: 1.5;
+			padding-top: 2px;
 
-.my__description {
-	font-size: 14px;
-	color: #7b8b8e;
-	line-height: 1.5;
-	padding-top: 2px;
+		}
 
-}
+		.page__control > ul:not(.nav) {
+			list-style: none;
+			padding-left: 10px;
+			margin-top: 0;
+			margin-bottom: 8.5px
+		}
 
-.page__control > ul:not(.nav) {
-      list-style: none;
-      padding-left: 10px;
-      margin-top: 0;
-      margin-bottom: 8.5px
-    }
-    
-    .page__control > ul:not(.nav) li {
-      background-image: url(bullet.png);
-      background-repeat: no-repeat;
-      background-position: 0 10px;
-      padding-left: 20px
-    }
+		.page__control > ul:not(.nav) li {
+			background-image: url(bullet.png);
+			background-repeat: no-repeat;
+			background-position: 0 10px;
+			padding-left: 20px
+		}
 
 
 
@@ -84,42 +68,43 @@ body {
 
 
 
-</style>
+	</style>
 </head>
 <body>
-	<strong>Normal value</strong>
-	<div class="page__control">
-		<ul>
-			<li>Psychology</li>
-			<li>Mathematics</li>
-			<li>Physics</li>
-			<li>Russian language</li>
-		</ul>
-		<p class="my__description">Обычное значение.<br>· · · Маркер выступают за границы допустимого и скрываются при уменьшении экрана;<br>· · · Нет возможности коррелировать расстояние между маркером и текстом;<br>· · · Нельзя видоименять маркер;</p>
-	</div>
+	<div class="wrapper">
+		<strong>Normal value</strong>
+		<div class="page__control">
+			<ul>
+				<li>Psychology</li>
+				<li>Mathematics</li>
+				<li>Physics</li>
+				<li>Russian language</li>
+			</ul>
+			<p class="my__description">Обычное значение.<br>· · · Маркер выступают за границы допустимого и скрываются при уменьшении экрана;<br>· · · Нет возможности коррелировать расстояние между маркером и текстом;<br>· · · Нельзя видоименять маркер;</p>
+		</div>
 
-	<strong>list-style-position: inside</strong>
-	<div class="page__control">
-		<ul class="nav-two">
-			<li><span>Psychology</span></li>
-			<li>Mathematics</li>
-			<li>Physics</li>
-			<li>Russian language</li>
-		</ul>
-		<p class="my__description">Внутреннее позиционирование.<br>· · · Огромное расстояние от маркера до текста, которое нельзя изменять;<br>· · · Нельзя видоименять маркер;</p>
-	</div>
+		<strong>list-style-position: inside</strong>
+		<div class="page__control">
+			<ul class="nav-two">
+				<li><span>Psychology</span></li>
+				<li>Mathematics</li>
+				<li>Physics</li>
+				<li>Russian language</li>
+			</ul>
+			<p class="my__description">Внутреннее позиционирование.<br>· · · Огромное расстояние от маркера до текста, которое нельзя изменять;<br>· · · Нельзя видоименять маркер;</p>
+		</div>
 
-<strong>Telegram value</strong>
-	<div class="page__control">
-		<ul class="telegram">
-			<li><span>Psychology</span></li>
-			<li>Mathematics</li>
-			<li>Physics</li>
-			<li>Russian language</li>
-		</ul>
-		<p class="my__description">Решение команды Telegram.<br>· · · Использование background-image в качестве маркера;<br>· · · Зароос HTTP, немного загружает;<br>· · · Любое выравниваение маркера: горизонтальное, вертикальное;<br>· · · Любая фигура маркера;</p>
+		<strong>Telegram value</strong>
+		<div class="page__control">
+			<ul class="telegram">
+				<li><span>Psychology</span></li>
+				<li>Mathematics</li>
+				<li>Physics</li>
+				<li>Russian language</li>
+			</ul>
+			<p class="my__description">Решение команды Telegram.<br>· · · Использование background-image в качестве маркера;<br>· · · Зароос HTTP, немного загружает;<br>· · · Любое выравниваение маркера: горизонтальное, вертикальное;<br>· · · Любая фигура маркера;</p>
+		</div>
 	</div>
-
 
 	
 </body>

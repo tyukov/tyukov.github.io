@@ -1,83 +1,236 @@
 <!doctype html>
 <html lang="ru-RU">
 <head>
-    <!-- Кодировка -->
-    <meta charset="utf-8">
-    <!-- Поддержка IE -->
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <!-- Заголовок -->
     <title>Контакты • Алексей Чигрин</title>
-    <!-- Адаптивность под ширину экрана -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Подключениее CSS стилей -->
-    <link rel="stylesheet" href="css/style.css">
-    <style>/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}template,[hidden]{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:'Lucida Sans Unicode', Menlo, Consolas, Monaco, monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,select,textarea{font:inherit;margin:0}optgroup{font-weight:bold}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:0.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}*,*:before,*:after{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box}body{background-color:#fff;color:#3e474f;font-family:HelveticaNeueCyr,Helvetica,Arial,sans-serif;line-height:1.4}h1,h2,h3,h4,h5,h6{margin-top:0;font-weight:300}a{transition:color 210ms 0s ease;text-decoration:none;color:#387bc9}a:hover{text-decoration:underline}img{max-width:100%}body{background-color:#edeff0}.col-4{width:33.3333334%;padding-left:1rem;padding-right:1rem;float:left}.card{-webkit-transition:transform 50ms 0s ease;-moz-transition:transform 50ms 0s ease;-o-transition:transform 50ms 0s ease;transition:transform 50ms 0s ease;display:block;position:relative}.card:hover{text-decoration:none}.card-box{background-color:#fff;display:block;cursor:pointer;position:relative;color:#b2bac2;-webkit-box-shadow:0 2px 0 rgba(0,0,0,0.06);box-shadow:0 2px 0 rgba(0,0,0,0.06);padding:88px 30px 30px;border-radius:.3125rem .3125rem .25rem .25rem;min-height:310px}.card-head{display:block;position:absolute;top:0;left:0;right:0;height:58px;line-height:58px;color:#fff;padding:0 30px;border-radius:0.3125rem .3125rem 0 0}.card-stages{display:inline-block;vertical-align:middle;position:absolute;left:70px;right:110px;white-space:nowrap;overflow:hidden}.card-stages li{width:10px;height:10px;background-color:transparent;border:2px solid rgba(255,255,255,0.4);border-radius:100px;margin:0 .4375rem 0 0;text-indent:-100px;overflow:hidden;display:inline-block}.card-stages li.current{border-color:#fff}.card-stages li.complete{background-color:#fff}.card-hours{position:absolute;right:30px;min-width:80px;padding-left:10px;text-align:right}.course-icon:before{content:"";display:block;background-repeat:no-repeat}.course-html .card-head{background-color:#39add1}.course-html .course-icon{display:inline-block;margin-right:1rem;vertical-align:middle}.course-html .course-icon:before{background-image:url(book-open.png);width:22px;height:18px}.card{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.col-4:after,.card-list:after,.wrap:after{content:"";display:table}.col-4:after,.card-list:after,.wrap:after{clear:both}.wrap{margin-left:auto;margin-right:auto;padding-left:1rem;padding-right:1rem;max-width:1170px;position:relative}.card-list,.card-stages{list-style:none;margin:0;padding:0}.fl{float:left}.fr{float:right}.row{margin-left:-1rem;margin-right:-1rem}
-</style>
+    <link rel="stylesheet" href="../../common__files/css/test.css">
+    <style>
+
+        body {
+            background-color: #edeff0;
+        }
+
+        .wrapper {
+            margin-top: 40px;
+            max-width: 1440px;
+        }
+
+        .card-list {
+            list-style: none;
+            margin: 0 -16px;
+            padding: 0;
+        }
+
+        .card-list::before,
+        .card-list::after,
+        .card::before,
+        .card::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .card {
+            float: left;
+            width: 33.33333333%;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            display: block;
+            position: relative;
+            padding: 0 16px;
+            animation: card-fade-up 50ms 0s ease;
+            -webkit-transition: transform 50ms 0s ease;
+            -moz-transition: transform 50ms 0s ease;
+            transition: transform 50ms 0s ease;
+            margin-bottom: 32px;
+        }
+
+        .card-box {
+            background-color: #fff;
+            min-height: 310px;
+            padding: 88px 30px 30px;
+            display: block;
+            border-radius: 5px 5px 4px 4px;
+            -webkit-box-shadow: 0 2px 0 rgba(0,0,0,.06);
+            box-shadow: 0 2px 0 rgba(0,0,0,.06);
+            position: relative;
+            color: #7b8b8e;
+            text-decoration: none;
+        }
+        .card-progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #369;
+            height: 58px;
+            line-height: 58px;
+            padding: 0 30px;
+            border-radius: 4px 4px 0 0;
+            color: #fff;
+            display: block;
+        }
+        .card-estimate {
+            position: absolute;
+            right: 30px;
+            top: 0;
+            min-width: 80px;
+            text-align: right;
+            padding-left: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+
+        }
+
+        .card-description {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            max-height: 45px;
+            font-size: 16px;
+            line-height: 1.5;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        .card-title {
+            color: #4b5658;
+            margin: 0 0 20px;
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .card-actions {
+            position: absolute;
+            left: 46px;
+            right: 46px;
+            bottom: 40px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card-action {
+            position: relative; 
+        }
+
+        .card-action.resume {
+            float: left;
+        }
+        .card-action.secondary {
+            float: right;
+            height: 36px;
+            margin: 0 0 0 10px;
+        }
+
+        .card-action:hover a {
+            border-color: #369;
+        }
+
+        .card-type {
+            display: block;
+            margin: 0 0 7px;
+            font-size: 14px;
+            line-height: 1;
+
+        }
+
+        .btn {
+            height: 36px;
+            line-height: 34px;
+            background-color: #369;
+            color: #fff;
+            padding: 0 24px;
+            display: inline-block;
+            border-radius: 3px;
+        }
+
+        .circle {
+            width: 36px;
+            height: 36px;
+            /*background-color: #369;*/
+            display: block;
+            border-radius: 50%;
+            border: 2px solid #ebedef;
+        }
+
+        .card-action-trailer::after {
+            content: "Watch trailer";
+            line-height: 22px;
+            font-size: 14px;
+            background-color: #2b2b2b;
+            position: absolute;
+            left: 50%;
+            bottom: 100%;
+            font-weight: 500;
+            padding: 10px 20px;
+            color: #fff;
+            -webkit-transform: translate(-50%,-10px);
+            -ms-transform: translate(-50%,-10px);
+            -o-transform: translate(-50%,-10px);
+            transform: translate(-50%,-10px);
+            white-space: nowrap;
+            border-radius: 4px;
+        }
+
+        .card-action-trailer::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: #384047;
+            position: absolute;
+            left: 50%;
+            bottom: 100%;
+            transform: translate(-50%,-5px) rotate(45deg);
+            border-radius: 0 0 3px 0;
+        }
+
+        @keyframe card-fade-up {
+            0% {
+                opacity: 0;
+                -webkit-transform: translatey(20px);
+                -moz-transform: translatey(20px);
+                -ms-transform: translatey(20px);
+                -o-transform: translatey(20px);
+                transform: translatey(20px);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translatey(0);
+                -moz-transform: translatey(0);
+                -ms-transform: translatey(0);
+                -o-transform: translatey(0);
+                transform: translatey(0);
+            }
+        }
+
+    </style>
 </head>
 <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-            <![endif]-->
-
-            <div class="section_library">
-                <div class="wrap">
-                    <h1>HTML</h1>
-                    <h3>Мой прогресс в языке разметки гиппер текста</h3>
-                    <ul class="card-list row">
-                        <li class="col-4 card course-html">
-                            <a class="card-box" href="#">
-                                <div class="card-head">
-                                    <span class="course-icon"></span>
-                                    <ul class="card-stages">
-                                        <li class="complete">sdfsdf</li>
-                                        <li class="complete"></li>
-                                        <li class="complete"></li>
-                                        <li class="current"></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ul>
-                                    <span class="card-hours">42 часа</span>
-                                </div>
-                            </a>
-                        </li>
-
-
-
-                        <li class="col-4 card course-html">
-                            <a class="card-box" href="#">
-                                <div class="card-head">
-                                    <span class="course-icon"></span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="col-4 card course-html">
-                            <a class="card-box" href="#">
-                                <div class="card-head">
-                                    <span class="course-icon"></span>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-
-
-                    <!-- Clear ↓ --> <hr>
-                    <div class="col col-4">
-                        <a href="#" class="card course-html">
-                            <div class="card_head course">
-                                <div class="course-icon"></div>
-                                <div class="course-progress">
-                                    <span class="have"></span><span class="nothave"></span>
-                                </div>
-                            </div>
-                        </a>
+    <div class="wrapper">
+        <ul class="card-list">
+            <li class="card">
+                <a class="card-box" href="#">
+                    <div class="card-progress">
+                        <span>Teamtreehouse</span>
+                        <span class="card-estimate">67 hours</span>
                     </div>
-                </div>
-            </div>
+                    <strong class="card-type">Course</strong>
+                    <h3 class="card-title">CSS Basics</h3>
+                    <p class="card-description">CSS  (Cascading Style Sheets) is a style sheet language that describes the presentation of web pages. Whereas HTML is what forms the structure of a web page, CSS is what we use to style the HTML with colors, backgrounds, font sizes, layout, and more. As you'll soon learn, CSS is one of the core technologies for designing and building websites.</p>
 
-
-        </body>
-        </html>
+                </a>
+                <ul class="card-actions">
+                    <li class="card-action resume"><a class="btn primary" href="#">Resume</a></li>
+                    <li class="card-action secondary card-action-trailer"><a class="circle" href="#"></a></li>
+                    <li class="card-action secondary"><a class="circle" href="#"></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

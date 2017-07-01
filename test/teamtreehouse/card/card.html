@@ -147,6 +147,11 @@
             padding: 0 24px;
             display: inline-block;
             border-radius: 3px;
+            text-decoration: none;
+            border: 2px solid #369;
+            border-width: 0 0 2px;
+            font-weight: 500;
+            font-size: 14px;
         }
 
         .circle {
@@ -169,24 +174,51 @@
             font-weight: 500;
             padding: 10px 20px;
             color: #fff;
+            -webkit-transform: translate(-50%, 0);
+            -ms-transform: translate(-50%, 0);
+            -o-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+            white-space: nowrap;
+            border-radius: 4px;
+        }
+        .card-action-trailer::after,
+        .card-action-trailer::before {
+            visibility: hidden;
+            opacity: 0;
+            -webkit-transition: transform 0.3s ease, opacity 0.3s ease;
+            -o-transition: transform 0.3s ease, opacity 0.3s ease;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .card-action-trailer:hover::after,
+        .card-action-trailer:hover::before {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .card-action-trailer:hover::after {
             -webkit-transform: translate(-50%,-10px);
             -ms-transform: translate(-50%,-10px);
             -o-transform: translate(-50%,-10px);
             transform: translate(-50%,-10px);
-            white-space: nowrap;
-            border-radius: 4px;
         }
 
         .card-action-trailer::before {
             content: "";
             width: 10px;
             height: 10px;
-            background-color: #384047;
+            background-color: #2b2b2b;
             position: absolute;
             left: 50%;
             bottom: 100%;
-            transform: translate(-50%,-5px) rotate(45deg);
+            transform: translate(-50%, 5px) rotate(45deg);
             border-radius: 0 0 3px 0;
+        }
+
+        .card-action-trailer:hover::before {
+            -webkit-transform: translate(-50%,-5px) rotate(45deg);
+            -ms-transform: translate(-50%,-5px) rotate(45deg);
+            -o-transform: translate(-50%,-5px) rotate(45deg);
+            transform: translate(-50%,-5px) rotate(45deg);
         }
 
         @keyframe card-fade-up {

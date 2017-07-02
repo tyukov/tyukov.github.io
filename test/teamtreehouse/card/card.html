@@ -168,8 +168,8 @@
             border: 2px solid #ebedef;
         }
 
-        .card-action-trailer::after {
-            content: "Watch trailer";
+        .card-action-trailer::after,
+        .cars-action-bookmarks::after {
             line-height: 22px;
             font-size: 14px;
             background-color: #2b2b2b;
@@ -186,8 +186,19 @@
             white-space: nowrap;
             border-radius: 4px;
         }
+
+        .card-action-trailer::after {
+            content: "Watch trailer";
+        }
+
+        .cars-action-bookmarks::after {
+            content: attr(data-type-tyukov);
+        }
+
         .card-action-trailer::after,
-        .card-action-trailer::before {
+        .card-action-trailer::before,
+        .cars-action-bookmarks::after,
+        .cars-action-bookmarks::before {
             visibility: hidden;
             opacity: 0;
             -webkit-transition: transform 0.3s ease, opacity 0.3s ease;
@@ -195,19 +206,15 @@
             transition: transform 0.3s ease, opacity 0.3s ease;
         }
         .card-action-trailer:hover::after,
-        .card-action-trailer:hover::before {
+        .card-action-trailer:hover::before,
+        .cars-action-bookmarks:hover::after,
+        .cars-action-bookmarks:hover::before{
             visibility: visible;
             opacity: 1;
         }
 
-        .card-action-trailer:hover::after {
-            -webkit-transform: translate(-50%,-10px);
-            -ms-transform: translate(-50%,-10px);
-            -o-transform: translate(-50%,-10px);
-            transform: translate(-50%,-10px);
-        }
-
-        .card-action-trailer::before {
+        .card-action-trailer::before,
+        .cars-action-bookmarks::before {
             content: "";
             width: 10px;
             height: 10px;
@@ -219,11 +226,20 @@
             border-radius: 0 0 3px 0;
         }
 
-        .card-action-trailer:hover::before {
+        .card-action-trailer:hover::before,
+        .cars-action-bookmarks:hover::before {
             -webkit-transform: translate(-50%,-5px) rotate(45deg);
             -ms-transform: translate(-50%,-5px) rotate(45deg);
             -o-transform: translate(-50%,-5px) rotate(45deg);
             transform: translate(-50%,-5px) rotate(45deg);
+        }
+
+        .card-action-trailer:hover::after,
+        .cars-action-bookmarks:hover::after {
+            -webkit-transform: translate(-50%,-10px);
+            -ms-transform: translate(-50%,-10px);
+            -o-transform: translate(-50%,-10px);
+            transform: translate(-50%,-10px);
         }
 
         @keyframe card-fade-up {
@@ -264,7 +280,7 @@
                 <ul class="card-actions">
                     <li class="card-action resume"><a class="btn primary" href="#">Resume</a></li>
                     <li class="card-action secondary card-action-trailer"><a class="circle" href="#"></a></li>
-                    <li class="card-action secondary"><a class="circle" href="#"></a></li>
+                    <li class="card-action secondary cars-action-bookmarks" data-type-tyukov="Hello"><a class="circle" href="#"></a></li>
                 </ul>
             </li>
         </ul>

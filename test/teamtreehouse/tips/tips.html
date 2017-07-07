@@ -191,28 +191,10 @@
 			opacity: 0;
 		}
 
-		.animate {
-			animation: page-up .3s .3s ease-in-out forwards;
-			transform: perspective(0) translate(0, 0);
-			opacity: 0;
-		}
-
-		@keyframes page-up {
-			0% {
-				opacity: 0;
-				transform: perspective(0) translate(0, 20px);
-			}
-			100% {
-				opacity: 1;
-				transform: perspective(0) translate(0, 0);
-			}
-		}
-
 
 	</style>
 </head>
 <body>
-	<div class="animate">
 		<div class="wrapper down">
 			<div class="box">
 				<div class="circle tipsup" data-tipsname="Подсказка сверху"></div>
@@ -234,6 +216,5 @@
 				</div>
 			</div>
 		</div>
-	</div>
 </body>
 </html>

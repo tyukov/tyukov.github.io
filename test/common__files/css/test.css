@@ -7,6 +7,16 @@
 	box-sizing: border-box;
 }
 
+.wrapper::before,
+.wrapper::after {
+content: "";
+display: table;
+}
+
+.wrapper::after {
+	clear: both;
+}
+
 img {
 	max-width: 100%;
 	display: block;

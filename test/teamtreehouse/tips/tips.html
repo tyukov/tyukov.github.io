@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tips</title>
+	<link rel="stylesheet" href="../../common__files/css/test.css">
+	<style>
+
+		body {
+			background-color: #edeff0;
+		}
+
+		.tipsup,
+		.tipsdown {
+			position: relative;
+		}
+
+		.tipsup::before,
+		.tipsdown::before {
+			content: "";
+			width: 10px;
+			height: 10px;
+			background-color: #2b2b2b;
+			position: absolute;
+			left: 50%;
+			border-radius: 0 0 3px 0;
+		}
+
+		.tipsup::before {
+			bottom: 100%;
+			transform: translate(-50%, 5px) rotate(45deg);
+		}
+
+		.tipsdown::before {
+			top: 100%;
+			transform: translate(-50%, -5px) rotate(45deg);
+		}
+
+		.tipsup::after,
+		.tipsdown::after {
+			content: attr(data-tipsname);
+			line-height: 22px;
+			font-size: 14px;
+			background-color: #2b2b2b;
+			position: absolute;
+			left: 50%;
+			font-weight: 500;
+			padding: 10px 20px;
+			color: #fff;
+			-webkit-transform: translate(-50%, 0);
+			-ms-transform: translate(-50%, 0);
+			-o-transform: translate(-50%, 0);
+			transform: translate(-50%, 0);
+			white-space: nowrap;
+			border-radius: 4px;
+		}
+
+		.tipsup::after {
+			bottom: 100%;
+		}
+
+		.tipsdown::after {
+			top: 100%;
+		}
+
+		.tipsup::before,
+		.tipsup::after,
+		.tipsdown::before,
+		.tipsdown::after {
+			visibility: hidden;
+			opacity: 0;
+			-webkit-transition: transform 0.3s ease, opacity 0.3s ease;
+			-o-transition: transform 0.3s ease, opacity 0.3s ease;
+			transition: transform 0.3s ease, opacity 0.3s ease;
+		}
+
+		.tipsup:hover::before,
+		.tipsup:hover::after,
+		.tipsdown:hover::before,
+		.tipsdown:hover::after {
+			visibility: visible;
+			opacity: 1;
+		}
+
+		.tipsup:hover::before {
+			-webkit-transform: translate(-50%,-5px) rotate(45deg);
+			-ms-transform: translate(-50%,-5px) rotate(45deg);
+			-o-transform: translate(-50%,-5px) rotate(45deg);
+			transform: translate(-50%,-5px) rotate(45deg);
+		}
+
+		.tipsdown:hover::before {
+			-webkit-transform: translate(-50%, 5px) rotate(45deg);
+			-ms-transform: translate(-50%, 5px) rotate(45deg);
+			-o-transform: translate(-50%, 5px) rotate(45deg);
+			transform: translate(-50%, 5px) rotate(45deg);
+		}
+
+		.tipsup:hover::after {
+			-webkit-transform: translate(-50%,-10px);
+			-ms-transform: translate(-50%,-10px);
+			-o-transform: translate(-50%,-10px);
+			transform: translate(-50%,-10px);
+		}
+
+		.tipsdown:hover::after {
+			-webkit-transform: translate(-50%,10px);
+			-ms-transform: translate(-50%,10px);
+			-o-transform: translate(-50%,10px);
+			transform: translate(-50%,10px);
+		}
+
+		body {
+			margin-top: 40px;
+		}
+
+		.wrapper {
+			max-width: 560px;
+			line-height: 140%;
+			padding-bottom: 60px;
+			position: relative;
+		}
+		.wrapper.down::after {
+			content: "";
+			width: 10px;
+			height: 40px;
+			background-color: #d4d9dd;
+			position: absolute;
+			left: 50%;
+			margin-left: -5px;
+			bottom: 10px;
+			border-radius: 5px;
+		}
+		.box {
+			background-color: #fff;
+			padding: 20px 30px;
+			border-radius: 4px;
+			box-shadow: 0 2px 0 rgba(0,0,0,.06);
+		}
+
+		.circle {
+			width: 34px;
+			height: 34px;
+			display: inline-block;
+			border: 2px solid #d6e0eb;
+			float: left;
+			border-radius: 100%;
+			cursor: help;
+		}
+		.circle:hover {
+			border-color: #369;
+		}
+
+		.text {
+			margin-left: 46px;
+			font-size: 14px;
+			font-weight: 500;
+			color: #575757;
+		}
+		p {
+			margin: 0 0 10px;
+		}
+		h3 {
+			margin: 0;
+		}
+
+		.link {
+			text-decoration: none;
+			color: #369;
+			position: relative;
+			-webkit-transition: all 240ms;
+			-o-transition: all 240ms;
+			transition: all 300ms;
+		}
+		.link::after {
+			content: "";
+			width: 100%;
+			position: absolute;
+			left: 0;
+			opacity: 1;
+			top: 100%;
+			border-bottom: 1px dashed #D7E7EC;
+			transition: all 300ms;
+		}
+		.link:hover {
+			color: #85a3c2;
+		}
+
+		.link:hover::after {
+			width: 0;
+			opacity: 0;
+		}
+
+		.animate {
+			animation: page-up .3s .3s ease-in-out forwards;
+			transform: perspective(0) translate(0, 0);
+			opacity: 0;
+		}
+
+		@keyframes page-up {
+			0% {
+				opacity: 0;
+				transform: perspective(0) translate(0, 20px);
+			}
+			100% {
+				opacity: 1;
+				transform: perspective(0) translate(0, 0);
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="animate">
+		<div class="wrapper down">
+			<div class="box">
+				<div class="circle tipsup" data-tipsname="Подсказка сверху"></div>
+				<div class="text">
+					<h3>Tips up</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea temporibus beatae libero asperiores laborum esse in, sint mollitia ut, sed non, veniam quia delectus quo quas error ad, necessitatibus eum.</p>
+					<a href="http://vk.com/tyukovd" class="link">Read more</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="box">
+				<div class="circle tipsdown" data-tipsname="Подсказка снизу"></div>
+				<div class="text">
+					<h3>Tips down</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea temporibus beatae libero asperiores laborum esse in, sint mollitia ut, sed non, veniam quia delectus quo quas error ad, necessitatibus eum.</p>
+					<a href="http://vk.com/quietthunder" class="link">Read more</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

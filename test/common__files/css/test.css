@@ -7,19 +7,17 @@
 	box-sizing: border-box;
 }
 
-.wrapper::before,
-.wrapper::after {
-content: "";
-display: table;
-}
-
-.wrapper::after {
-	clear: both;
+body {
+	margin: 0;
 }
 
 img {
 	max-width: 100%;
 	display: block;
+}
+
+h1 {
+	margin: 0;
 }
 
 .wrapper {
@@ -30,10 +28,22 @@ img {
 	margin: 0 auto;
 }
 
-body {
-	margin: 0;
+.wrapper::before,
+.wrapper::after {
+content: "";
+display: table;
 }
 
-h1 {
+.wrapper::after {
+	clear: both;
+}
+
+.bg-grey { /* For gray body background */
+	background-color: #edeff0;
+}
+
+.nav {
+	list-style: none;
 	margin: 0;
+	padding: 0;
 }

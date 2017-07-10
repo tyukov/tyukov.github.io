@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Step by stage</title>
+	<link rel="stylesheet" href="../../common__files/css/test.css">
+	<style>
+
+	.wrapper {
+		max-width: 600px;
+	}
+
+	ul > li {
+		display: block;
+		width: 100%;
+	}
+
+.box {
+	background-color: #fff;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 2px 0 rgba(0,0,0,.06);
+	box-shadow: 0 2px 0 rgba(0,0,0,.06);
+	position: relative;
+}
+
+h3 {
+padding: 30px 20px;
+}
+
+.nav {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+ul > .card {
+	padding-bottom: 70px;
+	position: relative;
+}
+
+ul > .card::after {
+	content: "";
+	position: absolute;
+	display: block;
+	bottom: 15px;
+	width: 10px;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #d4d9dd;
+	left: 50%;
+	margin-left: -5px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.col-77 {
+	width: 70%;
+}
+
+.col-33 {
+	width: 30%;
+}
+
+.col-77,
+.col-33 {
+	float: left;
+	padding: 0 16px;
+}
+
+.box::before, .box::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+
+
+	</style>
+</head>
+<body class="bg-grey">
+	<div class="wrapper">
+		<ul class="nav">
+			<li class="card">
+					<div class="box"><h3>Stage one – 1</h3></div>
+			</li>
+			<li class="card">
+					<div class="box"><h3>Stage one – 2</h3></div>
+			</li>
+			<li>
+					<div class="box"><h3>Stage one – 3</h3></div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

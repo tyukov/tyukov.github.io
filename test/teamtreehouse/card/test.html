@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>card test</title>
+	<link rel="stylesheet" href="../../common__files/css/test.css">
+	<style>
+
+	.wrapper {
+		max-width: 1200px;
+	}
+
+		.card-list {
+			margin: 40px -16px 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.card {
+			
+			float: left;
+			width: 50%;
+			padding: 0 16px;
+			position: relative;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			-o-user-select: none;
+			user-select: none;
+			margin-bottom: 32px;
+			
+		}
+
+		.card-box {
+			background-color: #fff;
+			-webkit-box-shadow: 0 2px 0 rgba(0,0,0,.6);
+			box-shadow: 0 2px 0 rgba(0,0,0,.06);
+			min-height: 310px;
+			padding: 80px 30px 30px;
+			border-radius: 5px 5px 4px 4px;
+			display: block;
+			text-decoration: none;
+			color: #777;
+			position: relative;
+		}
+
+		.card-head {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			padding: 0 30px;
+			background-color: #369;
+			height: 60px;
+			line-height: 60px;
+			border-radius: 4px 4px 0 0;
+			color: #fff;
+		}
+
+		.card-theme {
+			font-size: 14px;
+			font-weight: 500;
+		}
+
+		.card-type {
+			font-size: 14px;
+			display: block;
+			margin: 0 0 8px;
+			line-height: 1;
+		}
+
+		.card-estimate {
+			min-width: 80px;
+			text-align: right;
+			position: absolute;
+			right: 30px;
+			top: 0;
+			font-size: 14px;
+			font-weight: 500;
+			padding-left: 10px;
+		}
+
+		.card-description {
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 2;
+			height: 45px;
+			margin: 0;
+			overflow: hidden;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+
+		.card::before,
+		.card::after,
+		.card-list::before,
+		.card-list::after {
+			content: "";
+			display: table;
+		}
+
+		.card::after,
+		.card-list::after {
+			clear: both;
+		}
+
+		.card-title {
+			margin: 0 0 24px 0;
+			color: #666;
+			text-overflow: ellipsis;
+			font-weight: 500;
+			overflow: hidden;
+			white-space: nowrap;
+		}
+
+		.card-action {
+			position: absolute;
+			bottom: 40px;
+			left: 46px;
+			right: 46px;
+		}
+
+		.button {
+			float: left;
+			line-height: 34px;
+			height: 36px;
+			border-bottom: 2px solid #369;
+			padding: 0 24px;
+			border-radius: 4px;
+			color: #fff;
+			background-color: #369;
+			text-decoration: none;
+			font-size: 14px;
+			font-weight: 500;
+		}
+
+	</style>
+</head>
+<body class="bg-grey">
+	<div class="wrapper">
+			<ul class="card-list">
+				<li class="card">
+					<a class="card-box" href="#">
+						<div class="card-head">
+							<span class="card-theme">Teamtreehouse</span>
+							<span class="card-estimate">46 hours</span>
+						</div>
+						<strong class="card-type">Course</strong>
+						<h3 class="card-title">Css Basic</h3>
+						<p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa porro minima autem fuga veritatis praesentium, ullam facilis consectetur cumque soluta? Magnam quasi dolorem reprehenderit, voluptate nesciunt modi repellendus sunt. Laudantium!</p>
+					</a>
+					<ul class="card-action nav">
+						<li><a class="button" href="#">Resume</a></li>
+					</ul>
+				</li>
+			</ul>
+	</div>
+</body>
+</html>

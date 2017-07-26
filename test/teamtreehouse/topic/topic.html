@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>topic</title>
+	<link rel="stylesheet" href="../../common__files/css/test.css">
+	<style>
+
+		h3 {
+			font-weight: 500;
+			margin: 0 0 10px;
+		}
+
+		p {
+			margin: 0;
+			font-size: 14px;
+		}
+
+		.section-heading {
+			border-top: 1px solid #d4d9dd;
+			margin: 0 0 20px;
+			padding: 30px 0 0;
+		}
+
+		.topic-list {
+			list-style: none;
+			margin: 0 -16px 30px;
+			padding: 0;
+		}
+
+		.topic-list::before,
+		.topic-list::after {
+			content: "";
+			display: table;
+		}
+
+		.topic-list::after {
+			clear: both;
+		}
+
+		.topic {
+			float: left;
+			padding: 15px;
+			width: 20%;
+		}
+
+		.topic-box {
+			background-color: #fff;
+			border-radius: 4px;
+			box-shadow: 0 2px 0 rgba(0,0,0,.06);
+			display: block;
+			text-align: center;
+			transition: .2s;
+			text-decoration: none;
+		}
+
+		.topic-box:active {
+			-webkit-transform: translateY(2px);
+			-ms-transform: translateY(2px);
+			-o-transform: translateY(2px);
+			transform: translateY(2px);
+		}
+
+		.topic-cover {
+			border-radius: 4px 4px 0 0;
+			height: 100px;
+			position: relative;
+			transition: background-color .3s ease;
+		}
+
+		.topic-cover::before {
+			content: "+";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 40px;
+			font-size: 16px;
+			color: #fff;
+			font-weight: 500;
+			line-height: 40px;
+			height: 40px;
+			text-align: center;
+			border-radius: 50%;
+			background-color: rgba(255,255,255,.2);
+			-webkit-transform: translate(-50%, -50%);
+			-ms-transform: translate(-50%, -50%);
+			-o-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			box-shadow: 1px 1px 0px 1px rgba(0,0,0,.1);
+		}
+
+		.topic-title {
+			display: block;
+			padding: 20px 10px;
+			color: #384047;
+			font-weight: 500;
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+		}
+
+		.add-android-background-color {
+			background-color: #5cb860;
+		}
+
+		.topic:hover .add-android-background-color {
+			background-color: #4cae50;
+		}
+
+		.add-apis-background-color {
+			background-color: #993c50;
+		}
+
+		.topic:hover .add-apis-background-color {
+			background-color: #873546;
+		}
+
+		.add-business-background-color {
+			background-color: #f9845b;
+		}
+
+		.topic:hover .add-business-background-color {
+			background-color: #f87242;
+		}
+
+		.add-csharp-background-color {
+			background-color: #9e4d83;
+		}
+
+		.topic:hover .add-csharp-background-color {
+			background-color: #8d4575;
+		}
+
+		.add-css-background-color {
+			background-color: #3079ab;
+		}
+
+		.topic:hover .add-css-background-color {
+			background-color: #2a6b97;
+		}
+
+		.add-data-analysis-background-color {
+			background-color: #645a7e;
+		}
+
+		.topic:hover .add-data-analysis-background-color {
+			background-color: #584f6f;
+		}
+
+		.add-databases-background-color {
+			background-color: #eb7728;
+		}
+
+		.topic:hover .add-databases-background-color {
+			background-color: #e46915;
+		}
+
+		.add-design-background-color {
+			background-color: #e59a13;
+		}
+
+		.topic:hover .add-design-background-color {
+			background-color: #cd8a11;
+		}
+
+
+
+
+	</style>
+</head>
+<body class="bg-grey">
+	<div class="wrapper">
+		<div class="section-heading">
+			<h3>Topic</h3>
+			<p>Browse content by the topics that interest you most.</p>
+		</div>
+		<ul class="topic-list">
+			<li class="topic">
+				<a class="topic-box" href="#">
+					<div class="topic-cover add-android-background-color"></div>
+					<span class="topic-title">Android</span>
+				</a>
+			</li>
+			<li class="topic">
+				<a class="topic-box" href="#">
+					<div class="topic-cover add-apis-background-color"></div>
+					<span class="topic-title">APIs</span>
+				</a>
+			</li>
+			<li class="topic">
+				<a class="topic-box" href="#">
+					<div class="topic-cover add-business-background-color"></div>
+					<span class="topic-title">Business</span>
+				</a>
+			</li>
+			<li class="topic">
+				<a class="topic-box" href="#">
+					<div class="topic-cover add-csharp-background-color"></div>
+					<span class="topic-title">C#</span>
+				</a>
+			</li>
+			<li class="topic">
+				<a class="topic-box" href="#">
+					<div class="topic-cover add-css-background-color"></div>
+					<span class="topic-title">CSS</span>
+				</a>
+			</li>
+			<li class="topic">
+				<a class="topic-box" href="#">
+					<div class="topic-cover add-data-analysis-background-color"></div>
+					<span class="topic-title">Data Analysis</span>
+				</a>
+			</li>
+			<li class="topic">
+				<a class="topic-box" href="#">
+					<div class="topic-cover add-databases-background-color"></div>
+					<span class="topic-title">Databases</span>
+				</a>
+			</li>
+			<li class="topic">
+				<a class="topic-box" href="#">
+					<div class="topic-cover add-design-background-color"></div>
+					<span class="topic-title">Design</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

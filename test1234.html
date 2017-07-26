@@ -1,90 +1,174 @@
 <!DOCTYPE html>
-<html lang="ru" class="bloger">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/zoom.css">
-	<link rel="stylesheet" href="css/style.css">
+	<title>Карточки повторение</title>
+	<link rel="stylesheet" href="test/common__files/css/test.css">
 	<style>
-		.ccover {
-			margin: 0 auto;
-			position: relative;
-			/*text-align: center;*/
-			-webkit-background-size: cover;
-			background-size: cover;
-			background-position: center;
 
-		}
-		.ccover-single {
-			min-height: 600px;
-		}
-		.ccover-power {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-		}
-		.ccover-power h2 {
-			position: absolute;
-			bottom: 100px;
-			left: 481px;
-			right: 481px;	
-			color: #fff;
-			line-height: 1.2;
-			font-size: 2.875rem;
+		h3 {
 			font-weight: 500;
+			margin: 0 0 10px;
 		}
+
+		p {
+			font-size: 14px;
+			margin: 0;
+		}
+
+		.heading-description {
+			padding: 20px 0 0;
+			margin: 0 0 30px;
+		}
+
+		.topic-list {
+			margin: 0 -15px;
+			padding: 0;
+			list-style: none;
+		}
+
+		.topic {
+			float: left;
+			width: 25%;
+			padding: 15px;
+		}
+
+		.topic:hover .topic-head {
+			background-color: #930;
+		}
+
+		.topic-box {
+			display: block;
+			background-color: #fff;
+			box-shadow: 0 2px 0 rgba(0,0,0,.06);
+			border-radius: 4px;
+			text-align: center;
+			text-decoration: none;
+			transition: .2s;
+		}
+
+		.topic-box:active,
+		.topic-box:focus {
+			-webkit-transform: translatey(2px);
+			-ms-transform: translatey(2px);
+			-o-transform: translatey(2px);
+			transform: translatey(2px);
+		}
+
+		.topic-head {
+			background-color: #369;
+			height: 100px;
+			border-radius: 4px 4px 0 0;
+			position: relative;
+			transition: background-color .3s ease;
+		}
+
+		.topic-list::before,
+		.topic-list::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.topic-head::before {
+			content: "";
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 40px;
+			height: 40px;
+			background-color: rgba(255,255,255,.2);
+			border-radius: 50%;
+			display: block;
+			-webkit-transform: translate(-50%,-50%);
+			-ms-transform: translate(-50%,-50%);
+			-o-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+		}
+
+		.topic::before,
+		.topic::after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.topic-title {
+			display: block;
+			padding: 20px 10px;
+			font-weight: 500;
+			color: #383838;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+
+
 	</style>
 </head>
-<body>
-
-
-
-	<div class="header header-top">
-		<div class="container">
-
-			<a class="header__logo" href="index.html">Caspian</a>
-
-			<a class="btn btn__ghost--green" href="signup.html">Зарегистрироваться</a>
-
-			<ul class="nav navbar"><li class="navbar__list"><a class="navbar--item" href="#">Работа</a></li><li class="navbar__list"><a class="navbar--item" href="#">Блог</a></li><li class="navbar__list"><a class="navbar--item" href="#">Истории</a></li><li class="navbar__list"><a class="navbar--item" href="signin.html">Войти</a></li><li class="navbar__list"><a class="action navbar--item" href="signup.html">Зарегистрироваться</a></li></ul>
+<body class="bg-grey">
+	<div class="wrapper">
+		<div class="heading-description">
+			<h3>Topic</h3>
+			<p>Browse content by the topics that interest you most.</p>
 		</div>
+		<ul class="topic-list">
+			<li class="topic">
+				<a href="#" class="topic-box">
+					<div class="topic-head"></div>
+					<span class="topic-title">Android</span>
+				</a>
+			</li>
+			<li class="topic">
+				<a href="#" class="topic-box">
+					<div class="topic-head"></div>
+					<span class="topic-title">Android</span>
+				</a>
+			</li>
+			<li class="topic">
+				<a href="#" class="topic-box">
+					<div class="topic-head"></div>
+					<span class="topic-title">Android</span>
+				</a>
+			</li>
+			<li class="topic">
+				<a href="#" class="topic-box">
+					<div class="topic-head"></div>
+					<span class="topic-title">Android</span>
+				</a>
+			</li>
+			<li class="topic">
+				<a href="#" class="topic-box">
+					<div class="topic-head"></div>
+					<span class="topic-title">Android</span>
+				</a>
+			</li>
+			<li class="topic">
+				<a href="#" class="topic-box">
+					<div class="topic-head"></div>
+					<span class="topic-title">Android</span>
+				</a>
+			</li>
+			<li class="topic">
+				<a href="#" class="topic-box">
+					<div class="topic-head"></div>
+					<span class="topic-title">Android</span>
+				</a>
+			</li>
+			<li class="topic">
+				<a href="#" class="topic-box">
+					<div class="topic-head"></div>
+					<span class="topic-title">Android</span>
+				</a>
+			</li>
+			<li class="topic">
+				<a href="#" class="topic-box">
+					<div class="topic-head"></div>
+					<span class="topic-title">Android</span>
+				</a>
+			</li>
+		</ul>
 	</div>
-	<!-- data-parallax="scroll" data-image-src="img/blog/article_-journeys-4.jpg" -->
-	<div class="ccover" style="background-image: url(img/blog/5rk.jpg)">
-		<div class="ccover-single"></div>
-		<div class="ccover-power"><h2>Британские исследования доказали пользу видеоигр</h2></div>
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-	<script src="js/zoom.js"></script>
-	<script src="js/parallax.min.js"></script>
-	<script src="js/jquery.sticky.js"></script>
-	<script>
-		$(document).ready(function(){
-			$("#header").sticky({topSpacing:0});
-		});
-	</script>
 </body>
 </html>

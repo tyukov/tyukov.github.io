@@ -28,10 +28,14 @@ h1 {
 	margin: 0 auto;
 }
 
+.wrapper__large { /* For large size wrapper */
+	max-width: 1440px;
+}
+
 .wrapper::before,
 .wrapper::after {
-content: "";
-display: table;
+	content: "";
+	display: table;
 }
 
 .wrapper::after {

@@ -1,176 +1,28 @@
 <!DOCTYPE html>
-<html lang="ru" class="bloger">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/zoom.css">
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-.nav-up {
-    top: -40px;
+	<meta charset="UTF-8">
+	<title>Gradient</title>
+	<link rel="stylesheet" href="test/common__files/css/test.css">
+	<style>
+
+.blog {
+	width: 100%;
+	height: 450px;
+
+	background: #369 url(img/landing/degrees-hero-e9cd336b8c4ab9f1c957acd1fbcf9ce7.jpg);
+	background-size: cover;
+
+  background-image: radial-gradient(at top right, black, red 60%, yellow);
+
 }
-  </style>
-  <script>
-// Hide Header on on scroll down
-var didScroll;
-var lastScrollTop = 0;
-var delta = 5;
-var navbarHeight = $('header').outerHeight();
 
-$(window).scroll(function(event){
-    didScroll = true;
-});
 
-setInterval(function() {
-    if (didScroll) {
-        hasScrolled();
-        didScroll = false;
-    }
-}, 250);
-
-function hasScrolled() {
-    var st = $(this).scrollTop();
-    
-    // Make sure they scroll more than delta
-    if(Math.abs(lastScrollTop - st) <= delta)
-        return;
-    
-    // If they scrolled down and are past the navbar, add class .nav-up.
-    // This is necessary so you never see what is "behind" the navbar.
-    if (st > lastScrollTop && st > navbarHeight){
-        // Scroll Down
-        $('header').removeClass('nav-down').addClass('nav-up');
-    } else {
-        // Scroll Up
-        if(st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
-        }
-    }
-    
-    lastScrollTop = st;
-}
-  </script>
+	</style>
 </head>
-<body>
+<body class="bg-grey">
 
-
-
-  <div class="header header-top nav-down">
-    <div class="container">
-
-      <a class="header__logo" href="index.html">Caspian</a>
-      
-      <a class="btn btn__ghost--green" href="signup.html">Зарегистрироваться</a>
-
-      <ul class="nav navbar"><li class="navbar__list"><a class="navbar--item" href="#">Работа</a></li><li class="navbar__list"><a class="navbar--item" href="#">Блог</a></li><li class="navbar__list"><a class="navbar--item" href="#">Истории</a></li><li class="navbar__list"><a class="navbar--item" href="signin.html">Войти</a></li><li class="navbar__list"><a class="action navbar--item" href="signup.html">Зарегистрироваться</a></li></ul>
-    </div>
-  </div>
-  <!-- data-parallax="scroll" data-image-src="img/blog/article_-journeys-4.jpg" -->
-  <div class="cover cover-blog cover-development" style="background-image: url(img/blog/4rk.jpg);">
-    <div class="container-x2">
-      <div class="welcome">
-        <h1>Куда поступить учиться после Прикаспийского</h1>
-        <p>Очень много дискуссий у студентов нашего колледжа вызывает вопрос о дальнейшем развитии в высшем заведении. Мы составили список лучших вариантов специально для Вас.</p>
-      </div>
-    </div>
-  </div>
-  <!-- Content -->
-  <div class="action">
-    <div class="section__wrap">
-      <div class="section__halfcolumn">
-        <div class="section__creator">
-          <a href="#" class="section__creator-link">
-            <img class="section__creator--image x70" src="img/icons/user2-70.jpg" alt="">
-          </a>
-          <div class="section__creator-Text">
-            <a href="#">Екатерина Дмитриевна</a>
-            <p class="">от 8 дек 2016 · 5 мин</p>
-          </div>
-        </div>
-        <p>Школьники уже, кажется, сдали ЕГЭ и вот-вот отправятся подавать документы в ВУЗы. Программирование и IT-технологии пользуются стабильным спросом, примерно как юридические и экономические специальности 10 лет назад.</p>
-        <p>В этой статье я расскажу как работает высшее образование для IT, как правильно выбрать IT-специальность.</p>
-        <p>Статья будет полезна не только абитурентам-2015, но и школьникам старших классов, которые уже решили связать свою жизнь с IT.</p>
-        <h2 class="h2before">Нужно ли поступать в ВУЗ, чтобы стать программистом?</h2>
-        <p class="h2after">Существует множество точек зрения на этот вопрос и, уверен, в комментариях его не раз поднимут. По моему скромному мнению, высшее образование не является обязательным условием становления специалиста в области IT, ровно как и гарантией этого. Но может стать прочным фундаментом для профессионального роста.</p>
-        <p>Вы можете читать книги, участвовать в OpenSource-коммьюнити, подрабатывать на oDesk и через несколько лет будете опытным разработчиком, без высшего образования. Правда, ничто не мешает это всё делать параллельно учёбе в ВУЗе, кроме собственной лени.
-          <br> Вы можете поступить, сдавать зачёты и экзамены, получить диплом и не стать в итоге профессиональным программистом — таких историй миллионы.</p>
-          <p>Хороший ВУЗ даёт прежде всего отличные условия для того, чтобы получать знания, опыт, связи и вырасти как личность. И только от вас зависит, как вы будете их использовать (и будете ли вообще).
-            Примем условно, что вы уже приняли решение получить высшее образование в сфере IT, и пойдём дальше.</p>
-            <h2>Бакалавр, специалист и магистр</h2>
-            <center>
-              <img data-action="zoom" src="img/blog/gool.jpg" alt="">
-              <span class="imagecaption">С тех пор как министерство образование решило интегрировать Россию в болонскую систему высшего образования прошли годы и многое изменилось. Раньше все ИТ-шники могли получить только диплом специалиста. В этом году выпустились последние дипломированные специалисты (за исключением специальностей, где срок обучения более 5 лет).
-                Сейчас вы можете стать бакалавром, после этого — магистром, а далее поступать в аспирантуру для соискания российского аналога Ph.D.</span>
-              </center>
-              <h2 class="h2before">Прикладной и академический бакалавриат</h2>
-              <p class="h2after">Само собой тот факт, что специалитет просто уменьшили на 20%, не мог порадовать министерство образования. Мало кого может порадовать «недоспециалист», который теперь знает ещё меньше. Поэтому с 2015 года будут повсеместно вводить прикладной бакалавриат как альтернативу неполному академическому образованию.</p>
-              <p>Если коротко, то прикладной от академического отличается новым учебным планом, где все дисциплины сфокусированы на выпуск максимально готового к реальным рабочим задачам сотрудника. Без стажировок и прочих головняков для работодателя. Например, из академического бакалавриата может выйти «математик-программист», а из прикладного «Разработчик .Net», «Разработчик реляционных баз данных» или «Программист C++». Последние более интересны рынку труда сразу после окончания ВУЗа, первые же после окончания бакалавриата должны поступать в магистратуру и дальше качать свои компетенции, чтобы после выпуска претендовать на более высокие позиции. Другая полезная вещь — участие в учебной программе прикладного бакалавриата работодателей (как базы практики) и IT-вендоров.</p>
-              <p>Несмотря на то, что идея на мой взгляд здравая и её реализация была начата ещё 5 лет назад в 44 пилотных ВУЗах, я ещё не встречал ни качественно новых учебно-методических материалов, ни готовых к самостоятельной работе выпускников. Предполагаю, что в ближайшие 2-3 года ничего не изменится и значительной разницы в подготовке академического и прикладного бакалавриата не будет. Тем не менее, если вы уже решили быть магистром — поступайте на академический, если после 4 лет обучения планируете идти работать, а к магистратуре вернуться «когда-нибудь» — то на прикладной.</p>
-              <h2>Преподавание в ВУЗе</h2>
-              <center>
-                <img data-action="zoom" src="img/blog/pain.jpg" alt="">
-                <span class="imagecaption">Кадры из фильма "Убить Билла".</span>
-              </center>
-              <p>Если в школе учатся, то в ВУЗе обучаются. И разница тут огромна. Никто не будет заставлять учиться. Если хотите получить диплом — сидите, разбирайтесь, спрашивайте у однокурсников. Преподаватель — это просто носитель знаний, который умеет эти знания пояснять. Его цель — рассказать, ваша — понять. Если вы что-то не поняли — преподаватель свою цель всё равно выполнил. Даже если в отдельных случаях это не так — лучше думать именно в такой парадигме, будет меньше разочарований.</p>
-              <p>Качество преподавания заключается именно в том, насколько хорошо преподаватель доносит до вас знания, какую практическую компетенцию вы при этом получаете. Например, донести принцип ООП можно на языке программирования Delphi, а можно на C# или Java. Вы поймёте ООП в любом случае, если будете стараться, но знакомство с языками C# или Java будет полезно для вас в будущем, при подготовке курсовых работ, при подработке или дальнейшем трудоустройстве.
-              </p>
-              <p>Преподавание — штука инертная. Чем больше преподаватель читает один и тот же курс на примере одних и тех же технологий — тем лучше у него получается донести знания до студентов. Но IT-технологии меняются слишком быстро, поэтому возможны две крайности: 
-              </p>
-              <ol>
-                <li>преподаватель читает вам то, что морально устарело, но вы всё прекрасно понимаете</li>
-                <li>преподаватель рассказывает о новейших технологиях, но у вас остаются большие пробелы в понимании чего-либо (если вы не восполните их самостоятельно в книгах, на StackOverflow или MSDN — то так оно и останется).</li>
-              </ol>
-              <h1 class="h2before">Вывод</h1>
-              <i class="h2after" style="font-size: 20px">Важно понимать, что всё зависит от конкретного учебного заведения. Это как стандарт HTML и его реализация на сайте провинциального салона красоты. Есть ВУЗы, где студенты всех специальностей ходят на одинаковые лекции. Есть ВУЗы, где МОАИС изучает Visual Basic и Pascal, пишет макросы в Excel, а базы данных изучает на примере Access. Если в вашем родном городе именно такой ВУЗ, то пора покупать билеты на поезд.</i>
-        <!-- <center>
-          <img data-action="zoom" src="img/blog/photo8.jpg" alt="">
-          <span class="imagecaption">UX Design progect</span>
-        </center> -->
-      </div>
-
-      <!-- <div class="section__fullcolumn">
-        <img src="img/blog/1-Mghg_t-vMdWi8lDn09VnrQ.png" alt="">
-        <span class="imagecaption">UX Design progect</span>
-      </div> -->
-    </div>
-  </div>
-
-  <div class="footer">
-    <div class="container">
-      <ul class="nav footer-list">
-        <li class="footer-item"><a class="footer-link" title="Группа VK" href="index.html">Блог</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="dev.html">Вакансии</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="aboutus.html">О нас</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Реклама</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Правила</a></li><li class="footer-item"><a class="footer-link" title="Группа VK" href="#">Помощь</a></li><li class="footer-item">© Gimmeall 2016</li>
-      </ul>
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-  <script src="js/zoom.js"></script>
-  <script src="js/parallax.min.js"></script>
-  <script src="js/jquery.sticky.js"></script>
-  <script>
-    $(document).ready(function(){
-      $("#header").sticky({topSpacing:0});
-    });
-  </script>
+<div class="blog"></div>
+	
 </body>
 </html>

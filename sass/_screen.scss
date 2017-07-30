@@ -1,14 +1,51 @@
+@media screen and (min-width: 680px) {
+	.col {
+		&-50 {
+			width: 50%;
+			float: left;
+		}
 
+	}
 
-@media (min-width: 768px){
-.container {
-    width: 750px;
-}}
-@media (min-width: 992px){
-.container {
-    width: 970px;
-}}
-@media (min-width: 1200px){
-.container {
-    width: 1170px;
-}}
+	.pages {
+		/* page-support */
+		&-support {
+			/* page-support-hero */
+			&-hero {
+				padding-top: 2rem;
+				padding-bottom: 2rem;
+				padding-left: 1rem;
+				padding-right: 1rem;
+				/* page-support-hero-cta */
+				&-cta {
+					/* page-support-hero:active */
+					&:active {
+						@include transform(translateY(1px) scale(.99));
+					}
+
+				}
+			}
+			/* page-support-faq */
+			&-faq {
+				/* page-support-description */
+				&-description {
+					font-size: 1rem;
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+@media screen and (min-width: 960px) {
+
+	.hero {
+		&-title {
+			font-size: 2.125rem;
+		}
+	}
+
+}

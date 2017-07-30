@@ -1,0 +1,14 @@
+
+$color__green: #6dc1a0;
+$color__green--darken: darken($color__green, 11);
+
+$color__black: #3e474f;
+$color__black-80: #738188;
+$color__black-50: lighten($color__black, 50);
+$color__black-40: lighten($color__black, 40);
+$color__black-20: lighten($color__black, 20);
+
+
+$font-helvetica: HelveticaNeueCyr, Helvetica, Arial, sans-serif;
+$font-roboto: roboto, helvetica, arial, sans-serif;
+$font-monospace: 'Lucida Sans Unicode', menlo, consolas, monaco, monospace;

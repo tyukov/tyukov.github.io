@@ -14,16 +14,3 @@
 	-webkit-background-size: $background-size;
 	background-size: $background-size;
 }
-
-/* 
-Transform 
-http://caniuse.com/#search=translatey
-*/
-
-@mixin transform($transform...) {
-	-webkit-transform: $transform;
-	-moz-transform:    $transform;
-	-ms-transform:     $transform;
-	-o-transform:      $transform;
-	transform:         $transform;
-}

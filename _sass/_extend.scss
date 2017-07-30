@@ -3,8 +3,16 @@
   float: left;
 }
 
+.fl {
+  @extend %fl;
+}
+
 %fr {
   float: right;
+}
+
+.fr {
+  @extend %fr;
 }
 
 %content__box {
@@ -13,11 +21,22 @@
   box-sizing: content-box;
 }
 
+%text__decoration-none {
+  text-decoration: none;
+}
+
+%overflow--auto {
+  overflow: auto;
+}
+
+%border__radius--none {
+  border-radius: 0;
+}
+
 %select-none {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;
 }
 
 %clearfix {

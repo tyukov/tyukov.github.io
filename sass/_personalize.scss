@@ -1,6 +1,62 @@
-.container {
+.hero {
+	@extend %select-none;
+	margin-bottom: 2rem;
+	background-color: #dfe3e4;
 
-	margin: 0 auto;
-	padding: 0 1rem;
+	&-title {
+		font-size: 1.625rem;
+		margin-bottom: 2.5rem;
+	}
+}
+
+
+.pages {
+	/* pages-suport */
+	&-support { 
+		/* pages-suport-hero */
+		&-hero {
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+
+		}
+		/* page-support-faq */
+		&-faq {
+			/* page-support-faq-title */
+			&-title {
+				font-size: 1.125rem;
+				margin-bottom: .625rem;
+				line-height: 1.5;
+			}
+			/* page-support-description */
+			&-description {
+				margin-bottom: 1.25rem;
+				font-size: .875rem;
+				color: #40484a;
+				/* page-support-description:last-child */
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+			}
+
+		}
+		/* page-support-hero */
+		&-hero {
+			/* page-support-hero-cta */
+			&-cta {
+				margin-bottom: 2.5rem;
+			}
+
+		}
+
+	}
+
+}
+
+.col {
+	/* col-50 */
+	&-50 {
+		padding: 0 1rem;
+	}
 
 }

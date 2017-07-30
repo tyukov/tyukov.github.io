@@ -1,370 +1,42 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8">
-	<title>Project-name</title>
-	<link rel="stylesheet" href="test/common__files/css/test.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Support | Teamtreehouse</title>
 
-	<style>
+	<!-- Bootstrap -->
+	<link href="css/style.css" rel="stylesheet">
 
-		body {
-			color: #384047;
-		}
-
-		.wrapper {
-			max-width: 1100px;
-		}
-
-		.col-50::before,
-		.col-50::after,
-		.box::before,
-		.box::after,
-		.footer-two::before,
-		.footer-two::after {
-			content: "";
-			display: table;
-			clear: both;
-		}
-
-		.col-50 {
-			padding: 0 16px;
-		}
-
-		@media screen and (min-width: 768px) {
-			.col-50 {
-				float: left;
-				width: 50%;
-			}
-		}
-
-		.section-support {
-			background-color: #dfe3e4;
-			padding: 20px;
-			margin-bottom: 30px;
-		}
-
-		
-
-		h1 {
-			font-weight: 500;
-			margin: 0 0 40px;
-		}
-
-		h3 {
-			margin: 0 0 15px;
-		}
-
-		.section-faq-heading {
-			margin: 70px 0 20px;
-		}
-
-		p {
-			font-size: 16px;
-			line-height: 1.5;
-			margin: 0 0 20px;
-		}
-
-		a {
-			color: #4285C2;
-		}
-
-		.btn {
-			-webkit-appearance: none;
-			-moz-appearance: none;
-			-ms-appearance: none;
-			-o-appearance: none;
-			appearance: none;
-			-webkit-user-select: none;
-			-moz-user-select: none;
-			-ms-user-select: none;
-			user-select: none;
-			transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, width 0.3s ease, opacity 0.3s ease;
-			border-radius: 4px;
-			cursor: pointer;
-			display: inline-block;
-			font-family: "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
-			font-weight: 500;
-			position: relative;
-			margin: 0 10px 0 0;
-			outline: none;
-			text-align: center;
-			text-decoration: none;
-			vertical-align: baseline;
-			white-space: nowrap;
-		}
-
-		.btn-primary {
-			background-color: transparent;
-			border: solid 2px #5fcf80;
-			background-color: #5fcf80;
-			color: #fff;
-		}
-
-		.btn-primary:hover {
-			background-color: #3ac162;
-			border-color: #3ac162;
-		}
-
-		.btn-large {
-			height: 50px;
-			line-height: 46px;
-			font-size: 16px;
-			padding: 0 22px;
-		}
-
-		.box h4 {
-			margin: 0 0 15px;
-			line-height: 1.5;
-		}
-
-		.section-faq h2 {
-			margin: 0 0 30px;
-		}
-
-		.box p {
-			margin: 0 0 20px;
-		}
-
-		.box p:last-child {
-			margin-bottom: 0;
-		}
-
-		h2 {
-			font-weight: 500;
-			font-size: 26px;
-		}
-
-		.box {
-			padding: 20px;
-			background-color: #fff;
-			-webkit-box-shadow: 0 2px 0 rgba(0,0,0,.06);
-			box-shadow: 0 2px 0 rgba(0,0,0,.06);
-			border-radius: 4px;
-			margin-bottom: 20px;
-		}
-
-		.section-faq-question {
-			padding-top: 15px;
-			padding-bottom: 15px;
-		} 
-
-		.section-faq {
-			margin-bottom: 15px;
-		}
-
-		.footer-two {
-			margin-bottom: 30px;
-		}
-
-		.footer-two:last-child {
-			margin-bottom: 0;
-		}
-
-
-		@media screen and (min-width: 768px) {
-			.box {
-				padding: 30px;
-				margin-bottom: 30px;
-			}
-			.section-faq-question {
-				padding-top: 30px;
-				padding-bottom: 30px;
-			}
-			.footer-two {
-				width: 33.33333333%;
-				float: left;
-				margin-bottom: 0;
-			}
-
-			.section-faq {
-				margin-bottom: 30px;
-			}
-
-		}
-
-
-		
-
-		.footer-two {
-			padding: 0 16px;
-		}
-
-		.footer-two strong {
-			display: block;
-			margin-bottom: 20px;
-		}
-
-		.footer-two img {
-			float: left;
-			width: 100%;
-			max-width: 40px;
-			height: auto;
-		}
-
-		.footer-two p {
-			font-size: 14px;
-			margin-left: 60px;
-		}
-
-		.footer-item {
-			float: left;
-			font-size: 14px;
-			color: #b2bac2;
-		}
-
-		.footer-link {
-			display: inline-block;
-			font-size: inherit;
-			font-weight: 500;
-			margin-right: 16px;
-			color: inherit;
-		}
-
-		.footer-list {
-			margin: 20px 0;
-			list-style: none;
-			border-top: 1px solid #e2e5e8;
-			padding: 20px 0;
-		}
-
-		.footer-item:last-child {
-			float: right;
-		} 
-
-		@media screen and (min-width: 768px) {
-			.section-support-cta {
-				margin: 0;
-			}
-		}
-
-		.section-support-cta {
-			margin: 0 0 30px;
-		}
-
-		@media screen and (min-width: 768px) {
-			.section-support {
-				padding: 40px;
-			}
-		}
-
-	</style>
 </head>
-<body class="bg-grey">
-	<div class="section-support">
+<body>
+<!-- Hero-support -->
+	<div class="hero pages-support-hero">
 		<div class="wrapper">
-			<h1>Customer Support</h1>
+			<h1 class="pages-support-hero-title hero-title">Customer Support</h1>
 			<div class="row">
 				<div class="col-50">
-					<h3>Having issues?</h3>
-					<p>Some of the most frequently asked questions from students are listed below with helpful answers from our Support team. If you need help with something not answered below, check out the <a href="#">Community</a>. It's an active, helpful community of fellow Treehouse students.</p>
-					<p>If you don't find an answer below or on the Treehouse Forum, we'd love the opportunity to help you. You can get in touch with our Support team directly by clicking the button below.</p>
-					<a class="btn btn-primary btn-large section-support-cta" href="#">Contact Support</a>
-				</div>
-				<div class="col-50">
-					<h3>Report a bug</h3>
-					<p>Shoot us an email at help@teamtreehouse.com with a link and a screenshot. If this bug hasn’t been reported before, we’ll award you a special Exterminator badge as a thank you!</p>
-					<p>Response times from our Support team are fastest from 9am-6pm ET, Monday thru Thursday. Support requests submitted outside those times may receive delayed responses.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<h3 class="section-faq-heading text-center">FAQ</h3>
-	<div class="section-faq">
-		<div class="wrapper">
-
-			<div class="section-faq-question row">
-				<h2 class="text-center">Treehouse Accounts</h2>
-				<div class="col-50">
-					<div class="box">
-						<h4>How do I do things such as upgrade, cancel, pause or update my billing information?</h4>
-						<p>You can find these options on your Enrollment page. If you need more help, please watch these brief videos which will show you how to upgrade or change your plan and also how to pause or cancel your enrollment.</p>
+					<h5 class="pages-support-faq-title">Having issues?</h5>
+					<p class="pages-support-faq-description">Some of the most frequently asked questions from students are listed below with helpful answers from our Support team. If you need help with something not answered below, check out the <a href="#">Community</a>. It's an active, helpful community of fellow Treehouse students.</p>
+					<p class="pages-support-faq-description">If you don't find an answer below or on the Treehouse Forum, we'd love the opportunity to help you. You can get in touch with our Support team directly by clicking the button below.
+						Contact Support</p>
+						<a class="btn btn-primary btn-large pages-support-hero-cta" href="#">Contact Support</a>
 					</div>
-					<div class="box">
-						<h4>Can I gift a subscription to someone?</h4>
-						<p>Yes! We do offer gift certificates. Please email help@teamtreehouse.com for more information.</p>
-					</div>
-					<div class="box">
-						<h4>Can I use an internationally accepted debit or credit card to enroll?</h4>
-						<p>As long as your card is allowed to be used within the United States, yes!</p>
-					</div>
-				</div>
-				<div class="col-50">
-					<div class="box">
-						<h4>Do you offer a Group Membership at a discounted rate?</h4>
-						<p>We do offer group membership discounts. Please fill out the form here and someone from our Organizations team will follow up with you.</p>
-					</div>
-					<div class="box">
-						<h4>Do you have a free trial?</h4>
-						<p>We offer everyone a 7 day free trial! You can take advantage of it by visiting our sign-up page!</p>
+					<div class="col-50">
+						<h5 class="pages-support-faq-title">Report a bug</h5>
+						<p class="pages-support-faq-description">Shoot us an email at <a href="mailto:help@teamtreehouse.com">help@teamtreehouse.com</a> with a link and a screenshot. If this bug hasn’t been reported before, we’ll award you a special Exterminator badge as a thank you!</p>
+						<p class="pages-support-faq-description">Response times from our Support team are fastest from 9am-6pm ET, Monday thru Thursday. Support requests submitted outside those times may receive delayed responses.</p>
+						</div>
 					</div>
 				</div>
 			</div>
+			<!-- Section FAQ -->
+			<h4 class="text-center">FAQ</h4>
 
-			<div class="section-faq-question row">
-				<h2 class="text-center">Learning Content</h2>
-				<div class="col-50">
-					<div class="box">
-						<h4>How do I download videos for offline viewing?</h4>
-						<p>The easiest solution is to download our feed via iTunes.</p>
-					</div>
-					<div class="box">
-						<h4>How do I recommend new content/new suggestions?</h4>
-						<p>At this time you can email us at help@teamtreehouse.com with the subject line "Content Suggestion". We review all emails and make note each month of what our students are wanting to see. This helps shape our decisions about content and features in the near future!</p>
-					</div>
-				</div>
-				<div class="col-50">
-					<div class="box">
-						<h4>What can I do if I’m stuck on a Code Challenge task?</h4>
-						<p>We advise that you first utilize our Community if you’re stuck on a task. Please be sure to include a link to the Code Challenge and confirm which task number you’re stuck on. Also, include a screenshot of your code within the Code Challenge text editor or a code sample in markdown. Feel free to send us an email to help@teamtreehouse.com with a link to your post if you haven’t received a response within 24 business hours.</p>
-					</div>
-				</div>
-			</div>
 
-			<div class="section-faq-question row">
-				<h2 class="text-center">Misc</h2>
-				<div class="col-50">
-					<div class="box">
-						<h4>I have a great idea for an application or website, but need help on where to begin. Can you guys help me?</h4>
-						<p>We advise posting personal requests in our Community where our teachers and other students can provide you with some pointers on where to begin!</p>
-					</div>
-				</div>
-				<div class="col-50">
-					<div class="box">
-						<h4>I found a bug. Where can I report that?</h4>
-						<p>In the unlikely situation you stumble across a bug, go ahead and shoot us an email at help@teamtreehouse.com with a link and a screenshot. If this bug hasn’t been reported before, we’ll award you with a special Exterminator badge as a thank you!</p>
-					</div>
-				</div>
-			</div>
+			<!-- Include all compiled plugins (below), or include individual files as needed -->
 
-		</div>
-	</div>
-	<div class="section-footer-secondary">
-		<div class="wrapper">
-			<div class="row">
-				<ul class="footer-two-list nav">
-					<li class="footer-two">
-						<strong>Treehouse for Mobile</strong>
-						<img src="apple.svg" alt="ios">
-						<p>Learn anytime and anywhere with Treehouse for iOS or Android. Download for free today.</p>
-					</li>
-					<li class="footer-two">
-						<strong>Treehouse for Mobile</strong>
-						<img src="android.svg" alt="android">
-						<p>A collection of A collection of A collection of special discounts and exclusive offers available for Treehouse students.</p>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
-	<div class="wrapper">
-		<ul class="footer-list">
-			<li class="footer-item"><a class="footer-link" href="#">Teamtreehouse Blog</a></li>
-			<li class="footer-item"><a class="footer-link" href="#">About Teamtreehouse</a></li>
-			<li class="footer-item"><a class="footer-link" href="#">Privacy Policy</a></li>
-			<li class="footer-item"><a class="footer-link" href="#">Term & Conditions</a></li>
-			<li class="footer-item">© 2017 Treehouse Island, Inc.</li>
-		</ul>
-	</div>
-</body>
-</html>
+		</body>
+		</html>

@@ -54,14 +54,14 @@
 			}
 			/* pages-support-faq-heading */
 			&-heading {
-				font-size: 18px;
-				margin: 70px 0 20px;
+				font-size: 1.125rem;
+				margin: 4.375rem 0 1.25rem;
 			}
 			/* pages-support-faq-section */
 			&-section {
 				/* pages-support-faq-section-heading */
 				&-heading {
-					font-size: 26px;
+					font-size: 1.625rem;
 					margin: 0 0 35px;
 				}
 			}
@@ -88,9 +88,9 @@
 .box {
 	background-color: #fff;
 	box-shadow: 0 2px 0 rgba(0,0,0,.06);
-	padding: 20px;
-	margin-bottom: 20px;
-	border-radius: 4px;
+	padding: 1.25rem;
+	margin-bottom: 1.25rem;
+	border-radius: .25rem;
 }
 
 /*.hero .pages-support-faq-title {

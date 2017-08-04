@@ -8,30 +8,39 @@
 	}
 
 	.pages {
-		/* page-support */
+		/* pages-support */
 		&-support {
-			/* page-support-hero */
+			/* pages-support-hero */
 			&-hero {
 				padding-top: 2rem;
 				padding-bottom: 2rem;
 				padding-left: 1rem;
 				padding-right: 1rem;
-				/* page-support-hero-cta */
+				/* pages-support-hero-cta */
 				&-cta {
-					/* page-support-hero:active */
+					/* pages-support-hero:active */
 					&:active {
 						@include transform(translateY(1px) scale(.99));
 					}
 
 				}
 			}
-			/* page-support-faq */
+			/* pages-support-faq */
 			&-faq {
-				/* page-support-description */
+				/* pages-support-description */
 				&-description {
 					font-size: 1rem;
 				}
 
+				&-title {
+					font-size: 1rem;
+				}
+
+			}
+			/* pages-support-section */
+			&-section {
+				padding-top: 2rem;
+				padding-bottom: 2rem;
 			}
 
 		}
@@ -46,6 +55,11 @@
 		&-title {
 			font-size: 2.125rem;
 		}
+	}
+
+	.box {
+		padding: 30px;
+		margin-bottom: 30px;
 	}
 
 }

@@ -7,6 +7,15 @@
 		font-size: 1.625rem;
 		margin-bottom: 2.5rem;
 	}
+	& .pages {
+		&-support {
+			&-faq {
+				&-title {
+					font-size: 1.125rem;
+				}
+			}
+		}
+	}
 }
 
 
@@ -17,36 +26,51 @@
 		&-hero {
 			padding-top: 1rem;
 			padding-bottom: 1rem;
+			/* pages-support-hero-cta */
+			&-cta {
+				margin-bottom: 2.5rem;
+			}
 
 		}
-		/* page-support-faq */
+		/* pages-support-faq */
 		&-faq {
-			/* page-support-faq-title */
+			/* pages-support-faq-title */
 			&-title {
-				font-size: 1.125rem;
+				font-size: .875rem;
 				margin-bottom: .625rem;
 				line-height: 1.5;
 			}
-			/* page-support-description */
+			/* pages-support-description */
 			&-description {
 				margin-bottom: 1.25rem;
+				line-height: 1.5;
 				font-size: .875rem;
 				color: #40484a;
-				/* page-support-description:last-child */
+				/* pages-support-description:last-child */
 				&:last-child {
 					margin-bottom: 0;
 				}
 
 			}
-
-		}
-		/* page-support-hero */
-		&-hero {
-			/* page-support-hero-cta */
-			&-cta {
-				margin-bottom: 2.5rem;
+			/* pages-support-faq-heading */
+			&-heading {
+				font-size: 18px;
+				margin: 70px 0 20px;
+			}
+			/* pages-support-faq-section */
+			&-section {
+				/* pages-support-faq-section-heading */
+				&-heading {
+					font-size: 26px;
+					margin: 0 0 35px;
+				}
 			}
 
+		}
+		/* pages-support-section */
+		&-section {
+			padding-top: 1rem;
+			padding-bottom: 1rem;
 		}
 
 	}
@@ -60,3 +84,15 @@
 	}
 
 }
+
+.box {
+	background-color: #fff;
+	box-shadow: 0 2px 0 rgba(0,0,0,.06);
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 4px;
+}
+
+/*.hero .pages-support-faq-title {
+	font-size: 1.125rem;
+}*/

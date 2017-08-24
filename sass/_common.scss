@@ -29,6 +29,10 @@
 	line-height: 36px;
 	padding: 0 1rem;
 
+	&:hover {
+		border-color: #a9b3bb;
+	}
+
 	&:last-child {
 		margin-right: 0;
 	}

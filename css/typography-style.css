@@ -134,6 +134,7 @@ html {
 		font-size: 18px;
 	}
 }
+
 body > * {
 	font-size: 100%;
 }
@@ -213,10 +214,10 @@ a:hover {
 	margin: 0 auto;
 	position: relative;
 	opacity: 0;
-	-webkit-animation: plans-in .3s .3s ease-in-out forwards;
-	-moz-animation:    plans-in .3s .3s ease-in-out forwards;
-	-o-animation:      plans-in .3s .3s ease-in-out forwards;
-	animation:         plans-in .3s .3s ease-in-out forwards;
+	-webkit-animation: plans-in .6s .3s ease-in-out forwards;
+	-moz-animation:    plans-in .6s .3s ease-in-out forwards;
+	-o-animation:      plans-in .6s .3s ease-in-out forwards;
+	animation:         plans-in .6s .3s ease-in-out forwards;
 }
 
 .wrapper:before,
@@ -263,16 +264,11 @@ a:hover {
     position: inherit;
     width: 100%;
     text-align: left;
-    background: #fefefe;
-    padding: 0.5rem;
-    width: 90%;
-    border: 1px solid #ccc;
-    border-left: 3px solid #ccc;
-    margin-bottom: 1rem;
+    margin-bottom: .8rem;
 }
 }
 
-.layout-conclusion { //See after*
+.layout-conclusion {
 	margin-top: 2em;
 	margin-bottom: 4em;
 }
@@ -281,9 +277,16 @@ a:hover {
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 80%;
-	margin: 0 25% 1em;
+	margin: 0 5% 1em;
 	border-bottom: 4px double #ccc;
 	padding-bottom: .6em;
+}
+
+@media (min-width: 519px) {
+	.layout-conclusion__title {
+		margin-left: 25%;
+		margin-right: 25%;
+	}
 }
 
 .layout-conclusion__list {
@@ -326,6 +329,10 @@ a:hover {
 	font-size: 80%;
 }
 
+.article-title em>a {
+	font-size: 100%;
+}
+
 .article-layout__counter {
 	counter-reset: article-layout__counter;
 	list-style: none;
@@ -350,7 +357,7 @@ a:hover {
 	margin: 0;
 	font-style: italic;
 	border-left: .17rem solid #eceeef;
-	padding: 2rem 1.5rem 0.5rem;
+	padding: 1rem 1.5rem 0.5rem;
 	background-color: rgba(204, 204, 204, 0.15);
 	margin-bottom: 1.4em;
 }
@@ -377,5 +384,3 @@ a:hover {
 	display: block;
 	text-align: center;
 }
-
-/**/

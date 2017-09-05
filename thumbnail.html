@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>thumbnail | turnmeon</title>
+	<style>
+
+		*, *:before, *:after {
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+
+		.wrapper {
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		body {
+			background-color: #edeff0;
+			margin-top: 5%;
+    margin-bottom: 5%;
+		}
+		img {
+			width: 100%;
+		}
+
+		p {
+			line-height: 1.35;
+			margin: 0;
+		}
+
+		.p1 {
+			position: absolute;
+			left: 20px;
+			right: 20px;
+			top: 50%;
+			transform: translatey(-50%);
+		}
+
+		p {
+			-webkit-transition: all .3s 0s ease;
+			-o-transition: all .3s 0s ease;
+			transition: all .6s 0s ease;
+		}
+
+		.box2:hover p {
+			color: #fff;
+		}
+
+		.box:hover p {
+			top: 20px;
+			transform: translatey(0);
+			color: #fff;
+		}
+
+		.box:before {
+			content: "";
+			position: absolute;
+			left: 0;
+			width: 100%;
+			top: 0;
+			height: 100%;
+			background: url(https://pp.userapi.com/c639127/v639127055/362fb/hUV3EGqGQs0.jpg);
+			-webkit-background-size: cover;
+			background-size: cover;
+			opacity: 0;
+		}
+
+		.box:hover:before,
+		.box2__bg {
+			-webkit-transition: all .9s 0s ease;
+			-o-transition: all .9s 0s ease;
+			transition: all .9s 0s ease;
+			opacity: 1;
+		}
+
+		.box,
+		.box2 {
+			margin-right: 0;
+			margin-bottom: 2.5%;
+			background-color: #fff;
+			height: 250px;
+			position: relative;
+			-webkit-box-shadow: 0 2px 0 rgba(0,0,0,.08);
+			box-shadow: 0 2px 0 rgba(0,0,0,.08);
+		}
+
+		.box {
+			padding: 20px;
+		}
+
+		.box2__bg {
+			position: absolute;
+			left: 0;
+			width: 100%;
+			top: 0;
+			height: 100%;
+			opacity: 0;
+			-webkit-background-size: cover;
+			background-size: cover;
+		}
+		.box2__inner {
+			padding: 20px;
+			position: relative;
+		}
+
+		.box2:hover .box2__bg {
+			opacity: 1;
+		}
+
+		@media screen and (min-width: 680px) {
+.box,
+.box2 {
+	margin-right: 2.5%;
+	float: left;
+			width: 300px;
+}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+
+		<div class="box">
+			<p class="p1">Наведи мышкой и увидешь магию, которая работает только в Хогвартсе</p>
+		</div>
+
+		<div class="box2">
+			<div class="box2__bg" style="background-image: url(https://pp.userapi.com/c639127/v639127055/362fb/hUV3EGqGQs0.jpg)"></div>
+			<div class="box2__inner">
+				<p>Наведи мышкой и увидешь магию, другой способ реализации, более динамичный</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

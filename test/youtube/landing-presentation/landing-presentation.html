@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Landing presentation</title>
+	<link rel="stylesheet" href="../../common__files/css/test.css">
+
+	<style>
+
+		body {
+			font-family: roboto, sans-serif;
+		}
+
+		h1,h2 {
+			font-weight: normal;
+		}
+
+		.btn {
+			height: 40px;
+			padding: 0 1rem;
+			display: inline-block;
+			border: 2px solid gray;
+			font-size: 16px;
+			border-radius: 4px;
+		}
+
+		.btn-large {
+			line-height: 44px;
+			height: 48px;
+			padding: 0 2rem;
+		}
+
+		.btn-primary {
+			background-color: #4285f4;
+			border-color: #4285f4;
+			color: #fff;
+		}
+
+		.btn-promo {
+			font-size: 1rem;
+			text-transform: uppercase;
+			margin-top: 40px;
+		}
+
+		.cover {
+			text-align: center;
+		}
+
+		.cover-custom-bg {
+			min-height: 552px;
+			background-image: url(banner_468-vflNVlC5H.png)/*, url(banner_468_repeat-vfl2Oi2nP.png)*/;
+			background-repeat: no-repeat;
+			background-size: auto 240px, auto 240px;
+			background-position: bottom center, bottom center;
+			overflow: auto;
+		}
+
+
+
+		h1 {
+			width: 280px;
+			margin: 88px auto 0;
+			font-size: 34px;
+		}
+
+		p {
+			width: 280px;
+			margin: 1rem auto 0;
+			line-height: 1.45;
+		}
+
+		.promo-logo {
+			position: absolute;
+			left: 24px;
+			top: 24px;
+			background: url(https://www.youtube.com/yts/img/ringo/hitchhiker/logo_small_2x-vfl4_cFqn.png) no-repeat;
+			background-size: 100px 30px;
+			width: 100px;
+			height: 30px;
+		}
+
+		@media screen and (min-width: 600px) {
+			h1 {
+				margin-top: 112px;
+				width: 400px;
+			}
+			p {
+				width: 320px;
+				font-size: 14px;
+			}
+		}
+
+		@media screen and (min-width: 840px) {
+			.cover-custom-bg {
+				background-size: auto 360px
+			}
+			h1 {
+				width: 600px;
+			}
+			p {
+				width: 512px;
+			}
+		}
+
+		@media screen and (min-width: 1024px) {
+			.cover-custom-bg {
+				min-height: 512px;
+				background-size: auto 468px;
+			}
+
+			h1 {
+				width: 800px;
+			}
+		}
+
+		@media screen and (min-width: 1440px) {
+			.cover-custom-bg {
+				min-height: 600px;
+			}
+
+			h1 {
+				margin-top: 160px;
+			}
+		}
+
+		@media screen and (min-width: 1600px) {
+			h1 {
+				margin-top: 136px;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="cover cover-custom-bg">
+		<a href="#" class="promo-logo"></a>
+		<!-- <h1>Новый дизайн YouTube</h1> -->
+		<h1>Try out a fresh look for YouTube</h1>
+		<!-- <p>С обновленным интерфейсом пользоваться сайтом станет ещё удобнее, а искать любимых авторов и свежие видео – проще.</p> -->
+		<p>This new desktop design highlights your favourite videos and creators while making YouTube easier and more fun to use. We're still working on it, but we can't wait for you to try it out and let us know what you!</p>
+		<a class="btn btn-primary btn-large btn-promo" href="#">Попробовать</a>
+	</div>
+</body>
+</html>

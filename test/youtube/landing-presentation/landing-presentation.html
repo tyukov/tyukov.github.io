@@ -8,139 +8,440 @@
 
 	<style>
 
-		body {
-			font-family: roboto, sans-serif;
-			min-width: 360px;
-		}
+	body {
+		font-family: roboto, sans-serif;
+	}
 
-		h1,h2 {
-			font-weight: normal;
-		}
+	h1, h2 {
+		font-weight: normal;
+		margin: 0;
+	}
 
-		.btn {
-			height: 40px;
-			padding: 0 1rem;
-			display: inline-block;
-			border: 2px solid gray;
-			font-size: 16px;
-			border-radius: 4px;
-		}
+	h2 {
+		font-size: 1.5rem;
+	}
 
-		.btn-large {
-			line-height: 44px;
-			height: 48px;
-			padding: 0 2rem;
+	@media screen and (min-width: 1024px) {
+		h2 {
+			font-size: 2.125rem;
 		}
+	}
 
-		.btn-primary {
-			background-color: #4285f4;
-			border-color: #4285f4;
-			color: #fff;
+	p {
+		font-size: 1rem;
+		margin: 0;
+		line-height: 1.35;
+	}
+
+	.btn {
+		height: 40px;
+		padding: 0 1rem;
+		display: inline-block;
+		border: 2px solid gray;
+		font-size: 16px;
+		border-radius: 4px;
+	}
+
+	.btn-large {
+		line-height: 44px;
+		height: 48px;
+		padding: 0 2rem;
+	}
+
+	.btn-primary {
+		background-color: #4285f4;
+		border-color: #4285f4;
+		color: #fff;
+	}
+
+	.btn-promo {
+		font-size: 1rem;
+		text-transform: uppercase;
+		margin-top: 40px;
+	}
+
+	.cover {
+		text-align: center;
+	}
+
+	.cover-custom-bg {
+		min-height: 552px;
+		background-image: url(banner_240-vflrP5dvh.png);
+		background-repeat: no-repeat;
+		background-size: auto 240px, auto 240px;
+		background-position: bottom center, bottom center;
+		overflow: auto;
+	}
+
+	.cover-heading {
+		width: 280px;
+		margin: 88px auto 0;
+		font-size: 34px;
+	}
+
+	.cover-description {
+		width: 280px;
+		margin: 1rem auto 0;
+		line-height: 1.45;
+		font-size: .875rem
+	}
+
+	.promo-logo {
+		position: absolute;
+		left: 24px;
+		top: 24px;
+		background: url(https://www.youtube.com/yts/img/ringo/hitchhiker/logo_small_2x-vfl4_cFqn.png) no-repeat;
+		background-size: 100px 30px;
+		width: 100px;
+		height: 30px;
+	}
+
+	@media screen and (min-width: 600px) {
+		.cover-heading {
+			margin-top: 112px;
+			width: 400px;
 		}
-
-		.btn-promo {
-			font-size: 1rem;
-			text-transform: uppercase;
-			margin-top: 40px;
+		.cover-description {
+			width: 320px;
+			font-size: .875rem
 		}
+	}
 
-		.cover {
-			text-align: center;
-		}
-
+	@media screen and (min-width: 840px) {
 		.cover-custom-bg {
-			min-height: 552px;
 			background-image: url(banner_468-vflNVlC5H.png)/*, url(banner_468_repeat-vfl2Oi2nP.png)*/;
-			background-repeat: no-repeat;
-			background-size: auto 240px, auto 240px;
-			background-position: bottom center, bottom center;
-			overflow: auto;
+			background-size: auto 360px
+		}
+		.cover-heading {
+			width: 600px;
+		}
+		.cover-description {
+			width: 512px;
+			font-size: 1rem;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		.cover-custom-bg {
+			min-height: 512px;
+			background-size: auto 468px;
 		}
 
+		.cover-heading {
+			width: 800px;
+		}
+	}
 
-
-		h1 {
-			width: 280px;
-			margin: 88px auto 0;
-			font-size: 34px;
+	@media screen and (min-width: 1440px) {
+		.cover-custom-bg {
+			min-height: 600px;
 		}
 
-		p {
-			width: 280px;
-			margin: 1rem auto 0;
-			line-height: 1.45;
+		.cover-heading {
+			margin-top: 160px;
 		}
+	}
 
-		.promo-logo {
+	@media screen and (min-width: 1600px) {
+		.cover-heading {
+			margin-top: 136px;
+		}
+	}
+
+	/*test*/
+
+	.promo-section {
+		overflow: hidden;
+	}
+
+	@media screen and (min-width: 840px) {
+		.promo-section {
+			min-height: 290px;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		.promo-section {
+			min-height: 400px;
+		}
+	}
+
+	@media screen and (min-width: 1440px) {
+		.promo-section {
+			min-height: 512px;
+		}
+	}
+
+	.promo-section-content {
+		margin: 0 auto;
+		position: relative;
+	}
+
+	@media screen and (max-width: 839px) {
+		.promo-section-content {
+			height: 368px;
+		}
+	}
+
+	.promo-section-content::before,
+	.promo-section-content::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	@media screen and (min-width: 840px) {
+		.promo-section-content {
+			width: 664px;
+			min-height: 290px;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		.promo-section-content {
+			width: 920px;
+			min-height: 400px;
+		}
+	}
+
+	@media screen and (min-width: 1440px) {
+		.promo-section-content {
+			width: 1208px;
+			min-height: 512px;
+		}
+	}
+
+	.promo-section-screenshot {
+		display: block;
+		box-shadow: 0 2px 16px rgba(0,0,0,0.15);
+	}
+
+	.promo-section-illustration {
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+
+	@media screen and (max-width: 599px) {
+		.promo-section-screenshot {
+			width: 312px;
+			height: 176px;
+		}
+	}
+
+	@media screen and (min-width: 600px) and (max-width: 839px) {
+		.promo-section-screenshot {
+			width: 520px;
+			height: 292px;
+		}
+	}
+
+	@media screen and (min-width: 840px) {
+		.promo-section-illustration,
+		.promo-section-screenshot {
 			position: absolute;
-			left: 24px;
-			top: 24px;
-			background: url(https://www.youtube.com/yts/img/ringo/hitchhiker/logo_small_2x-vfl4_cFqn.png) no-repeat;
-			background-size: 100px 30px;
-			width: 100px;
-			height: 30px;
+			bottom: 0;
+		}
+		.promo-section-right .promo-section-screenshot,
+		.promo-section-right .promo-section-illustration {
+			left: 0;
 		}
 
-		@media screen and (min-width: 600px) {
-			h1 {
-				margin-top: 112px;
-				width: 400px;
-			}
-			p {
-				width: 320px;
-				font-size: 14px;
-			}
+		.promo-section-left .promo-section-screenshot,
+		.promo-section-right .promo-section-illustration {
+			right: 0;
+		}
+	}
+
+	@media screen and (min-width: 840px) and (max-width: 1023px) {
+		.promo-section-screenshot {
+			width: 432px;
+			height: 243px;
+		}
+	}
+
+	@media screen and (min-width: 1024px) and (max-width: 1439px) {
+		.promo-section-screenshot {
+			width: 600px;
+			height: 338px;
+		}
+	}
+
+	@media screen and (min-width: 1440px) {
+		.promo-section-screenshot {
+			width: 784px;
+			height: 440px;
+		}
+	}
+
+	@media screen and (max-width: 839px) {
+		.promo-section-text__heading,
+		.promo-section-text__description {
+			margin: 0 auto;
+			/*text-align: center;*/
+		}
+	}
+
+	@media (max-width: 599px) {
+		.promo-section-text__heading,
+		.promo-section-text__description {
+			max-width: 280px;
+		}
+	}
+
+	@media screen and (max-width: 839px) and (min-width: 600px) {
+
+		.promo-section-text__heading,
+		.promo-section-text__description {
+			max-width: 320px;
 		}
 
-		@media screen and (min-width: 840px) {
-			.cover-custom-bg {
-				background-size: auto 360px
-			}
-			h1 {
-				width: 600px;
-			}
-			p {
-				width: 512px;
-			}
+	}
+
+	@media screen and (max-width: 839px) {
+		.promo-section-screenshot {
+			margin: 48px auto 0;
 		}
-
-		@media screen and (min-width: 1024px) {
-			.cover-custom-bg {
-				min-height: 512px;
-				background-size: auto 468px;
-			}
-
-			h1 {
-				width: 800px;
-			}
+		
+		.promo-section-text__heading {
+			margin-top: 48px;
 		}
+	}
 
-		@media screen and (min-width: 1440px) {
-			.cover-custom-bg {
-				min-height: 600px;
-			}
+	.promo-section-text__description {
+		margin-top: 1rem;
+		line-height: 1.45;
+	}
 
-			h1 {
-				margin-top: 160px;
-			}
+
+	.promo-section-dark {
+		background-color: #131313;
+		color: rgba(255,255,255,.87);
+	}
+
+	@media screen and (min-width: 840px) {
+		.promo-section-text {
+			width: 200px;
+			margin: 64px 0 36px;
 		}
+	}
 
-		@media screen and (min-width: 1600px) {
-			h1 {
-				margin-top: 136px;
-			}
+	@media screen and (min-width: 1024px) {
+		.promo-section-text {
+			width: 280px;
+			margin: 96px 0 36px;
 		}
+	}
 
-	</style>
+	.promo-section-text__description {
+		font-size: .875rem;
+	}
+
+	@media screen and (min-width: 840px) {
+		.promo-section-text__description {
+			font-size: 1rem;
+		}
+	}
+
+	@media screen and (min-width: 1440px) {
+		.promo-section-text {
+			width: 360px;
+			margin: 140px 0 36px;
+		}
+	}
+
+	@media screen and (min-width: 840px) {
+		.promo-section-right .promo-section-text {
+			float: right;
+		}
+		.promo-section-left .promo-section-text {
+			float: left;
+		}
+	}
+
+	body {
+		height: 5000px;
+	}
+
+
+</style>
 </head>
 <body>
 	<div class="cover cover-custom-bg">
 		<a href="#" class="promo-logo"></a>
-		<!-- <h1>Новый дизайн YouTube</h1> -->
-		<h1>Try out a fresh look for YouTube</h1>
-		<!-- <p>С обновленным интерфейсом пользоваться сайтом станет ещё удобнее, а искать любимых авторов и свежие видео – проще.</p> -->
-		<p>This new desktop design highlights your favourite videos and creators while making YouTube easier and more fun to use. We're still working on it, but we can't wait for you to try it out and let us know what you!</p>
+		<h1 class="cover-heading">Новый дизайн YouTube</h1>
+		<p class="cover-description">С обновленным интерфейсом пользоваться сайтом станет ещё удобнее, а искать любимых авторов и свежие видео – проще.</p>
 		<a class="btn btn-primary btn-large btn-promo" href="#">Попробовать</a>
 	</div>
+
+	<div class="promo-section promo-section-right">
+		<div class="promo-section-content">
+			<div class="promo-section-text">
+				<h2 class="promo-section-text__heading">Новый дизайн YouTube</h2>
+				<p class="promo-section-text__description">Мы упростили интерфейс, и теперь пользоваться сайтом станет ещё удобнее.</p>
+			</div>
+			<img src="https://www.youtube.com/yts/img/new_promo_page/home_screenshot_r_600-vflo6WSLb.png" class="promo-section-screenshot" sizes="(max-width: 599px) 312px,
+			(min-width: 600px) and (max-width: 839px) 520px,
+			(min-width: 840px) and (max-width: 1023px) 432px,
+			(min-width: 1024px) and (max-width: 1439px) 600px,
+			(min-width: 1440px) 784px" 
+			srcset="https://www.youtube.com/yts/img/new_promo_page/home_screenshot_r_784@2x-vflh1C1V5.png 1494w,
+			https://www.youtube.com/yts/img/new_promo_page/home_screenshot_r_600@2x-vfl9cTr8a.png 1200w,
+			https://www.youtube.com/yts/img/new_promo_page/home_screenshot_r_520@2x-vfl6I8ZIE.png 1040w,
+			https://www.youtube.com/yts/img/new_promo_page/home_screenshot_r_432@2x-vflC31yAj.png 864w,
+			https://www.youtube.com/yts/img/new_promo_page/home_screenshot_r_784-vflovx1_D.png 784w,
+			https://www.youtube.com/yts/img/new_promo_page/home_screenshot_r_312@2x-vflwh6ASK.png 624w,
+			https://www.youtube.com/yts/img/new_promo_page/home_screenshot_r_600-vflo6WSLb.png 600w,
+			https://www.youtube.com/yts/img/new_promo_page/home_screenshot_r_520-vfl4dfnE8.png 520w,
+			https://www.youtube.com/yts/img/new_promo_page/home_screenshot_r_432-vflUayhjP.png 432w,
+			https://www.youtube.com/yts/img/new_promo_page/home_screenshot_r_312-vflpgrTox.png 312w">
+		</div>
+	</div>
+
+	<div class="promo-section promo-section-left promo-section-dark">
+		<div class="promo-section-content">
+			<div class="promo-section-text">
+				<h2 class="promo-section-text__heading">Ночной режим</h2>
+				<p class="promo-section-text__description">В ночном режиме яркость экрана снижается, и цвета становятся более теплыми и естественными. Включить его можно в новом меню аккаунта.</p>
+			</div>
+			<img src="https://www.youtube.com/yts/img/new_promo_page/dark_screenshot_r_600-vflA5l7O4.png" class="promo-section-screenshot" sizes="(max-width: 599px) 312px,
+			(min-width: 600px) and (max-width: 839px) 520px,
+			(min-width: 840px) and (max-width: 1023px) 432px,
+			(min-width: 1024px) and (max-width: 1439px) 600px,
+			(min-width: 1440px) 784px" srcset="https://www.youtube.com/yts/img/new_promo_page/dark_screenshot_r_784@2x-vfl5xrSvj.png 1494w,
+			https://www.youtube.com/yts/img/new_promo_page/dark_screenshot_r_600@2x-vflg-34Ii.png 1200w,
+			https://www.youtube.com/yts/img/new_promo_page/dark_screenshot_r_520@2x-vflF-rCJ9.png 1040w,
+			https://www.youtube.com/yts/img/new_promo_page/dark_screenshot_r_432@2x-vflAcjFY6.png 864w,
+			https://www.youtube.com/yts/img/new_promo_page/dark_screenshot_r_784-vfldw5o5x.png 784w,
+			https://www.youtube.com/yts/img/new_promo_page/dark_screenshot_r_312@2x-vflYpKIGC.png 624w,
+			https://www.youtube.com/yts/img/new_promo_page/dark_screenshot_r_600-vflA5l7O4.png 600w,
+			https://www.youtube.com/yts/img/new_promo_page/dark_screenshot_r_520-vflFTITaK.png 520w,
+			https://www.youtube.com/yts/img/new_promo_page/dark_screenshot_r_432-vflkPd9V3.png 432w,
+			https://www.youtube.com/yts/img/new_promo_page/dark_screenshot_r_312-vfllMB3tV.png 312w">
+		</div>
+	</div>
+
+	<div class="promo-section promo-section-right">
+		<div class="promo-section-content">
+			<div class="promo-section-text">
+				<h2 class="promo-section-text__heading">Современный интерфейс</h2>
+				<p class="promo-section-text__description">Мы полностью изменили дизайн YouTube. На сайте появились новые функции, например ночной режим, а искать и смотреть видео стало ещё быстрее и удобнее.</p>
+			</div>
+			<img src="https://www.youtube.com/yts/img/new_promo_page/build_600-vfl9lwL0Q.png" class="promo-section-illustration" sizes="(max-width: 839px) 312px,
+			(min-width: 840px) and (max-width: 1023px) 432px,
+			(min-width: 1024px) and (max-width: 1439px) 600px,
+			(min-width: 1440px) 784px" srcset="https://www.youtube.com/yts/img/new_promo_page/build_784@2x-vflp-T8V1.png 1568w,
+			https://www.youtube.com/yts/img/new_promo_page/build_600@2x-vfliIN3JJ.png 1200w,
+			https://www.youtube.com/yts/img/new_promo_page/build_432@2x-vflXJNUR_.png 864w,
+			https://www.youtube.com/yts/img/new_promo_page/build_784-vflRGvujB.png 784w,
+			https://www.youtube.com/yts/img/new_promo_page/build_312@2x-vfl_4XvdT.png 624w,
+			https://www.youtube.com/yts/img/new_promo_page/build_600-vfl9lwL0Q.png 600w,
+			https://www.youtube.com/yts/img/new_promo_page/build_432-vflHPObP_.png 432w,
+			https://www.youtube.com/yts/img/new_promo_page/build_312-vflOa61N1.png 312w">
+		</div>
+	</div>
+
 </body>
 </html>

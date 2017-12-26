@@ -1,0 +1,6 @@
+.promo-section {
+min-height: 720px;
+background-image: url(promo-1.png);
+-webkit-background-size: cover;
+background-size: cover;
+}

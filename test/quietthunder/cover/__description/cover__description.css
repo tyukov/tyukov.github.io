@@ -1,0 +1,24 @@
+.cover__description
+{
+	font-size: .875rem;
+	line-height: 1.45;
+	margin: 1rem auto 0;
+	max-width: 280px;
+}
+
+@media (min-width: 600px)
+{
+	.cover__description
+	{
+		max-width: 400px;
+	}
+}
+
+@media (min-width: 840px)
+{
+	.cover__description
+	{
+		max-width: 600px;
+		font-size: 1rem;
+	}
+}

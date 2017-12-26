@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="UTF-8">
+	<title>Youtube presentation 2</title>
+	<link rel="stylesheet" href="../../common__files/css/test.css">
+	<style>
+
+	p, h1, h2 {
+		margin: 0;
+	}
+
+	h1, h2 {
+		font-size: 2rem;
+	}
+
+	.btn {
+		height: 38px;
+		line-height: 34px;
+		border: 2px solid #ccc;
+		display: inline-block;
+		margin: 0 10px 0 0;
+		padding: 0 1rem;
+		-webkit-transition: 300ms ease;
+		-o-transition: 300ms ease;
+		transition: 300ms ease;
+		border-radius: 3px;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+	}
+
+	.btn:hover {
+		opacity: .87;
+	}
+
+	.btn:last-child {
+		margin-right: 0;
+	}
+
+	.btn-primary {
+		background-color: #4285f4;
+		color: #fff;
+		border-color: #4285f4;
+	}
+
+	.btn-custom-bg {
+		margin-top: 2rem;
+		height: 48px;
+		line-height: 44px;
+		text-transform: uppercase;
+	}
+
+	.cover {
+		overflow: auto;
+		text-align: center;
+	}
+
+	.cover-custom-bg {
+		background-image: url(header_left_180-vflkDZJtz.png), url(header_right_180-vflFup6Yg.png);
+		background-position: left bottom, right top;
+		background-repeat: no-repeat;
+		min-height: 512px;
+		-webkit-box-sizing: content-box;
+		-moz-box-sizing: content-box;
+		box-sizing: content-box;
+		padding-bottom: 10px;
+		margin-bottom: -40px;
+	}
+
+	.promo-logo {
+		position: absolute;
+		top: 24px;
+		left: 24px;
+		background: url(logo_small-vflHpzGZm.png);
+		background-size: 100px 30px;
+		background-repeat: no-repeat;
+		width: 100px;
+		height: 30px;
+	}
+
+	.cover-custom-description,
+	.cover-custom-heading {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 280px;
+	}
+
+	.cover-custom-heading {
+		margin-top: 112px;
+		line-height: 1.2;
+	}
+
+	.cover-custom-description {
+		margin-top: 1rem;
+		line-height: 1.45;
+		font-size: .875rem;
+	}
+
+	.promo-section {
+		height: 368px;
+		overflow: hidden;
+	}
+
+	.promo-section-better,
+	.promo-section-closer {
+		height: auto;
+	}
+
+	.promo-content {
+		position: relative;
+		margin: 0 auto;
+	}
+
+	.promo-content::before,
+	.promo-content::after {
+		content: "";
+		display: table;
+	}
+
+	.promo-content::after {
+		clear: both;
+	}
+
+	.promo-section-screenshot,
+	.promo-section-illustration {
+		display: block;	
+	}
+
+	.promo-section-screenshot {
+		margin: 48px auto 0;
+		-webkit-box-shadow: 0 2px 16px rgba(0,0,0,.15);
+		box-shadow: 0 2px 16px rgba(0,0,0,.15);
+	}
+
+	.promo-section-illustration {
+		margin: 32px auto;
+	}
+
+	.promo-section-dark {
+		background-color: #131313;
+		color: rgba(255,255,255,.87);
+	}
+
+	.promo-section-text__heading,
+	.promo-section-text__description {
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.promo-section-text__heading {
+		font-size: 1.5rem;
+		line-height: 1.45;
+		margin-top: 48px;
+	}
+
+	.promo-section-text__description {
+		margin-top: 1rem;
+		line-height: 1.75;
+		font-size: .875rem;
+	}
+
+	.promo-section-closer {
+		background-color: #292929;
+		background-repeat: no-repeat;
+		background-position: left top, right bottom;
+		background-image: url(footer_left_180-vflrsk5Qj.png),url(footer_right_180-vflSSnQnL.png);
+		background-size: 180px;
+		text-align: center;
+		position: relative;
+	}
+
+	.promo-section-footer {
+		position: absolute;
+		bottom: 16px;
+		left: 24px;
+		right: 24px;
+		line-height: 24px;
+		font-size: .875rem;
+		text-align: center;
+	}
+
+	.promo-section-footer__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: inline;
+		font-weight: 500;
+	}
+
+	.promo-section-footer__item {
+		display: inline-block;
+		margin-right: 12px;
+	}
+
+	.promo-section-footer__link {
+		-webkit-transition: all .3s ease;
+		-o-transition: all .3s ease;
+		transition: all .3s ease;
+		color: rgba(255,255,255,.54);
+	}
+
+	.promo-section-footer__copyright {
+		display: inline-block;
+		margin-left: 5px;
+		color: rgba(255,255,255,.26);
+	}
+
+	.promo-section-closer-content {
+		padding-top: 32px;
+		padding-bottom: 112px;
+	}
+	.promo-section-footer__link:hover {
+		color: rgba(255,255,255,.87)
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/***
+	***
+	**
+	* MEDIA SCREEN MIN + MAX (combination)
+	**
+	***
+	***/
+
+	@media (max-width: 599px) {
+		.promo-section-screenshot {
+			width: 312px;
+			height: 176px;
+		}
+	}
+
+	@media (max-width: 839px) {
+		.promo-section-illustration {
+			width: 312px;
+			height: 150px;
+		}
+	}
+
+	@media (min-width: 600px) and (max-width: 839px) {
+		.promo-section-screenshot {
+			width: 520px;
+			height: 292px;
+		}
+		.promo-section-text__heading,
+		.promo-section-text__description  {
+			max-width: 320px;
+		}
+	}
+
+	@media (min-width: 840px) and (max-width: 1023px) {
+		.promo-section-screenshot {
+			width: 432px;
+			height: 243px;
+		}
+		.promo-section-illustration {
+			width: 432px;
+			height: 208px;
+		}
+	}
+
+	@media (min-width: 1024px) and (max-width: 1439px) {
+		.promo-section-screenshot {
+			width: 600px;
+			height: 337px;
+		}
+		.promo-section-illustration {
+			width: 600px;
+			height: 289px;
+		}
+	}
+
+	/***
+	***
+	**
+	* MEDIA SCREEN FOR MAX-WIDTH
+	**
+	***
+	***/
+
+	@media (max-width: 599px) {
+		.promo-section-text__heading,
+		.promo-section-text__description  {
+			max-width: 280px;
+		}
+	}
+
+
+	/***
+	***
+	**
+	* MEDIA SCREEN FOR MIN-WIDTH
+	**
+	***
+	***/
+	@media (min-width: 600px) {
+		.cover-custom-bg {
+			background-image: url(header_left_200-vflDm1mOm.png), url(header_right_200-vflbXWGix.png);
+			padding-bottom: 50px;
+			margin-bottom: -50px;
+		}
+
+		.cover-custom-heading {
+			max-width: 400px;
+		}
+
+		.cover-custom-description {
+			max-width: 320px;
+		}
+
+		.promo-section-closer {
+			background-image: url(footer_left_200-vflrsk5Qj.png),url(footer_right_200-vflSSnQnL.png);
+			background-size: 200px;
+		}
+
+		.cover-custom-bg .btn-custom-bg {
+			margin-top: 2.5rem;
+		}
+
+	}
+
+	@media (min-width: 840px) {
+		.cover-custom-bg {
+			background-image: url(header_left_240-vflo6hNIK.png), url(header_right_240-vflXZsDmY.png);
+			padding-bottom: 104px;
+			margin-bottom: -104px;
+		}
+
+		.cover-custom-heading {
+			max-width: 600px;
+		}
+
+		.cover-custom-description {
+			max-width: 512px;
+			font-size: 1rem;
+		}
+
+		.promo-section {
+			height: auto;
+		}
+
+		.promo-section-right .promo-section-screenshot,
+		.promo-section-right .promo-section-illustration {
+			left: 0;
+		}
+
+		.promo-section-left .promo-section-screenshot,
+		.promo-section-left .promo-section-illustration {
+			right: 0;
+		}
+
+		.promo-section-screenshot,
+		.promo-section-illustration {
+			position: absolute;
+		}
+
+		.promo-section-screenshot {
+			bottom: 0;
+		}
+
+		.promo-section-illustration {
+			top: 50%;
+			-webkit-transform: translatey(-50%);
+			-ms-transform: translatey(-50%);
+			-o-transform: translatey(-50%);
+			transform: translatey(-50%);
+		}
+
+		.promo-section,
+		.promo-content {
+			min-height: 290px;
+		}
+
+		.promo-section-right .promo-section-text {
+			float: right;
+		}
+
+		.promo-section-left .promo-section-text {
+			float: left;
+		}
+
+		.promo-section-text {
+			max-width: 200px;
+			margin: 64px 0 36px;
+		}
+
+		.promo-section-text__description {
+			font-size: 1rem;
+		}
+
+		.promo-section-text__heading {
+			margin: 0;
+		}
+
+		.promo-section-text__heading, .promo-section-text__description {
+			text-align: left;
+		}
+
+		.promo-content {
+			max-width: 664px;
+		}
+
+		.promo-section-screenshot, .promo-section-illustration {
+			margin: 0;
+		}
+
+		.promo-section-closer {
+			background-image: url(footer_left_240-vflrsk5Qj.png),url(footer_right_240-vflSSnQnL.png);
+			background-size: 240px;
+		}
+
+		.promo-section-footer {
+			bottom: 24px;
+		}
+
+		.promo-section-closer-content {
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+
+		.promo-section-closer .btn-custom-bg {
+			margin-top: 1.5rem;
+		}
+
+		} /* 840px ↑ */
+
+		@media (min-width: 1024px) {
+			.cover-custom-bg {
+				background-image: url(header_left_320-vfl1Du3hA.png), url(header_right_320-vflnRWWiL.png);
+				padding-bottom: 138px;
+				margin-bottom: -138px;
+			}
+
+			.cover-custom-heading {
+				max-width: 800px;
+			}
+
+			.promo-content {
+				max-width: 920px;
+			}
+
+			.promo-section,
+			.promo-content {
+				min-height: 400px;
+			}
+
+			.promo-section-text {
+				max-width: 280px;
+				margin: 96px 0 36px;
+			}
+
+			.promo-section-text__heading {
+				font-size: 2rem;
+			}
+
+			.promo-section-closer {
+				background-image: url(footer_left_320-vflrsk5Qj.png),url(footer_right_320-vflSSnQnL.png);
+				background-size: 320px;
+			}
+
+			.promo-section-closer-content {
+				padding-top: 120px;
+			}
+
+			.promo-section-closer .btn-custom-bg {
+				margin-top: 2.5rem;
+			}
+
+		}
+
+		@media (min-width: 1440px) {
+			.cover-custom-bg {
+				background-image: url(header_left_500-vfla3YIPA.png), url(header_right_500-vfl0dyJ-w.png);
+			}
+
+			.cover-custom-bg {
+				padding-bottom: 190px;
+				margin-bottom: -190px;
+			}
+
+			.cover-custom-heading {
+				margin-top: 160px;
+			}
+
+			.promo-section,
+			.promo-content {
+				min-height: 512px;
+			}
+
+			.promo-content {
+				max-width: 1208px;
+			}
+
+			.promo-section-screenshot {
+				width: 784px;
+				height: 441px;
+			}
+
+			.promo-section-illustration {
+				width: 784px;
+				height: 378px;
+			}
+
+			.promo-section-text {
+				max-width: 360px;
+				margin: 140px 0 36px;
+			}
+
+			.promo-section-closer {
+				background-image: url(footer_left_500-vflrsk5Qj.png),url(footer_right_500-vflSSnQnL.png);
+				background-size: 500px;
+			}
+
+			.promo-section-closer-content {
+				padding-top: 152px;
+			}
+
+			} /* media min-width: 1440px */
+
+			@media (min-width: 1600px) {
+				.cover-custom-heading {
+					margin-top: 136px;
+				}
+			}
+
+			@media (min-width: 1920px) {
+				.cover-custom-bg {
+					background-image: url(header_left_600-vflGJ2Kdj.png), url(header_right_600-vflTFzfM9.png);
+				}
+
+				.cover-custom-bg {
+					padding-bottom: 190px;
+					margin-bottom: -190px;
+				}
+
+				.promo-section-closer {
+					background-image: url(footer_left_600-vflrsk5Qj.png),url(footer_right_600-vflSSnQnL.png);
+					background-size: 600px;
+				}
+
+			}
+
+
+	/***
+	***
+	**
+	* MEDIA SCREEN FOR RETINA 
+	**
+	***
+	***/
+	@media (-webkit-min-device-pixel-ratio: 2), not all, (min-resolution: 2dppx), (min-resolution: 192dpi) {
+		.exp-invert-logo .yt-new-promo-page-logo {
+			background: no-repeat url(/yts/img/ringo/hitchhiker/logo_small_2x-vfl4_cFqn.png);
+			background-size: 100px 30px;
+		}
+	}
+</style>
+</head>
+<body>
+	<a class="promo-logo" href="#"></a>
+	<div class="cover cover-custom-bg">
+		<h1 class="cover-custom-heading">Новый дизайн YouTube</h1>
+		<p class="cover-custom-description">С обновленным интерфейсом пользоваться сайтом станет ещё удобнее, а искать любимых авторов и свежие видео – проще.</p>
+		<a class="btn btn-primary btn-custom-bg" href="#">Перейти на YouTube</a>
+	</div>
+	<div class="promo-section promo-section-right">
+		<div class="promo-content">
+			<div class="promo-section-text">
+				<h2 class="promo-section-text__heading">Новый дизайн YouTube</h2>
+				<p class="promo-section-text__description">Мы упростили интерфейс, и теперь пользоваться сайтом станет ещё удобнее.</p>
+			</div>
+			<img src="home_screenshot_r_600-vflo6WSLb.png" class="promo-section-screenshot" alt="Youtube new design"
+			sizes="(max-width: 599px) 312px,
+			(min-width: 600px) and (max-width: 839px) 520px,
+			(min-width: 840px) and (max-widt: 1023px) 432px,
+			(min-width: 1024px) and (max-width: 1439px) 600px,
+			(min-width: 1440px) 784px"
+			srcset="home_screenshot_r_784@2x-vflh1C1V5.png 1494w,
+			home_screenshot_r_600@2x-vfl9cTr8a.png 1200w,
+			home_screenshot_r_520@2x-vfl6I8ZIE.png 1040w,
+			home_screenshot_r_432@2x-vflC31yAj.png 864w,
+			home_screenshot_784-vflvurxi3.png 784w,
+			home_screenshot_r_312@2x-vflwh6ASK.png 624w,
+			home_screenshot_r_600-vflo6WSLb.png 600w,
+			home_screenshot_r_520-vfl4dfnE8.png 520w,
+			home_screenshot_r_432-vflUayhjP.png 432w,
+			home_screenshot_r_312-vflpgrTox.png 312w">
+		</div>
+	</div>
+
+	<div class="promo-section promo-section-left promo-section-dark">
+		<div class="promo-content">
+			<div class="promo-section-text">
+				<h2 class="promo-section-text__heading">Ночной режим</h2>
+				<p class="promo-section-text__description">В ночном режиме яркость экрана снижается, и цвета становятся более теплыми и естественными. Включить его можно в новом меню аккаунта.</p>
+			</div>
+			<img src="dark_screenshot_r_600-vflA5l7O4.png" class="promo-section-screenshot" alt="Youtube new design"
+			sizes="(max-width: 599px) 312px,
+			(min-width: 600px) and (max-width: 839px) 520px,
+			(min-width: 840px) and (max-width: 1023px) 432px,
+			(min-width: 1024px) and (max-width: 1440px) 600px,
+			(min-width: 1440px) 784px"
+			srcset="dark_screenshot_r_784@2x-vfl5xrSvj.png 1494w,
+			dark_screenshot_r_600@2x-vflg-34Ii.png 1200w,
+			dark_screenshot_r_520@2x-vflF-rCJ9.png 1040w,
+			dark_screenshot_r_432@2x-vflAcjFY6.png 864w,
+			dark_screenshot_r_784-vfldw5o5x.png 784w,
+			dark_screenshot_r_312@2x-vflYpKIGC.png 624w,
+			dark_screenshot_r_600-vflA5l7O4.png 600w,
+			dark_screenshot_r_520-vflFTITaK.png 520w,
+			dark_screenshot_r_432-vflkPd9V3.png 432w,
+			dark_screenshot_r_312-vfllMB3tV.png 312w">
+		</div>
+	</div>
+
+	<div class="promo-section promo-section-right promo-section-better">
+		<div class="promo-content">
+			<div class="promo-section-text">
+				<h2 class="promo-section-text__heading">Современный интерфейс</h2>
+				<p class="promo-section-text__description">Мы полностью изменили дизайн YouTube. На сайте появились новые функции, например ночной режим, а искать и смотреть видео стало ещё быстрее и удобнее.</p>
+				<img src="build_600-vfl9lwL0Q.png" class="promo-section-illustration" alt="illustration"
+				sizes="(max-width: 839px) 312px,
+				(min-width: 840px) and (max-width: 1023px) 432px,
+				(min-width: 1024px) and (max-width: 1439px) 600px,
+				(min-width: 1440px) 784px"
+				srcset="build_784@2x-vflp-T8V1.png 1568w,
+				build_600@2x-vfliIN3JJ.png 1200w,
+				build_432@2x-vflXJNUR_.png 864w,
+				build_784-vflRGvujB.png 784w,
+				build_312@2x-vfl_4XvdT.png 624w,
+				build_600-vfl9lwL0Q.png 600w,
+				build_432-vflHPObP_.png 432w,
+				build_312-vflOa61N1.png 312w">
+			</div>
+		</div>
+	</div>
+
+	<div class="promo-section promo-section-closer">
+		<div class="promo-section-closer-content">
+			<a class="btn btn-primary btn-custom-bg" href="#">Перейти на YouTube</a>
+		</div>
+		<div class="promo-section-footer">
+			<ul class="promo-section-footer__list">
+				<li class="promo-section-footer__item"><a href="#" class="promo-section-footer__link">О сервисе</a></li><li class="promo-section-footer__item"><a href="#" class="promo-section-footer__link">Прессе</a></li><li class="promo-section-footer__item"><a href="#" class="promo-section-footer__link">Правообладателям</a></li><li class="promo-section-footer__item"><a href="#" class="promo-section-footer__link">Авторам</a></li><li class="promo-section-footer__item"><a href="#" class="promo-section-footer__link">Рекламодателям</a></li><li class="promo-section-footer__item"><a href="#" class="promo-section-footer__link">Разработчикам</a></li><li class="promo-section-footer__item"><a href="#" class="promo-section-footer__link">+YouTube</a></li>
+			</li>
+		</ul><span class="promo-section-footer__copyright">© 2017 YouTube, LLC</span>
+	</div>
+</div>
+
+</body>
+</html>

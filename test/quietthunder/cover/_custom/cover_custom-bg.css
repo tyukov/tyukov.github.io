@@ -1,0 +1,64 @@
+.cover_custom-bg
+{
+	-webkit-background-size: cover;
+	
+	background-position: bottom center;
+	background-size: cover;
+	min-height: 520px;
+	position: relative;
+	background-image: url(cover-large-840.png);
+}
+
+.cover_custom-bg::after
+{
+	background-color: #000;
+	bottom: 0;
+	content: "";
+	height: 3px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
+@media (min-width: 840px)
+{
+	.cover_custom-bg
+	{
+		background-image: url(cover-large-1024.png);
+
+	}
+}
+
+@media (min-width: 1024px)
+{
+	.cover_custom-bg
+	{
+		min-height: 600px;
+		background-image: url(cover-large.png);
+
+	}
+}
+
+@media (min-width: 1440px)
+{
+	.cover_custom-bg
+	{
+		min-height: 720px;
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 839px), not all, (max-width: 839px) and (min-resolution: 2dppx), (max-width: 839px) and (min-resolution: 192dpi)
+{
+	.cover_custom-bg
+	{
+		background-image: url(cover-large-840@2x.png);
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 1023px) and (min-width: 840px), not all, (max-width: 1023px) and (min-resolution: 2dppx) and (min-width: 840px), (max-width: 1023px) and (min-resolution: 192dpi) and (min-width: 840px)
+{
+	.cover_custom-bg
+	{
+		background-image: url(cover-large-1024@2x.png);
+	}
+}

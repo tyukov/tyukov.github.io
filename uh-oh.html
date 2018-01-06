@@ -2,24 +2,433 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Flexbox</title>
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
 	<style>
-		body {
+	* {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: 'Karla', sans-serif;
+	}
+	body:after {
+		content: "";
+		position: absolute;
+    width: auto;
+    height: 5000%;
+    z-index: 9999;
+    content: '';
+    display: block;
+    pointer-events: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(https://basehold.it/image.php?height=24) repeat top left;
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	/*.header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 63px;
+		z-index: 11;
+	}
+
+	.navbar {
+		padding: 0 20px;
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+
+	.header__main {
+		flex: 1;
+		display: flex;
+		align-items: center;
+	}
+
+	.header__logo {
+		display: flex;
+		margin-top: -2px;
+	}
+
+	.header__search {
+		margin-left: 18px;
+		width: 100%;
+	}
+
+	.header__form {
+		display: flex;
+		width: 100%;
+	}
+
+	.header__input {
+		width: 100%;
+		background-color: #d4d9dd5e;
+		border: 1px solid transparent;
+		height: 40px;
+		border-radius: 20px;
+		padding: 0 20px 2px;
+		font-size: .875rem;
+		outline: none;
+		transition: border-color 300ms 0s ease, color 300ms 0s ease, background 300ms 0s ease;
+	}
+
+	.header__input:hover,
+	.header__input:focus {
+		border-color: #d4d9dd;
+	}
+
+	.header__input:focus {
+		background-color: #fff;
+	}
+
+	.header__nav {
+		padding: 0 36px;
+	}
+
+	.header__navbar {
+		display: inline-block;
+	}
+
+	.header__navbar > li {
+		display: inline-block;
+	}
+
+	.header__navbar > li > a {
+		display: flex;
+		line-height: 62px;
+		padding: 0 12px;
+		text-align: center;
+		flex-direction: column;
+		align-items: center;
+		text-decoration: none;
+		color: #333333a1;
+		font-size: 15px;
+		font-weight: 500;
+		transition: color 300ms 0s ease;
+	}
+
+	.header__navbar > li > a:hover {
+		color: #333333;
+	}
+
+	.header__user {
+		display: flex;
+		height: 32px;
+		align-items: center;
+	}
+
+	.btn {
+		font-size: 14px;
+		text-decoration: none;
+		color: #333333a1;
+		border: 1px solid #d4d9dd;
+		display: inline-block;
+		height: 32px;
+		line-height: 29px;
+		font-weight: 500;
+		padding: 0 11px;
+		border-radius: 2px;
+		transition: color 300ms 0s ease;
+	}
+
+	.btn:hover {
+		color: #333;
+	}
+
+	.btn:focus,
+	.btn:active {
+		background-color: #d4d9dd5e;
+		border-color: transparent;
+		line-height: 30px;
+		color: #333;
+	}
+
+	.icon-tonify {
+		margin-left: 9px;
+		position: relative;
+		height: 48px;
+	}
+
+	._3MB2y {
+		box-sizing: content-box;
+		padding: 14px;
+		cursor: pointer;
+		transition: all .2s ease-in-out;
+		fill: #b5bec5;
+	}
+
+	.user {
+		    width: 32px;
+    height: 32px;
+    margin-left: 6px;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #d4d9dd5e;
+    line-height: 1;
+    vertical-align: middle;
+    text-decoration-skip: ink;
+	}
+
+	._1FdcY {
+		vertical-align: middle;
+		width: 100%;
+		}*/
+
+		.header {
+			background-color: #fff;
+		}		
+
+		.nav {
+			max-width: 980px;
+			margin: 0 auto;
+			padding: 0 15px;
+			text-align: center;
+		}
+
+		.header__logo {
 			margin: 0;
+			font-size: 1.25rem;
+			font-weight: 600;
+			white-space: nowrap;
 		}
-		.fade {
-			height: 584px;
-			background: 
-			linear-gradient(#ffa949, transparent 90%),
-			linear-gradient(0deg, #fff, transparent) ,
-			#ffa949 url(test/common__files/img/maxresdefault.jpg) no-repeat center;
+
+		.header__logo > a {
+			text-decoration: none;
+			color: #369;
+			display: block;
+			padding: 25px 0;
+			transition: .3s 0s ease;
 		}
+
+		.header__logo:hover a {
+			color: #33669999;
+		}
+
+		.header__item {
+			line-height: 70px;
+			font-weight: 500;
+			font-size: 1rem;
+			text-transform: uppercase;
+		}
+
+		.header__link {
+			display: block;
+			text-decoration: none;
+			color: #31cc31;
+			transition: color .3s 0s ease;
+		}
+
+		.header__link:hover {
+			color: #31cc3199;
+		}
+
+		.row {
+			max-width: 980px;
+			margin: 0 auto;
+			padding: 0 15px;
+
+			display: flex;
+		}
+
+		h2 {
+			margin: 0 0 1.5rem;
+			font-size: 1.5rem;
+			color: #093a58;
+		}
+
+		p {
+			margin: 0 0 1.5rem;
+		}
+
+		.row p {
+			color: #333;
+			font-size: 1rem;
+			line-height: 1.5;
+		}
+
+		.col {
+			padding: 0 15px;
+			flex: 1;
+		}
+
+		.primary {
+			flex: 2;
+		}
+
+		.banner {
+			background-color: #3acec2;
+			padding: 4em 0;
+			color: #fff;
+			text-align: center;
+			margin-bottom: 4.5em;
+
+			display: flex;
+			flex-flow: column nowrap;
+			align-items: center;
+		}
+
+		.banner img {
+			max-width: 230px;
+		}
+
+		.banner h1 {
+			font-size: 3em;
+			margin: 1.5rem 0 0;
+			line-height: 1.6;
+			margin-top: 1rem;
+		}
+
+		.banner p {
+			margin: 0;
+			font-size: 1.375rem;
+		}
+
+		.footer {
+			padding: 2em 0;
+			background-color: #d9e4ea;
+			margin-top: 1.5em;
+			text-align: center;
+		}
+
+
+
+
+
+
+		/* MEDIA QUERy*/
+
+		@media (min-width: 768px) {
+			.nav {
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+			}
+			.header__logo > a {
+				padding: 15px;
+			}
+			.header__item {
+				line-height: 50px;
+				margin-left: 30px;
+			}
+			.header__nav {
+				display: flex;
+			}
+		}
+
+		@media (min-width: 1024px) {
+			.nav {
+				flex-direction: row;
+				justify-content: space-between;
+			}
+			.header {
+				min-height: 72px;
+			}
+			.header__logo > a {
+				padding: 23px 0 24px;
+			}
+			.header__item {
+				line-height: 70px;
+			}
+		}
+
+		
+
 
 	</style>
 </head>
 <body>
-	<div class="fade">
+	
+	<header class="header">
+		<nav class="nav">
+			<h1 class="header__logo"><a href="#">Best City Guide</a></h1>
+			<ul class="header__nav">
+				<li class="header__item"><a class="header__link" href="#">Ice cream</a></li>
+				<li class="header__item"><a class="header__link" href="#">Donuts</a></li>
+				<li class="header__item"><a class="header__link" href="#">Tea</a></li>
+				<li class="header__item"><a class="header__link" href="#">Coffee</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section class="banner">
+		<img src="https://blackrockdigital.github.io/startbootstrap-freelancer/img/profile.png" alt="">
+		<h1>Start Bootstrap</h1>
+		<p>The best drinks and eats in the best city ever.</p>
+	</section>
+
+	<div class="row">
+
+		<div class="primary col">
+			<h2>Welcome!</h2>
+			<p>Everything in this city is worth waiting in line for.</p>
+			<p>Cupcake ipsum dolor sit. Amet chocolate cake gummies jelly beans candy bonbon brownie candy. Gingerbread powder muffin. Icing cotton candy. Croissant icing pie ice cream brownie I love cheesecake cookie. Pastry chocolate pastry jelly croissant.</p>
+			<p>Cake sesame snaps sweet tart candy canes tiramisu I love oat cake chocolate bar. Jelly beans pastry brownie sugar plum pastry bear claw tiramisu tootsie roll. Tootsie roll wafer I love chocolate donuts.</p>
+		</div>
+
+		<div class="secondary col">
+			<h2>How to get here</h2>
+			<p><strong>Plane:</strong> Tiramisu caramels gummies chupa chups lollipop muffin. Jujubes chocolate caramels cheesecake brownie lollipop dragée cheesecake.</p>
+			<p><strong>Train:</strong> Pie apple pie pudding I love wafer toffee liquorice sesame snaps lemon drops. Lollipop gummi bears dessert muffin I love fruitcake toffee pie.</p>
+			<p><strong>Car:</strong> Jelly cotton candy bonbon jelly-o jelly-o I love. I love sugar plum chocolate cake pie I love pastry liquorice.</p>
+		</div>
 
 	</div>
+
+	<footer class="footer">
+		<small>©2015 Residents of The Best City Ever.</small>
+	</footer>
+
+
+
+
+
+
+
+	<!-- <header class="header">
+		<nav class="navbar">
+			<div class="header__main">
+				<a class="header__logo" href="#">
+					<svg class="_2m4hn" version="1.1" viewBox="0 0 32 32" width="32" height="32" aria-labelledby="unsplash-home" aria-hidden="false"><title id="unsplash-home">Unsplash Home</title><path d="M20.8 18.1c0 2.7-2.2 4.8-4.8 4.8s-4.8-2.1-4.8-4.8c0-2.7 2.2-4.8 4.8-4.8 2.7.1 4.8 2.2 4.8 4.8zm11.2-7.4v14.9c0 2.3-1.9 4.3-4.3 4.3h-23.4c-2.4 0-4.3-1.9-4.3-4.3v-15c0-2.3 1.9-4.3 4.3-4.3h3.7l.8-2.3c.4-1.1 1.7-2 2.9-2h8.6c1.2 0 2.5.9 2.9 2l.8 2.4h3.7c2.4 0 4.3 1.9 4.3 4.3zm-8.6 7.5c0-4.1-3.3-7.5-7.5-7.5-4.1 0-7.5 3.4-7.5 7.5s3.3 7.5 7.5 7.5c4.2-.1 7.5-3.4 7.5-7.5z"></path></svg>
+				</a>
+				<div class="header__search">
+					<form action="#" class="header__form">
+						<input type="text" class="header__input" placeholder="Search free hight-resolution porn">
+					</form>
+				</div>
+			</div>
+			<div class="header__nav">
+				<ul class="header__navbar">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Collection</a></li>
+					<li><a href="#">Explore</a></li>
+				</ul>
+			</div>
+			<div class="header__user">
+				<a href="#" class="btn">Sumbit a photo</a>
+				<div class="icon-tonify">
+					<span><svg class="_3MB2y" version="1.1" viewBox="0 0 32 32" width="20" height="20" aria-hidden="false"><path d="M18.9 30.6c-7.4 2.6-14.2 1.4-15.7-2.8-.5-1.5-.2-3.2.8-4.9.5-.8.5-2.1.2-3l-1.4-3.9c-.9-2.6-.7-5.2.3-7.5.7-1.7 2-3.1 3.5-4.1l-.4-1c-.4-1.1.2-2.2 1.3-2.6l1.9-.7c1.1-.4 2.2.2 2.6 1.3l.4 1c2-.2 4.1.3 5.9 1.4 1.9 1.2 3.5 3.1 4.3 5.4l1.4 3.9c.3.8 1.2 1.9 2 2.2 1.8.7 3 1.8 3.6 3.4 1.4 4.2-3.2 9.3-10.7 11.9zm7.3-10.8c-.6-1.7-5.2-2.8-11.3-.7-6.1 2.1-9 5.8-8.4 7.5.6 1.7 5.2 2.8 11.3.7 6.1-2.1 9-5.8 8.4-7.5zm-7.2.8l.1.8c0 1.9-1.1 3.6-2.7 4.4-.6.3-1.3.6-2.1.6h-.1c-1.6 0-2.9-.8-3.9-1.9-.1-.2-.1-.5.1-.6 1.1-.9 2.8-2 5.3-2.8 1-.3 2-.6 2.9-.8.1-.1.3.1.4.3z"></path></svg></span>
+				</div>
+				<div class="user">
+					<a href="#">
+						<img class="_1FdcY" src="https://images.unsplash.com/profile-1507969904744-367edffb31ca?dpr=1&amp;auto=format&amp;fit=crop&amp;w=64&amp;h=64&amp;q=60&amp;cs=tinysrgb&amp;crop=faces&amp;bg=fff" srcset="https://images.unsplash.com/profile-1507969904744-367edffb31ca?dpr=1&amp;auto=format&amp;fit=crop&amp;w=64&amp;h=64&amp;q=60&amp;cs=tinysrgb&amp;crop=faces&amp;bg=fff 1x, https://images.unsplash.com/profile-1507969904744-367edffb31ca?dpr=2&amp;auto=format&amp;fit=crop&amp;w=64&amp;h=64&amp;q=60&amp;cs=tinysrgb&amp;crop=faces&amp;bg=fff 2x" role="presentation">
+					</a>
+				</div>
+			</div>
+		</nav>
+	</header> -->
 </body>
 </html>

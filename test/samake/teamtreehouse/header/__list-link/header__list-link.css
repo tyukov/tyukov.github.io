@@ -1,0 +1,10 @@
+.header__list-link {
+	display: inline-block;
+	text-align: center;
+	color: #7b8b8e;
+	transition: color 300ms 0s ease;
+}
+
+.header__list-link:hover {
+	color: #4b5658;
+}

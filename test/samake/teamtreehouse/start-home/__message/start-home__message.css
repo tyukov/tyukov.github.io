@@ -1,0 +1,12 @@
+	.start-home__message {
+		padding-bottom: 1.5rem;
+	}
+
+@media (min-width: 960px) {
+	.start-home__message {
+		flex: 0 0 50%;
+		max-width: 50%;
+		padding-right: .9375rem;
+		padding-bottom: 0;
+	}
+}

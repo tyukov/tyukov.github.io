@@ -1,0 +1,7 @@
+@media (min-width: 960px) {
+	.start-home__form-card {
+		flex: 0 0 50%;
+		max-width: 50%;
+		padding-left: .9375rem;
+	}
+}

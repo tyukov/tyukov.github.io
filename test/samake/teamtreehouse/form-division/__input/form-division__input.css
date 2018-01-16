@@ -1,0 +1,20 @@
+.form-division__input {
+	display: block;
+	width: 100%;
+	border: 2px solid #d4d9dd;
+	padding: .75rem 1rem;
+	line-height: normal;
+	font-size: 1rem;
+	background-color: #f9fafa;
+	margin: 0 0 1.5rem;
+	outline: none;
+	vertical-align: middle;
+	border-radius: .125rem;
+	color: #40484a;
+	transition: .2s;
+}
+
+.form-division__input:focus {
+	background-color: #fff;
+	border-color: #8c9aa6;
+}

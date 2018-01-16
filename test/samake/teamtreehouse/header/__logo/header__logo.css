@@ -1,0 +1,22 @@
+
+.header__logo {
+	display: inline-block;
+	padding: 10px 0;
+}
+
+.teamtreehouse-logo {
+	display: block;
+	fill: #5fcf80;
+	width: 140px;
+	height: 30px;
+}
+
+.teamtreehouse-logo:hover {
+	fill: #34ad58;
+}
+
+@media (min-width: 420px) {
+	.header__logo {
+		padding: 20px 0;
+	}
+}

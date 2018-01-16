@@ -29,6 +29,15 @@
  * Add the correct display in IE 9-.
  */
 
+ *,
+ *::before,
+ *::after {
+ 	box-sizing: border-box;
+ 	-webkit-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	-ms-box-sizing: border-box;
+ }
+
  article,
  aside,
  footer,
@@ -70,7 +79,7 @@
  }
 
  .wrapper {
- 	max-width: 980px;
+ 	max-width: 1150px;
  	margin: 0 auto;
  }
 
@@ -182,6 +191,74 @@
  	line-height: 24px;
  }
 
+ .main__img {
+ 	max-width: 100%;
+ 	border-radius: 2px;
+ }
+
+ .icon-location {
+ 	position: absolute;
+ 	top: -15px;
+ 	right: -15px;
+ 	width: 35px;
+ 	z-index: 2;
+
+ }
+
+ figure {
+ 	margin: 0 0 1.5rem;
+ 	line-height: 0;
+ 	position: relative;
+ }
+
+ figcaption {
+ 	position: absolute;
+ 	width: 100%;
+ 	bottom: 0;
+ 	color: #fff;
+ 	font-size: .9375em;
+ 	line-height: 1.5;
+ 	padding: 1em;
+ 	background: rgba(19, 43, 102, .85);
+ }
+
+ h4 {
+ 	margin: 0 0 .4em;
+ }
+
+ .main__secondary {
+ 	background-color: #f9faff;
+ 	padding: 4.5em 0;
+ }
+
+ .test--2 li {
+ 	background-color: #fff;
+ 	padding: 1.5em;
+ 	margin-bottom: 1.5rem;
+ 	margin-right: 1.5%;
+ 	box-shadow: 0 0 20px rgba(43,45,56,.08);
+ }
+
+ .test--2 li:nth-child(3n) {
+ 	margin-right: 0;
+ }
+
+ .test--2 h3 {
+ 	margin: 0 0 1.5rem;
+ }
+
+ .test--2 p {
+ 	line-height: 1.5;
+ 	margin-bottom: 1.5rem;
+ }
+
+ .test--2 a {
+ 	padding: .469em 1rem;
+ 	background: #2D729F;
+ 	color: #fff;
+ 	line-height: 1;
+ }
+
 
 /**
  * MEDIA QUERy
@@ -201,6 +278,19 @@
  	}
  	.header__item {
  		margin-left: 1.875rem;
+ 	}
+ 	.test--2 {
+ 		display: flex;
+ 		flex-flow: row wrap;
+ 	}
+ 	.test--2 li {
+ 		flex: 0 1 48.5%;
+ 		display: flex;
+ 		flex-flow: column nowrap;
+ 	}
+ 	.test--2 a {
+ 		align-self: flex-start;
+ 		margin-top: auto;
  	}
  }
 
@@ -231,7 +321,7 @@
  	}
 
  	.main__primary {
- 		flex: 2;
+ 		flex: 1.4;
  	}
  	.main__heading {
  		margin-top: 0;
@@ -240,6 +330,12 @@
  	.header__link:active {
  		position: relative;
  		top: 1px;
+ 	}
+ 	.secondary {
+ 		order: -1;
+ 	}
+ 	.test--2 li {
+ 		flex: 0 1 32.3333333%;
  	}
  }
 
@@ -267,14 +363,30 @@
 
 	<main class="main">
 		<div class="wrapper main__content">
+
 			<div class="main__primary col">
+				<h2 class="main__heading">How to get here</h2>
+				<figure>
+					<img class="icon-location" src="http://www.kenwalger.com/BestCity/img/location.svg" alt="">
+					<img class="main__img" src="http://www.kenwalger.com/BestCity/img/treats.svg" alt="football">
+					<figcaption>
+						<h4>Freatured Drinks & Eats!</h4>
+						Croissant macaroon pie brownie cookie marshmallow liquorice gingerbread caramels toffee.
+					</figcaption>
+				</figure>
+				<p class="main__description"><strong>Plane:</strong> Tiramisu caramels gummies chupa chups lollipop muffin. Jujubes chocolate caramels cheesecake brownie lollipop dragée cheesecake.</p>
+				<p class="main__description"><strong>Train:</strong> Pie apple pie pudding I love wafer toffee liquorice sesame snaps lemon drops. Lollipop gummi bears dessert muffin I love fruitcake toffee pie.</p>
+				<p class="main__description"><strong>Car:</strong> Jelly cotton candy bonbon jelly-o jelly-o I love. I love sugar plum chocolate cake pie I love pastry liquorice.</p>
+			</div>
+
+			<div class="secondary col">
 				<h2 class="main__heading">Welcome!</h2>
 				<p class="main__description">Everything in this city is worth waiting in line for.</p>
 				<p class="main__description">Cupcake ipsum dolor sit. Amet chocolate cake gummies jelly beans candy bonbon brownie candy. Gingerbread powder muffin. Icing cotton candy. Croissant icing pie ice cream brownie I love cheesecake cookie. Pastry chocolate pastry jelly croissant.</p>
 				<p class="main__description">Cake sesame snaps sweet tart candy canes tiramisu I love oat cake chocolate bar. Jelly beans pastry brownie sugar plum pastry bear claw tiramisu tootsie roll. Tootsie roll wafer I love chocolate donuts.</p>
 			</div>
 
-			<div class="secondary col">
+			<div class="tertiary col">
 				<h2 class="main__heading">How to get here</h2>
 				<p class="main__description"><strong>Plane:</strong> Tiramisu caramels gummies chupa chups lollipop muffin. Jujubes chocolate caramels cheesecake brownie lollipop dragée cheesecake.</p>
 				<p class="main__description"><strong>Train:</strong> Pie apple pie pudding I love wafer toffee liquorice sesame snaps lemon drops. Lollipop gummi bears dessert muffin I love fruitcake toffee pie.</p>
@@ -282,6 +394,31 @@
 			</div>
 		</div>
 	</main>
+	<section class="main__secondary">
+		<div class="wrapper">
+			<ul class="test--2">
+				<li>
+					<h3>Welcome!</h3>
+					<p>Everything in this city is worth waiting in line for. Cupcake ipsum dolor sit. Amet chocolate cake gummies jelly beans candy bonbon brownie candy.</p>
+					<a href="#">Learn More</a>
+				</li>
+				<li>
+					<h3>Great food</h3>
+					<p>Croissant macaroon pie brownie. Cookie marshmallow liquorice gingerbread caramels toffee I love chocolate. Wafer lollipop dessert. Bonbon jelly beans pudding dessert sugar plum. Marzipan toffee dragée chocolate bar candy toffee pudding I love. Gummi bears pie gingerbread lollipop.</p>
+					<p>Wafer lollipop dessert. Bonbon jelly beans pudding dessert sugar plum.</p>
+					<a href="#">Learn More</a>
+				</li>
+				<li>
+					<h3>Welcome!</h3>
+					<p><strong>Plane:</strong> Tiramisu caramels gummies chupa chups lollipop muffin. Jujubes chocolate caramels cheesecake brownie lollipop dragée cheesecake.</p>
+					<p><strong>Train:</strong> Pie apple pie pudding I love wafer toffee liquorice sesame snaps lemon drops. Lollipop gummi bears dessert muffin I love fruitcake toffee pie.</p>
+					<p><strong>Car:</strong> Jelly cotton candy bonbon jelly-o jelly-o I love. I love sugar plum chocolate cake pie I love pastry liquorice.</p>
+					<a href="#">Learn More</a>
+				</li>
+
+			</ul>
+		</div>
+	</section>
 	<footer class="footer">
 		<small class="footer__text">©2018 Residents of The Best City Ever.</small>
 	</footer>

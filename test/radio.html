@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>checkbox and radiobutton</title>
+    <style>
+        *,
+        *::before,
+        *:after {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            max-width: 600px;
+            margin: 0 auto
+        }
+        
+        h4 {
+            font-family: helvetica;
+            font-weight: 300;
+            font-family: calibri, sans-serif;
+        }
+        
+        .checkbox-1 {
+            margin-top: 21px;
+        }
+        
+        .checkbox {
+            user-select: none;
+            position: relative;
+            display: inline-flex;
+            align-items: baseline;
+        }
+        
+                @keyframes tick {
+  0%   { transform: scale(0)}
+  100% { transform: scale(1)}
+}
+        
+/* input checkbox customize */
+        .checkbox__control {
+            border: none;
+            outline: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+            z-index: -1;
+        }
+        
+        .checkbox__label {
+            font-size: 18px;
+            flex: 1
+        }
+/*        46a3de - BLUE COLOR*/
+        
+        
+        .checkbox_disabled {
+            color: #999;
+        }
+        
+        .checkbox_theme_sky:hover .checkbox__box {
+            border-color: #ccc
+        }
+        
+        .checkbox_theme_sky.checkbox_size_m .checkbox__box {
+            width: 1rem;
+            height: 1rem;
+            margin-right: .4375rem;
+            border: 1px solid #ddd;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.08);
+            top: 2px;
+        }
+        
+         .checkbox_theme_sky .checkbox__box {
+            display: inline-block;
+            background-color: #fff;
+            border-radius: .1875rem;
+            position: relative;
+        }
+        
+        .checkbox_theme_sky.checkbox_disabled .checkbox__box {
+            background-color: rgba(0,0,0,.06);
+        }
+        
+        .checkbox_theme_sky:not(.checkbox_disabled) .checkbox__control:focus + .checkbox__box {
+            box-shadow: 0 0 5px rgba(44, 151, 222, .6);
+        }
+        
+        .checkbox_theme_sky .checkbox__control:checked:hover + .checkbox__box {
+            background-color: #2580bd;
+        }
+        
+        .checkbox_theme_sky .checkbox__control:not(:checked):hover + .checkbox__box {
+            background-color: rgba(0,0,0,.06);
+        }
+        
+        .checkbox_theme_sky .checkbox__control:checked + .checkbox__box {
+            background: #2c97de url(img/cd-icon-check.svg) no-repeat center;
+            border: none;
+            box-shadow: 0 0 5px rgba(44, 151, 222, .4);
+            animation: tick 150ms ease-in
+        }
+        
+/*
+        .checkbox__control:not(:checked):hover + .checkbox__box {
+            background-color: #eef8fc;
+        }
+*/
+    </style>
+</head>
+<body>
+    <h4>Features</h4>
+    <div class="checkbox-1">
+        <label class="checkbox checkbox_theme_sky checkbox_size_m">
+           <input class="checkbox__control" type="checkbox" name="checkbox" checked>
+            <span class="checkbox__box">
+<!--                <span class="checkbox__tick"></span>-->
+            </span>
+            <span class="checkbox__label">Display a 'Message' button on your profile</span>
+        </label>
+    </div>
+    <div class="checkbox-1">
+        <label class="checkbox checkbox_theme_sky checkbox_size_m">
+            <input class="checkbox__control" type="checkbox" name="checkbox">
+            <span class="checkbox__box">
+<!--                <span class="checkbox__tick"></span>-->
+            </span>
+            <span class="checkbox__label">Messages will be sent to your email</span>
+        </label>
+    </div>
+    <div class="checkbox-1">
+        <label class="checkbox checkbox_theme_sky checkbox_size_m">
+            <input class="checkbox__control" type="checkbox" name="checkbox">
+            <span class="checkbox__box">
+<!--                <span class="checkbox__tick"></span>-->
+            </span>
+            <span class="checkbox__label">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quam nostrum pariatur cumque incidunt adipisci deserunt aspernatur porro et ut eos inventore itaque, rerum magnam autem qui, quaerat architecto, tenetur.</span>
+        </label>
+    </div>
+    <div class="checkbox-1">
+        <label class="checkbox checkbox_theme_sky checkbox_size_m checkbox_disabled">
+            <input class="checkbox__control" type="checkbox" name="checkbox" disabled>
+            <span class="checkbox__box">
+<!--            <span class="checkbox__tick"></span>-->
+            </span>
+            <span class="checkbox__label">Disabled</span>
+        </label>
+    </div>
+    <input type="radio">
+</body>
+</html>

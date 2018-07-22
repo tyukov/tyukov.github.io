@@ -1,8 +1,0 @@
-.header__list-link_cta {
-	color: #5fcf80;
-	transition: color 200ms 0s ease;
-}
-
-.header__list-link_cta:hover {
-	color: #34ad58;
-}

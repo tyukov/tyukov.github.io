@@ -1,0 +1,163 @@
+
+/*THEME sky color: #46a3de */
+
+.radio-group {
+  display: inline-block;
+}
+
+.radio-group__block {
+  display: block;
+  margin-bottom: .625rem;
+}
+
+.radio-group__block_pos_last {
+margin-bottom:0
+}
+
+.radio-group__inline {
+display:inline-block;
+margin:0 1.25rem .625rem 0
+}
+
+.radio-group__inline_pos_last {
+margin:0
+}
+
+.radio {
+  align-items: baseline;
+  cursor: pointer;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radio-group .radio {
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: inline-flex;
+}
+
+.radio__control {
+  border: none;
+  outline: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  z-index: -1;
+}
+
+.radio_theme_sky .radio__box {
+    display: inline-block;
+    background-color: #ccc;
+    border-radius: 50%;
+    position: relative;
+}
+
+.radio_theme_sky.radio_size_m .radio__box {
+    width: 1rem;
+    height: 1rem;
+    margin-right: .4375rem;
+    top: 3px;
+}
+
+@-webkit-keyframes tick {
+0% {
+opacity:0
+}
+
+100% {
+opacity:1
+}
+}
+
+@keyframes tick {
+0% {
+transform:scale(0)
+}
+
+100% {
+transform:scale(1)
+}
+}
+
+.radio_theme_sky .radio__control:not(:disabled):checked + .radio__box {
+    -webkit-animation: tick 150ms ease-in;
+    animation: tick 150ms ease-in;
+    background-color: #46a3de;
+}
+
+.radio_theme_sky .radio__control:not(:disabled) + .radio__box::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  left: 1px;
+  right: 1px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.radio_theme_sky .radio__control:not(:disabled):checked + .radio__box::before {
+    background-color: #46a3de;
+}
+
+.radio_theme_sky .radio__control:not(:disabled):checked:hover + .radio__box,
+.radio_theme_sky .radio__control:not(:disabled):checked:hover + .radio__box::before {
+    background-color: #6bb5e5;
+}
+
+.radio_theme_sky .radio__control:not(:checked):not(:disabled):hover ~ .radio__box {
+  background-color: #999;
+}
+
+.radio_theme_sky .radio__tick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    fill: #fff;
+}
+
+.radio_theme_sky .radio__control:not(:checked) + .radio__box .radio__tick {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*maybe not
+.radio_theme_sky .radio__control:checked + .radio__box .radio__tick {
+opacity:1;
+visibility:visible
+}
+*/
+
+.radio_theme_sky .radio__control:not(:checked):focus + .radio__box {
+box-shadow:0 0 5px rgba(153,153,153,.6)
+}
+
+.radio_theme_sky .radio__control:checked:focus + .radio__box {
+box-shadow:0 0 5px rgba(56,130,178,.6)
+}
+
+.radio_theme_sky.radio_disabled .radio__tick {
+    fill: #999;
+}
+
+.radio_disabled {
+    cursor: default;
+    color: #999;
+}
+
+.radio_theme_sky.radio_disabled .radio__box {
+    background-color: rgba(0,0,0,.1);
+}
+
+.radio__label {
+flex:1
+}

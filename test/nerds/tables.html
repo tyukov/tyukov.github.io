@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>table</title>
+    <style>
+        
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box
+        }
+        
+        body {
+            font-family: calibri, sans-serif;
+            margin: 0;
+        }
+        form {
+    max-width: 600px;
+        margin: 0 auto;
+        }
+        
+        h2 {
+         text-align: center;
+            font-size: 38px;
+            font-weight: 300;
+        }
+        
+        fieldset {
+            border: none
+        }
+        
+        legend {
+          border-bottom: 1px solid #ccc;
+            font-size: 20px;
+            font-weight: 400;
+            display: block;
+            width: 100%;
+            padding-bottom: 4px;
+            margin-bottom: 20px;
+        }
+        
+        input[type=text],
+        input[type=email],
+        textarea,
+        select {
+            background: url(https://codyhouse.co/demo/contact-form/img/cd-icon-budget.svg) no-repeat 16px center;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            display: block;
+            width: 100%;
+            padding: 14px 54px;
+            margin-bottom: 28px;
+            font-size: 1rem;
+        }
+        
+        textarea {
+            background-position: 16px 16px;
+            font-family: sans-serif;
+            resize: vertical
+        }
+        
+        h4 {
+            color: #777;
+            font-weight: 400;
+            font-size: 1rem;
+            margin: 0 0 10px;
+        }
+        
+        button {
+            background-color: #468ace;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 4px;
+            color: #fff;
+            padding: 16px 20px;
+        }
+        
+        button:active {
+            transform: scale(.88)
+        }
+        
+        .project-radio,
+        .project-checkbox {
+            margin: 0 0 28px;
+        }
+        
+        .project-type-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap
+        }
+        
+        .project-type-list__item {
+            padding: 0 26px 16px 0;
+            user-select: none;
+        }
+        
+        .project-cta {
+            text-align: right;
+            margin-bottom: 28px;
+        }
+        
+/*
+        input[type=radio],
+        input[type=checkbox] {
+            display: none;
+        }
+*/
+        
+        .project-radiobox,
+        .project-checkboxin {
+             padding: 3px 0 3px 24px;
+            position: relative;
+        }
+        
+        .project-radiobox__label,
+        .project-checkboxin__label {
+            font-size: 18px;
+        }
+        
+        .project-radiobox__label::before {
+            content: '';
+            width: 1rem;
+            height: 1rem;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            box-shadow: inset 0 1px 1px rgba(0,0,0,.08);
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 4px   
+        }
+        
+        .project-checkboxin__label::before {
+            content: '';
+            width: 1rem;
+            height: 1rem;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: .25rem;
+            position: absolute;
+            left: 0;
+            top: 4px;
+        }
+        
+        input[type=radio],
+        input[type=checkbox] {
+            position: absolute;
+            left: 0;
+            border: none;
+            outline: none;
+            top: 0;
+            z-index: 3;
+            margin: 0;
+            padding: 0;
+            opacity: 0;
+        }
+        
+        input[type=radio]:focus+.project-radiobox__label::before,
+        input[type=checkbox]:focus+.project-checkboxin__label::before {
+            box-shadow: 0 0 5px rgba(44, 151, 222, .6);
+        }
+        
+        input[type=checkbox]:checked+.project-checkboxin__label::before {
+            background: #2c97de url(img/cd-icon-check.svg) no-repeat center;
+            box-shadow: 0 0 5px rgba(44, 151, 222, .4);
+            border: none;
+            -webkit-animation: cd-bounce .3s;
+            -moz-animation: cd-bounce .3s;
+            animation: cd-bounce 180ms ease-in; 
+        }
+        
+        input[type=radio]:checked+.project-radiobox__label::before {
+            border: 5px solid #2c97de;
+            box-shadow: 0 0 5px rgba(44, 151, 222, .4);
+            -webkit-animation: cd-bounce .3s;
+            -moz-animation: cd-bounce .3s;
+/*            animation: cd-bounce .3s;*/
+            animation: cd-bounce 180ms ease-in;
+        }
+        
+        @-webkit-keyframes cd-bounce {
+            0%, 100% {
+                -webkit-transform:scale(1)
+            }
+            
+            50% { 
+                -webkit-transform:scale(.8)
+            }
+        }
+        
+        @-moz-keyframes cd-bounce { 
+            0%,100%{
+                -moz-transform:scale(1)
+            }
+            
+            50% {
+                -moz-transform:scale(.8)}
+        }
+        
+        @keyframes cd-bounce {             
+            0% {
+                transform: scale(0);
+            }
+            
+            90% {
+                transform: scale(1.4);
+            }
+            
+            100% {
+                transform: scale(1);
+            }
+
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <form action="action">
+       
+        <h2>CSS Contact Form</h2>
+        
+        <fieldset>
+            <legend>Account Info</legend>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Company">
+            <input type="email" placeholder="Email">
+        </fieldset>
+        
+        <fieldset>
+            <legend>Project Info</legend>
+            <h4>Budget</h4>
+            <select name="" id="">
+                <option value="sdfsdf">Select Budget</option>
+                <option value="sdfsdf">< $5000</option>
+                <option value="sdfsdf">$5000 - $10000</option>
+                <option value="sdfsdf">> $10000</option>
+            </select>
+            
+            <div class="project-radio">
+                <h4>Project type</h4>
+                <ul class="project-type-list">
+                    <li class="project-type-list__item">
+                        <label class="project-radiobox">
+                           <input type="radio" name="project-radiobox" checked>
+                            <span class="project-radiobox__label">Женщина</span>
+                        </label>
+                    </li>
+                    <li class="project-type-list__item">
+                        <label class="project-radiobox">
+                           <input type="radio" name="project-radiobox">
+                            <span class="project-radiobox__label">Мужчина</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="project-checkbox">
+                <h4>Features</h4>
+                <ul class="project-type-list">
+                   <li class="project-type-list__item">
+                        <label class="project-checkboxin cd-form-list">
+                           <input type="checkbox" name="project-checkbox">
+                            <span class="project-checkboxin__label">Option 1</span>
+                        </label>
+                    </li>
+                    <li class="project-type-list__item">
+                        <label class="project-checkboxin cd-form-list">
+                           <input type="checkbox" name="project-checkbox">
+                            <span class="project-checkboxin__label">Option 2</span>
+                        </label>
+                    </li>
+                    <li class="project-type-list__item">
+                        <label class="project-checkboxin cd-form-list">
+                           <input type="checkbox" name="project-checkbox">
+                            <span class="project-checkboxin__label">Option 3</span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            
+            <textarea name="" id="" cols="30" rows="10" placeholder="Project description"></textarea>
+            
+            <div class="project-cta">
+                <button type="submit">Send Message</button>
+            </div>
+            
+        </fieldset>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

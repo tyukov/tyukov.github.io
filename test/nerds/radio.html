@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=UTF-8>
+<title>Radiobutton</title>
+<style>*,*::before,*::after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}body{margin:0;max-width:600px;margin:0 auto;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif}h4{font-weight:300;margin: 3rem 0 .75rem}</style>
+<link rel="stylesheet" href="css/radio.css">
+</head>
+<body>
+<h4>Блочный вариант</h4>
+ <div class="radio-group">
+  <div class="radio-group__block">
+    <label class="radio radio_theme_sky radio_size_m">
+      <input class="radio__control" type="radio" name="radio" checked>
+      <span class="radio__box">
+<svg class="radio__tick" viewBox="0 0 16 16"><circle cx="8" cy="8" r="3"></circle></svg>
+</span>
+      <span class="radio__label">Выбранный</span>
+    </label>
+  </div>
+  <div class="radio-group__block">
+    <label class="radio radio_theme_sky radio_size_m">
+      <input class="radio__control" type="radio" name="radio">
+      <span class="radio__box">
+      <svg class="radio__tick" viewBox="0 0 16 16"><circle cx="8" cy="8" r="3"></circle></svg>
+      </span>
+      <span class="radio__label">Не выбранный</span>
+    </label>
+  </div>
+  <div class="radio-group__block">
+    <label class="radio radio_theme_sky radio_size_m radio_disabled">
+      <input class="radio__control" type="radio" disabled>
+      <span class="radio__box">
+        <svg class="radio__tick" viewBox="0 0 16 16"><circle cx="8" cy="8" r="3"></circle></svg>
+      </span>
+      <span class="radio__label">Неактивный</span>
+    </label>
+  </div>
+  <div class="radio-group__block radio-group__block_pos_last">
+    <label class="radio radio_theme_sky radio_size_m radio_disabled">
+      <input class="radio__control" type="radio" disabled checked>
+      <span class="radio__box">
+        <svg class="radio__tick" viewBox="0 0 16 16"><circle cx="8" cy="8" r="3"/></svg>
+      </span>
+      <span class="radio__label">Неактивный (выбранный)</span>
+    </label>
+  </div>
+  </div>
+  <h4>Строчный вариант</h4>
+  <div class="radio-group">
+    <div class="radio-group__inline">
+      <label class="radio radio_theme_sky radio_size_m">
+        <input class="radio__control" type="radio" name="radio-b" checked>
+        <span class="radio__box">
+          <svg class="radio__tick" viewBox="0 0 16 16"><circle cx="8" cy="8" r="3"/></svg>
+        </span>
+        <span class="radio__label">Выбранный</span>
+      </label>
+    </div>
+    <div class="radio-group__inline">
+      <label class="radio radio_theme_sky radio_size_m">
+        <input class="radio__control" type="radio" name="radio-b" checked>
+        <span class="radio__box">
+          <svg class="radio__tick" viewBox="0 0 16 16"><circle cx="8" cy="8" r="3"/></svg>
+        </span>
+        <span class="radio__label">Не выбранный</span>
+      </label>
+    </div>
+    <div class="radio-group__inline">
+      <label class="radio radio_theme_sky radio_size_m radio_disabled">
+        <input class="radio__control" type="radio" name="radio-b" disabled>
+        <span class="radio__box">
+          <svg class="radio__tick" viewBox="0 0 16 16"><circle cx="8" cy="8" r="3"/></svg>
+        </span>
+        <span class="radio__label">Неактивный</span>
+      </label>
+    </div>
+  </div>
+  <br><br>
+  <hr>
+  <h4>Неактивные элементы</h4>
+  <div class="radio-group">
+    <div class="radio-group__block">
+      <label class="radio radio_theme_sky radio_size_m radio_disabled">
+        <input class="radio__control" type="radio" name="radio-c" checked disabled>
+        <span class="radio__box">
+          <svg class="radio__tick" viewBox="0 0 16 16"><circle cx="8" cy="8" r="3"/></svg>
+        </span>
+        <span class="radio__label">Неактивный</span>
+      </label>
+    </div>
+    <div class="radio-group__block">
+      <label class="radio radio_theme_sky radio_size_m radio_disabled">
+        <input class="radio__control" type="radio" name="radio-c" checked disabled>
+        <span class="radio__box">
+          <svg class="radio__tick" viewBox="0 0 16 16"><circle cx="8" cy="8" r="3"/></svg>
+        </span>
+        <span class="radio__label">Неактивный (выбранный)</span>
+      </label>
+    </div>
+    <div class="radio-group__block">
+      <label class="radio radio_theme_sky radio_size_m radio_disabled">
+        <input class="radio__control" type="radio" name="radio-c" disabled>
+        <span class="radio__box">
+          <svg class="radio__tick" viewBox="0 0 16 16"><circle cx="8" cy="8" r="3"/></svg>
+        </span>
+        <span class="radio__label">Неактивный (не выбранный)</span>
+      </label>
+    </div>
+  </div>
+<br><br>
+  <hr>
+</body>
+</html>

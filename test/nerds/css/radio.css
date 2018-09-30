@@ -60,10 +60,24 @@ margin:0
 }
 
 .radio_theme_sky.radio_size_m .radio__box {
-    width: 1rem;
-    height: 1rem;
-    margin-right: .4375rem;
-    top: 3px;
+width:1rem;
+height:1rem;
+margin-right:.4375rem;
+top:3px
+}
+
+.radio_theme_sky.radio_size_s .radio__box {
+width:.875rem;
+height:.875rem;
+margin-right:.3125rem;
+top:2px
+}
+
+.radio_theme_sky.radio_size_l .radio__box {
+width:1.125rem;
+height:1.125rem;
+margin-right:.5625rem;
+top:3px
 }
 
 @-webkit-keyframes tick {
@@ -130,12 +144,10 @@ transform:scale(1)
     visibility: hidden;
 }
 
-/*maybe not
 .radio_theme_sky .radio__control:checked + .radio__box .radio__tick {
 opacity:1;
 visibility:visible
 }
-*/
 
 .radio_theme_sky .radio__control:not(:checked):focus + .radio__box {
 box-shadow:0 0 5px rgba(153,153,153,.6)
@@ -160,4 +172,16 @@ box-shadow:0 0 5px rgba(56,130,178,.6)
 
 .radio__label {
 flex:1
+}
+
+.radio_size_m .radio__label {
+font-size:.9375rem
+}
+
+.radio_size_s .radio__label {
+font-size:.9375rem
+}
+
+.radio_size_l .radio__label {
+font-size:1.0625rem
 }

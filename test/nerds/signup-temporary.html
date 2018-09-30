@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Регистрация</title>
+  <style>
+    *,
+    *::after,
+    *::before {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: rgba(0,0,0,.04);
+      margin: 0;
+      font-family: sans-serif;
+    }
+    .wrapper {
+      max-width: 980px;
+      margin: 40px auto;
+      background-color: #fff;
+    }
+    .wrapper__inner {
+      padding: 48px 20px;
+    }
+    .header {
+      background-color: #f39681;
+      height: 48px;
+      margin: -48px -20px 20px;
+    }
+    .content {
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+    }
+    .ima-sec {
+      flex: 1;
+      background-color: #ffcc00;
+    }
+    .box {
+      flex-basis: 260px;
+      height: 500px;
+    }
+    .box-head {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+    .box-head__heading {
+      margin: 0 0 5px;
+      font-size: 19px;
+      font-weight: 400;
+      color: #222;
+    }
+    .box-head__description {
+      font-size: 13px;
+      color: #666;
+    }
+    .form-division {
+      border: none;
+      margin: 0 0 20px;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="wrapper__inner">
+     <header class="header"></header>
+     <div class="content">
+      <div class="ima-sec"></div>
+        <div class="box">
+        <div class="box-head">
+          <h1 class="box-head__heading">Впервые ВКонтакте?</h1>
+          <span class="box-head__description">Моментальная регистрация</span>
+        </div>
+        <form class="account-signup">
+          <fieldset class="form-division">
+            <div class="form-division__row">
+              <input class="form-division__input" type="text" placeholder="Ваше имя">
+            </div>
+            <div class="form-division__row">
+              <input class="form-division__input" type="text" placeholder="Ваше фамилия">
+            </div>
+            <div class="form-division__row">
+              <label>Дата рождения</label>
+            </div>
+            <div class="form-division__row">
+              <label>Ваш пол</label>
+              <div class="radio-group">
+                <div class="radio-group__inline">
+                  <label class="radio radio_theme_sky radio_size_s">
+                    <input type="radio" class="radio__control">
+                    <span class="radio__box">
+                      <span class="radio__tick"></span>
+                    </span>
+                    <span class="radio__text">Женщина</span>
+                  </label>
+                </div>
+                <div class="radio-group__inline">
+                  <label class="radio radio_theme_sky radio_size_s">
+                    <input type="radio" class="radio__control">
+                    <span class="radio__box">
+                      <span class="radio__tick"></span>
+                    </span>
+                    <span class="radio__text">Мужчина</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+        </div>
+      </div>
+      </div>
+  </div>
+</body>
+</html>
